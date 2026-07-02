@@ -1,0 +1,2099 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-PT" xml:lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Guia de Migra����o SEO ��� leomonteiro.pt</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+  <style type="text/css">@page {
+size: A4;
+margin: 2cm;
+}
+body {
+font-family: 'Georgia', 'Cormorant Garamond', serif;
+max-width: 820px;
+margin: 2rem auto;
+padding: 0 1.5rem 4rem;
+color: #2A2A2A;
+background: #FAF7F2;
+line-height: 1.65;
+font-size: 16px;
+}
+h1, h2, h3, h4 {
+font-family: 'Georgia', serif;
+color: #1E4A5C;
+line-height: 1.3;
+margin-top: 2.5rem;
+margin-bottom: 1rem;
+letter-spacing: -0.01em;
+}
+h1 {
+font-size: 2.4rem;
+font-weight: 600;
+border-bottom: 2px solid #3A8B9E;
+padding-bottom: 0.6rem;
+margin-top: 3rem;
+}
+h2 {
+font-size: 1.7rem;
+font-weight: 600;
+color: #143847;
+margin-top: 3.5rem;
+padding-top: 1rem;
+border-top: 1px solid #E5E0D5;
+}
+h3 {
+font-size: 1.3rem;
+font-weight: 600;
+color: #3A8B9E;
+margin-top: 2rem;
+}
+h4 {
+font-size: 1.05rem;
+font-weight: 600;
+color: #143847;
+}
+p {
+margin: 0.9rem 0;
+}
+strong { color: #143847; font-weight: 600; }
+a {
+color: #3A8B9E;
+text-decoration: none;
+border-bottom: 1px solid rgba(58, 139, 158, 0.3);
+}
+a:hover { border-bottom-color: #3A8B9E; }
+ul, ol {
+margin: 0.8rem 0 1rem 1.5rem;
+padding-left: 1rem;
+}
+li { margin: 0.4rem 0; }
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 1.5rem 0;
+font-size: 0.95rem;
+background: white;
+border: 1px solid #E5E0D5;
+}
+th {
+background: #1E4A5C;
+color: #FAF7F2;
+text-align: left;
+padding: 0.7rem 1rem;
+font-weight: 600;
+font-family: 'Helvetica', sans-serif;
+font-size: 0.85rem;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+}
+td {
+padding: 0.6rem 1rem;
+border-bottom: 1px solid #E5E0D5;
+vertical-align: top;
+}
+tr:last-child td { border-bottom: none; }
+tr:nth-child(even) td { background: #F4EFE6; }
+
+blockquote {
+border-left: 4px solid #E07856;
+background: #F4EFE6;
+padding: 1rem 1.5rem;
+margin: 1.5rem 0;
+font-style: italic;
+color: #5A6772;
+}
+blockquote strong { color: #1E4A5C; }
+
+pre {
+background: #143847;
+color: #FAF7F2;
+padding: 1.2rem 1.5rem;
+border-radius: 4px;
+overflow-x: auto;
+font-size: 0.85rem;
+line-height: 1.5;
+margin: 1.2rem 0;
+border-left: 4px solid #3A8B9E;
+}
+code {
+font-family: 'Consolas', 'Monaco', monospace;
+background: rgba(58, 139, 158, 0.12);
+color: #1E4A5C;
+padding: 0.15rem 0.4rem;
+border-radius: 3px;
+font-size: 0.9em;
+}
+pre code {
+background: transparent;
+color: inherit;
+padding: 0;
+}
+
+hr {
+border: none;
+border-top: 1px solid #E5E0D5;
+margin: 3rem 0;
+}
+
+input[type="checkbox"] {
+margin-right: 0.4rem;
+}
+
+body > h1:first-child {
+border-bottom: 3px solid #1E4A5C;
+padding-bottom: 1rem;
+margin-top: 1rem;
+font-size: 2.6rem;
+}
+body > blockquote:first-of-type {
+background: #1E4A5C;
+color: #FAF7F2;
+border-left: 4px solid #E07856;
+padding: 1.5rem 2rem;
+font-style: normal;
+font-size: 1.05rem;
+}
+body > blockquote:first-of-type strong { color: #FAF7F2; }
+
+@media print {
+body { background: white; max-width: 100%; padding: 0; }
+pre { page-break-inside: avoid; }
+h1, h2, h3 { page-break-after: avoid; }
+a { color: #1E4A5C; }
+}
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Guia de Migra����o SEO ��� leomonteiro.pt</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#guia-completo-de-migração-seo-leomonteiro.pt" id="toc-guia-completo-de-migração-seo-leomonteiro.pt">Guia Completo de
+Migração SEO — leomonteiro.pt</a>
+<ul>
+<li><a href="#índice" id="toc-índice">ÍNDICE</a></li>
+</ul></li>
+<li><a href="#parte-0-backup-e-preparação" id="toc-parte-0-backup-e-preparação">PARTE 0 — Backup e preparação</a>
+<ul>
+<li><a href="#backup-completo-do-site-atual" id="toc-backup-completo-do-site-atual">0.1 — Backup completo do site
+atual</a></li>
+<li><a href="#criar-ambiente-de-teste-recomendado-mas-opcional" id="toc-criar-ambiente-de-teste-recomendado-mas-opcional">0.2 — Criar
+ambiente de teste (recomendado mas opcional)</a></li>
+<li><a href="#o-que-vais-precisar" id="toc-o-que-vais-precisar">0.3 — O
+que vais precisar</a></li>
+</ul></li>
+<li><a href="#parte-1-plugins-essenciais-a-instalar" id="toc-parte-1-plugins-essenciais-a-instalar">PARTE 1 — Plugins
+essenciais a instalar</a></li>
+<li><a href="#parte-2-configurações-globais-do-wordpress" id="toc-parte-2-configurações-globais-do-wordpress">PARTE 2 —
+Configurações globais do WordPress</a>
+<ul>
+<li><a href="#estrutura-de-urls-permalinks" id="toc-estrutura-de-urls-permalinks">2.1 — Estrutura de URLs
+(permalinks)</a></li>
+<li><a href="#configuração-do-rank-math-wizard-inicial" id="toc-configuração-do-rank-math-wizard-inicial">2.2 — Configuração do
+Rank Math (wizard inicial)</a></li>
+<li><a href="#title-tag-template-global" id="toc-title-tag-template-global">2.3 — Title tag template
+global</a></li>
+<li><a href="#social-meta-open-graph" id="toc-social-meta-open-graph">2.4 — Social Meta (Open Graph)</a></li>
+<li><a href="#robots.txt" id="toc-robots.txt">2.5 — Robots.txt</a></li>
+<li><a href="#configuração-do-litespeed-cache-ou-wp-rocket" id="toc-configuração-do-litespeed-cache-ou-wp-rocket">2.6 — Configuração
+do LiteSpeed Cache (ou WP Rocket)</a></li>
+</ul></li>
+<li><a href="#parte-3-schema-markup-código-a-adicionar" id="toc-parte-3-schema-markup-código-a-adicionar">PARTE 3 — Schema
+markup (código a adicionar)</a>
+<ul>
+<li><a href="#schema-global-localbusiness-medicalclinic" id="toc-schema-global-localbusiness-medicalclinic">3.1 — Schema global
+(LocalBusiness / MedicalClinic)</a></li>
+<li><a href="#como-validar" id="toc-como-validar">3.2 — Como
+validar</a></li>
+<li><a href="#schema-faqpage-para-a-página-de-faq" id="toc-schema-faqpage-para-a-página-de-faq">3.3 — Schema FAQPage para a
+página de FAQ</a></li>
+</ul></li>
+<li><a href="#parte-4-conteúdo-otimizado-de-cada-página" id="toc-parte-4-conteúdo-otimizado-de-cada-página">PARTE 4 — Conteúdo
+otimizado de cada página</a>
+<ul>
+<li><a href="#página-home" id="toc-página-home">4.1 — Página HOME</a>
+<ul>
+<li><a href="#title-tag-rank-math" id="toc-title-tag-rank-math">Title
+tag (Rank Math)</a></li>
+<li><a href="#meta-description-rank-math" id="toc-meta-description-rank-math">Meta description (Rank
+Math)</a></li>
+<li><a href="#focus-keyword-rank-math" id="toc-focus-keyword-rank-math">Focus Keyword (Rank Math)</a></li>
+<li><a href="#conteúdo-da-página" id="toc-conteúdo-da-página">Conteúdo
+da página</a></li>
+<li><a href="#notas-de-implementação" id="toc-notas-de-implementação">Notas de implementação</a></li>
+</ul></li>
+<li><a href="#página-tratamentos" id="toc-página-tratamentos">4.2 —
+Página TRATAMENTOS</a>
+<ul>
+<li><a href="#title-tag-rank-math-1" id="toc-title-tag-rank-math-1">Title tag (Rank Math)</a></li>
+<li><a href="#meta-description-rank-math-1" id="toc-meta-description-rank-math-1">Meta description (Rank
+Math)</a></li>
+<li><a href="#focus-keyword-rank-math-1" id="toc-focus-keyword-rank-math-1">Focus Keyword (Rank Math)</a></li>
+<li><a href="#conteúdo" id="toc-conteúdo">Conteúdo</a></li>
+<li><a href="#notas" id="toc-notas">Notas</a></li>
+</ul></li>
+<li><a href="#página-terapêuticas" id="toc-página-terapêuticas">4.3 —
+Página TERAPÊUTICAS</a>
+<ul>
+<li><a href="#title-tag" id="toc-title-tag">Title tag</a></li>
+<li><a href="#meta-description" id="toc-meta-description">Meta
+description</a></li>
+<li><a href="#focus-keyword" id="toc-focus-keyword">Focus
+Keyword</a></li>
+<li><a href="#conteúdo-1" id="toc-conteúdo-1">Conteúdo</a></li>
+</ul></li>
+<li><a href="#página-corporate-b2b" id="toc-página-corporate-b2b">4.4 —
+Página CORPORATE (B2B)</a>
+<ul>
+<li><a href="#title-tag-1" id="toc-title-tag-1">Title tag</a></li>
+<li><a href="#meta-description-1" id="toc-meta-description-1">Meta
+description</a></li>
+<li><a href="#focus-keyword-1" id="toc-focus-keyword-1">Focus
+Keyword</a></li>
+<li><a href="#conteúdo-2" id="toc-conteúdo-2">Conteúdo</a></li>
+</ul></li>
+<li><a href="#página-marcar-consulta" id="toc-página-marcar-consulta">4.5 — Página MARCAR CONSULTA</a>
+<ul>
+<li><a href="#title-tag-2" id="toc-title-tag-2">Title tag</a></li>
+<li><a href="#meta-description-2" id="toc-meta-description-2">Meta
+description</a></li>
+<li><a href="#focus-keyword-2" id="toc-focus-keyword-2">Focus
+Keyword</a></li>
+<li><a href="#conteúdo-3" id="toc-conteúdo-3">Conteúdo</a></li>
+</ul></li>
+<li><a href="#página-contactos" id="toc-página-contactos">4.6 — Página
+CONTACTOS</a>
+<ul>
+<li><a href="#title-tag-3" id="toc-title-tag-3">Title tag</a></li>
+<li><a href="#meta-description-3" id="toc-meta-description-3">Meta
+description</a></li>
+<li><a href="#focus-keyword-3" id="toc-focus-keyword-3">Focus
+Keyword</a></li>
+<li><a href="#conteúdo-4" id="toc-conteúdo-4">Conteúdo</a></li>
+<li><a href="#notas-1" id="toc-notas-1">Notas</a></li>
+</ul></li>
+<li><a href="#página-faq" id="toc-página-faq">4.7 — Página FAQ</a>
+<ul>
+<li><a href="#title-tag-4" id="toc-title-tag-4">Title tag</a></li>
+<li><a href="#meta-description-4" id="toc-meta-description-4">Meta
+description</a></li>
+<li><a href="#focus-keyword-4" id="toc-focus-keyword-4">Focus
+Keyword</a></li>
+<li><a href="#conteúdo-5" id="toc-conteúdo-5">Conteúdo</a></li>
+<li><a href="#configuração-do-schema-faq-no-rank-math" id="toc-configuração-do-schema-faq-no-rank-math">Configuração do Schema
+FAQ no Rank Math</a></li>
+</ul></li>
+<li><a href="#página-sobre-nova-criar" id="toc-página-sobre-nova-criar">4.8 — Página SOBRE (NOVA — criar)</a>
+<ul>
+<li><a href="#title-tag-5" id="toc-title-tag-5">Title tag</a></li>
+<li><a href="#meta-description-5" id="toc-meta-description-5">Meta
+description</a></li>
+<li><a href="#focus-keyword-5" id="toc-focus-keyword-5">Focus
+Keyword</a></li>
+<li><a href="#conteúdo-6" id="toc-conteúdo-6">Conteúdo</a></li>
+<li><a href="#schema-person-para-esta-página" id="toc-schema-person-para-esta-página">Schema Person para esta
+página</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#parte-5-otimização-de-imagens" id="toc-parte-5-otimização-de-imagens">PARTE 5 — Otimização de
+imagens</a>
+<ul>
+<li><a href="#substituir-imagens-de-banco" id="toc-substituir-imagens-de-banco">5.1 — Substituir imagens de
+banco</a></li>
+<li><a href="#otimização-técnica-de-imagens" id="toc-otimização-técnica-de-imagens">5.2 — Otimização técnica de
+imagens</a></li>
+<li><a href="#alt-text-regras" id="toc-alt-text-regras">5.3 — Alt text —
+regras</a></li>
+<li><a href="#configuração-no-shortpixel" id="toc-configuração-no-shortpixel">5.4 — Configuração no
+ShortPixel</a></li>
+</ul></li>
+<li><a href="#parte-6-redirects-de-urls-antigos" id="toc-parte-6-redirects-de-urls-antigos">PARTE 6 — Redirects de URLs
+antigos</a>
+<ul>
+<li><a href="#plugin-redirection-gratuito" id="toc-plugin-redirection-gratuito">6.1 — Plugin Redirection
+(gratuito)</a></li>
+<li><a href="#redirects-a-criar" id="toc-redirects-a-criar">6.2 —
+Redirects a criar</a></li>
+<li><a href="#verificar-redirects" id="toc-verificar-redirects">6.3 —
+Verificar redirects</a></li>
+</ul></li>
+<li><a href="#parte-7-validação-e-submissão" id="toc-parte-7-validação-e-submissão">PARTE 7 — Validação e
+submissão</a>
+<ul>
+<li><a href="#lighthouse-performance" id="toc-lighthouse-performance">7.1 — Lighthouse (performance)</a></li>
+<li><a href="#schema-validator" id="toc-schema-validator">7.2 — Schema
+Validator</a></li>
+<li><a href="#google-search-console" id="toc-google-search-console">7.3
+— Google Search Console</a></li>
+<li><a href="#google-business-profile" id="toc-google-business-profile">7.4 — Google Business Profile</a></li>
+<li><a href="#analytics" id="toc-analytics">7.5 — Analytics</a></li>
+</ul></li>
+<li><a href="#parte-8-checklist-final" id="toc-parte-8-checklist-final">PARTE 8 — Checklist final</a>
+<ul>
+<li><a href="#pré-implementação" id="toc-pré-implementação">Pré-implementação</a></li>
+<li><a href="#plugins" id="toc-plugins">Plugins</a></li>
+<li><a href="#schema-markup" id="toc-schema-markup">Schema
+markup</a></li>
+<li><a href="#conteúdo-das-páginas-cada-um-deve-ter-title-meta-h1-conteúdo-schema" id="toc-conteúdo-das-páginas-cada-um-deve-ter-title-meta-h1-conteúdo-schema">Conteúdo
+das páginas (cada um deve ter Title, Meta, H1, conteúdo,
+schema)</a></li>
+<li><a href="#imagens" id="toc-imagens">Imagens</a></li>
+<li><a href="#redirects" id="toc-redirects">Redirects</a></li>
+<li><a href="#configurações-globais" id="toc-configurações-globais">Configurações globais</a></li>
+<li><a href="#validação-externa" id="toc-validação-externa">Validação
+externa</a></li>
+<li><a href="#pequenas-correções-textuais" id="toc-pequenas-correções-textuais">Pequenas correções
+textuais</a></li>
+<li><a href="#comunicação-pós-go-live" id="toc-comunicação-pós-go-live">Comunicação pós-go-live</a></li>
+<li><a href="#tempo-total-estimado-de-implementação" id="toc-tempo-total-estimado-de-implementação">Tempo total estimado de
+implementação</a></li>
+<li><a href="#suporte-e-próximos-passos" id="toc-suporte-e-próximos-passos">Suporte e próximos passos</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="guia-completo-de-migração-seo-leomonteiro.pt">Guia Completo de
+Migração SEO — leomonteiro.pt</h1>
+<blockquote>
+<p><strong>Objetivo deste documento:</strong> modernizar o conteúdo do
+site atual no WordPress, aplicar todas as boas práticas de SEO técnico,
+e dar-te um plano executável passo-a-passo. Todos os textos estão
+prontos para copiar e colar diretamente nas páginas do WordPress.</p>
+</blockquote>
+<hr />
+<h2 id="índice">ÍNDICE</h2>
+<ul>
+<li><a href="#parte-0--backup-e-preparação">PARTE 0 — Backup e
+preparação</a></li>
+<li><a href="#parte-1--plugins-essenciais-a-instalar">PARTE 1 — Plugins
+essenciais a instalar</a></li>
+<li><a href="#parte-2--configurações-globais-do-wordpress">PARTE 2 —
+Configurações globais do WordPress</a></li>
+<li><a href="#parte-3--schema-markup-código-a-adicionar">PARTE 3 —
+Schema markup (código a adicionar)</a></li>
+<li><a href="#parte-4--conteúdo-otimizado-de-cada-página">PARTE 4 —
+Conteúdo otimizado de cada página</a>
+<ul>
+<li><a href="#41--página-home">4.1 — Página HOME</a></li>
+<li><a href="#42--página-tratamentos">4.2 — Página TRATAMENTOS</a></li>
+<li><a href="#43--página-terapêuticas">4.3 — Página
+TERAPÊUTICAS</a></li>
+<li><a href="#44--página-corporate-b2b">4.4 — Página CORPORATE
+(B2B)</a></li>
+<li><a href="#45--página-marcar-consulta">4.5 — Página MARCAR
+CONSULTA</a></li>
+<li><a href="#46--página-contactos">4.6 — Página CONTACTOS</a></li>
+<li><a href="#47--página-faq">4.7 — Página FAQ</a></li>
+<li><a href="#48--página-sobre-nova--criar">4.8 — Página SOBRE (NOVA —
+criar)</a></li>
+</ul></li>
+<li><a href="#parte-5--otimização-de-imagens">PARTE 5 — Otimização de
+imagens</a></li>
+<li><a href="#parte-6--redirects-de-urls-antigos">PARTE 6 — Redirects de
+URLs antigos</a></li>
+<li><a href="#parte-7--validação-e-submissão">PARTE 7 — Validação e
+submissão</a></li>
+<li><a href="#parte-8--checklist-final">PARTE 8 — Checklist
+final</a></li>
+</ul>
+<hr />
+<h1 id="parte-0-backup-e-preparação">PARTE 0 — Backup e preparação</h1>
+<p><strong>Antes de mexer em qualquer coisa, fazer backup completo é
+obrigatório.</strong></p>
+<h2 id="backup-completo-do-site-atual">0.1 — Backup completo do site
+atual</h2>
+<p><strong>Opção A — Plugin (recomendada para quem não tem cPanel à
+mão):</strong></p>
+<ol type="1">
+<li>Instala o plugin <strong>UpdraftPlus</strong> (gratuito): WordPress
+→ Plugins → Adicionar Novo → procurar “UpdraftPlus”</li>
+<li>Ativa o plugin</li>
+<li>Vai a <em>Definições → UpdraftPlus Backups</em></li>
+<li>Clica em “Backup agora”</li>
+<li>Marca todas as opções (Base de dados, Plugins, Temas, Uploads,
+Outros)</li>
+<li>Faz download dos 5 ficheiros que serão gerados</li>
+<li><strong>Guarda numa pasta local com a data</strong>:
+<code>backup-leomonteiro-AAAA-MM-DD</code></li>
+</ol>
+<p><strong>Opção B — Backup manual (se tiveres acesso ao
+cPanel/Hostinger):</strong></p>
+<ol type="1">
+<li>Acede ao cPanel ou ao painel do alojamento</li>
+<li>Em <em>Ferramentas → Cópia de Segurança</em>, descarrega a base de
+dados (.sql) e os ficheiros (.zip)</li>
+</ol>
+<h2 id="criar-ambiente-de-teste-recomendado-mas-opcional">0.2 — Criar
+ambiente de teste (recomendado mas opcional)</h2>
+<p>Se queres testar antes de mexer no site live, instala o plugin
+<strong>WP Staging</strong> que cria uma cópia do site num subdomínio
+para testes. Faz todas as alterações lá primeiro.</p>
+<h2 id="o-que-vais-precisar">0.3 — O que vais precisar</h2>
+<ul>
+<li>Acesso administrador ao WordPress (<code>/wp-admin</code>)</li>
+<li>2-3 horas de trabalho concentrado (espalhadas em 2-3 sessões)</li>
+<li>Este documento aberto ao lado</li>
+<li>Um editor de texto simples (Notepad++ ou VS Code) para copiar
+trechos de código</li>
+</ul>
+<hr />
+<h1 id="parte-1-plugins-essenciais-a-instalar">PARTE 1 — Plugins
+essenciais a instalar</h1>
+<p>Os plugins atuais do site vão ser substituídos por estes.
+<strong>Remove os antigos relacionados com SEO e cache</strong> para
+evitar conflitos.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Plugin</th>
+<th>Função</th>
+<th>Custo</th>
+<th>Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Rank Math SEO</strong></td>
+<td>SEO completo + schema</td>
+<td>Grátis</td>
+<td>Crítica</td>
+</tr>
+<tr class="even">
+<td><strong>LiteSpeed Cache</strong> ou <strong>WP Rocket</strong></td>
+<td>Cache + otimização</td>
+<td>Grátis / €59 ano</td>
+<td>Crítica</td>
+</tr>
+<tr class="odd">
+<td><strong>ShortPixel Image Optimizer</strong></td>
+<td>Comprimir imagens</td>
+<td>Grátis até 100/mês</td>
+<td>Crítica</td>
+</tr>
+<tr class="even">
+<td><strong>Redirection</strong></td>
+<td>Gerir redirecionamentos</td>
+<td>Grátis</td>
+<td>Alta</td>
+</tr>
+<tr class="odd">
+<td><strong>Code Snippets</strong></td>
+<td>Adicionar código sem mexer no tema</td>
+<td>Grátis</td>
+<td>Alta</td>
+</tr>
+<tr class="even">
+<td><strong>Wordfence Security</strong></td>
+<td>Segurança</td>
+<td>Grátis</td>
+<td>Alta</td>
+</tr>
+<tr class="odd">
+<td><strong>WPForms Lite</strong> ou <strong>Contact Form
+7</strong></td>
+<td>Formulários</td>
+<td>Grátis</td>
+<td>Média</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Como instalar:</strong></p>
+<p>WordPress → Plugins → Adicionar Novo → pesquisa o nome → Instalar →
+Ativar</p>
+<p><strong>IMPORTANTE:</strong> Antes de instalar o Rank Math,
+<strong>desinstala o Yoast SEO se o tiveres</strong> (são
+incompatíveis). Se já tens Rank Math, mantém-no.</p>
+<hr />
+<h1 id="parte-2-configurações-globais-do-wordpress">PARTE 2 —
+Configurações globais do WordPress</h1>
+<h2 id="estrutura-de-urls-permalinks">2.1 — Estrutura de URLs
+(permalinks)</h2>
+<p>WordPress → Definições → Permalinks → seleciona <strong>“Nome da
+publicação”</strong> (<code>/sample-post/</code>)</p>
+<p>Isto é essencial para SEO. Se já está assim, ótimo.</p>
+<h2 id="configuração-do-rank-math-wizard-inicial">2.2 — Configuração do
+Rank Math (wizard inicial)</h2>
+<p>Quando ativares o Rank Math pela primeira vez, ele lança um wizard.
+Configurações:</p>
+<ul>
+<li><strong>Your Site:</strong> Personal Blog → muda para <strong>Small
+Business Site</strong></li>
+<li><strong>Business Type:</strong> <strong>Medical Business</strong> →
+<strong>Medical Clinic</strong></li>
+<li><strong>Logo for Google:</strong> upload do teu logo (mínimo
+112×112px, ideal 600×600px)</li>
+<li><strong>Default Social Share Image:</strong> cria uma imagem
+1200×630px com o teu logo + tagline</li>
+<li><strong>Sitemaps:</strong> ativar</li>
+<li><strong>SEO Tweaks:</strong> ativar todos os toggles recomendados
+(Noindex Empty Category Pages, Nofollow External Links, etc.)</li>
+<li><strong>Search Console:</strong> liga depois (Parte 7)</li>
+</ul>
+<h2 id="title-tag-template-global">2.3 — Title tag template global</h2>
+<p>Rank Math → Titles &amp; Meta → Global Meta:</p>
+<p><strong>Title Separator:</strong> <code>·</code> (ponto médio — mais
+elegante que <code>|</code> ou <code>-</code>)</p>
+<p><strong>Default Title Template para Posts:</strong></p>
+<pre><code>%title% %sep% %sitename% — Taguspark, Oeiras</code></pre>
+<h2 id="social-meta-open-graph">2.4 — Social Meta (Open Graph)</h2>
+<p>Rank Math → Titles &amp; Meta → Social Meta:</p>
+<ul>
+<li><strong>Facebook App ID:</strong> (deixa vazio se não tiveres)</li>
+<li><strong>Twitter Username:</strong> (se tiveres conta)</li>
+<li><strong>Default Image:</strong> mesma do social share image</li>
+</ul>
+<h2 id="robots.txt">2.5 — Robots.txt</h2>
+<p>Rank Math → General Settings → Edit robots.txt:</p>
+<pre><code>User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /xmlrpc.php
+Disallow: /wp-content/plugins/
+Disallow: /readme.html
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://leomonteiro.pt/sitemap_index.xml</code></pre>
+<h2 id="configuração-do-litespeed-cache-ou-wp-rocket">2.6 — Configuração
+do LiteSpeed Cache (ou WP Rocket)</h2>
+<p><strong>LiteSpeed Cache</strong> → recomendo usar o “Preset” →
+<strong>Advanced (Recommended)</strong></p>
+<p>Activa pelo menos: - Page Cache ✓ - Browser Cache ✓ - Object Cache ✓
+(se disponível) - CSS Minify ✓ - JS Minify ✓ - HTML Minify ✓ - Lazy Load
+Images ✓ - WebP Replacement ✓</p>
+<p><strong>Se usares WP Rocket</strong> (recomendado, pago), as
+configurações são automáticas e otimizadas — só precisas de ativar.</p>
+<hr />
+<h1 id="parte-3-schema-markup-código-a-adicionar">PARTE 3 — Schema
+markup (código a adicionar)</h1>
+<p>O schema diz ao Google o que cada coisa é. É <strong>a maior alavanca
+de SEO</strong> que ainda não estás a usar.</p>
+<h2 id="schema-global-localbusiness-medicalclinic">3.1 — Schema global
+(LocalBusiness / MedicalClinic)</h2>
+<p>Este é o mais importante. Adiciona via plugin <strong>Code
+Snippets</strong>:</p>
+<ol type="1">
+<li>Plugins → Code Snippets → Add New</li>
+<li><strong>Title:</strong> “Schema MedicalClinic Global”</li>
+<li><strong>Code:</strong></li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode php"><code class="sourceCode php"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>add_action(<span class="st">&#39;wp_head&#39;</span><span class="ot">,</span> <span class="kw">function</span>() {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">?&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>script type<span class="op">=</span><span class="st">&quot;application/ld+json&quot;</span><span class="op">&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;@context&quot;</span><span class="ot">:</span> <span class="st">&quot;https://schema.org&quot;</span><span class="ot">,</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;MedicalClinic&quot;</span><span class="ot">,</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;@id&quot;</span><span class="ot">:</span> <span class="st">&quot;https://leomonteiro.pt/#clinic&quot;</span><span class="ot">,</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;name&quot;</span><span class="ot">:</span> <span class="st">&quot;Leo Monteiro — Clínica da Dor Taguspark&quot;</span><span class="ot">,</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;alternateName&quot;</span><span class="ot">:</span> <span class="st">&quot;Consultório Leo Monteiro&quot;</span><span class="ot">,</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;url&quot;</span><span class="ot">:</span> <span class="st">&quot;https://leomonteiro.pt&quot;</span><span class="ot">,</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;logo&quot;</span><span class="ot">:</span> <span class="st">&quot;https://leomonteiro.pt/wp-content/uploads/2024/05/cropped-Logo-LM_Vert_1.png&quot;</span><span class="ot">,</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;image&quot;</span><span class="ot">:</span> <span class="st">&quot;https://leomonteiro.pt/wp-content/uploads/2023/09/LeoMonteiro_coluna-1024x683.jpg&quot;</span><span class="ot">,</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;telephone&quot;</span><span class="ot">:</span> <span class="st">&quot;+351916345523&quot;</span><span class="ot">,</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;email&quot;</span><span class="ot">:</span> <span class="st">&quot;info@leomonteiro.pt&quot;</span><span class="ot">,</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;priceRange&quot;</span><span class="ot">:</span> <span class="st">&quot;€€&quot;</span><span class="ot">,</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;address&quot;</span><span class="ot">:</span> {</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;PostalAddress&quot;</span><span class="ot">,</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;streetAddress&quot;</span><span class="ot">:</span> <span class="st">&quot;Taguspark, Núcleo Central, 3º Piso, Sala 340&quot;</span><span class="ot">,</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;addressLocality&quot;</span><span class="ot">:</span> <span class="st">&quot;Porto Salvo&quot;</span><span class="ot">,</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;postalCode&quot;</span><span class="ot">:</span> <span class="st">&quot;2740-122&quot;</span><span class="ot">,</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;addressRegion&quot;</span><span class="ot">:</span> <span class="st">&quot;Oeiras&quot;</span><span class="ot">,</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;addressCountry&quot;</span><span class="ot">:</span> <span class="st">&quot;PT&quot;</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>      }<span class="ot">,</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;geo&quot;</span><span class="ot">:</span> {</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;GeoCoordinates&quot;</span><span class="ot">,</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;latitude&quot;</span><span class="ot">:</span> <span class="fl">38.7370</span><span class="ot">,</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;longitude&quot;</span><span class="ot">:</span> <span class="op">-</span><span class="fl">9.3045</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>      }<span class="ot">,</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;openingHoursSpecification&quot;</span><span class="ot">:</span> [</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>        {</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;OpeningHoursSpecification&quot;</span><span class="ot">,</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;dayOfWeek&quot;</span><span class="ot">:</span> [<span class="st">&quot;Monday&quot;</span><span class="ot">,</span><span class="st">&quot;Tuesday&quot;</span><span class="ot">,</span><span class="st">&quot;Wednesday&quot;</span><span class="ot">,</span><span class="st">&quot;Thursday&quot;</span><span class="ot">,</span><span class="st">&quot;Friday&quot;</span>]<span class="ot">,</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;opens&quot;</span><span class="ot">:</span> <span class="st">&quot;09:00&quot;</span><span class="ot">,</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;closes&quot;</span><span class="ot">:</span> <span class="st">&quot;19:00&quot;</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>      ]<span class="ot">,</span></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;medicalSpecialty&quot;</span><span class="ot">:</span> [<span class="st">&quot;PainManagement&quot;</span><span class="ot">,</span> <span class="st">&quot;PhysicalTherapy&quot;</span>]<span class="ot">,</span></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;areaServed&quot;</span><span class="ot">:</span> [</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>        {<span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;Place&quot;</span><span class="ot">,</span> <span class="st">&quot;name&quot;</span><span class="ot">:</span> <span class="st">&quot;Taguspark&quot;</span>}<span class="ot">,</span></span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>        {<span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;Place&quot;</span><span class="ot">,</span> <span class="st">&quot;name&quot;</span><span class="ot">:</span> <span class="st">&quot;Oeiras&quot;</span>}<span class="ot">,</span></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>        {<span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;Place&quot;</span><span class="ot">,</span> <span class="st">&quot;name&quot;</span><span class="ot">:</span> <span class="st">&quot;Porto Salvo&quot;</span>}<span class="ot">,</span></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>        {<span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;Place&quot;</span><span class="ot">,</span> <span class="st">&quot;name&quot;</span><span class="ot">:</span> <span class="st">&quot;Cascais&quot;</span>}<span class="ot">,</span></span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>        {<span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;Place&quot;</span><span class="ot">,</span> <span class="st">&quot;name&quot;</span><span class="ot">:</span> <span class="st">&quot;Carnaxide&quot;</span>}</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>      ]<span class="ot">,</span></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;sameAs&quot;</span><span class="ot">:</span> [</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;https://www.facebook.com/LeoMonteiro.pt&quot;</span><span class="ot">,</span></span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;https://www.instagram.com/leomonteiro.pt/&quot;</span><span class="ot">,</span></span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;https://www.linkedin.com/in/leomonteiropt&quot;</span></span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>      ]<span class="ot">,</span></span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;founder&quot;</span><span class="ot">:</span> {</span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;Person&quot;</span><span class="ot">,</span></span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;name&quot;</span><span class="ot">:</span> <span class="st">&quot;Leonardo Monteiro&quot;</span><span class="ot">,</span></span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;jobTitle&quot;</span><span class="ot">:</span> <span class="st">&quot;Acupuntor e Terapeuta Manual&quot;</span><span class="ot">,</span></span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;identifier&quot;</span><span class="ot">:</span> <span class="st">&quot;C-05000400&quot;</span><span class="ot">,</span></span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;description&quot;</span><span class="ot">:</span> <span class="st">&quot;Profissional de saúde com mais de 28 anos de experiência em tratamento da dor, manipulações articulares e acupuntura clínica&quot;</span></span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a>      }<span class="ot">,</span></span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;hasOfferCatalog&quot;</span><span class="ot">:</span> {</span>
+<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;OfferCatalog&quot;</span><span class="ot">,</span></span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;name&quot;</span><span class="ot">:</span> <span class="st">&quot;Tratamentos&quot;</span><span class="ot">,</span></span>
+<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;itemListElement&quot;</span><span class="ot">:</span> [</span>
+<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a>          {<span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;Offer&quot;</span><span class="ot">,</span> <span class="st">&quot;itemOffered&quot;</span><span class="ot">:</span> {<span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;MedicalProcedure&quot;</span><span class="ot">,</span> <span class="st">&quot;name&quot;</span><span class="ot">:</span> <span class="st">&quot;Tratamento da Coluna Vertebral&quot;</span>}}<span class="ot">,</span></span>
+<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a>          {<span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;Offer&quot;</span><span class="ot">,</span> <span class="st">&quot;itemOffered&quot;</span><span class="ot">:</span> {<span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;MedicalProcedure&quot;</span><span class="ot">,</span> <span class="st">&quot;name&quot;</span><span class="ot">:</span> <span class="st">&quot;Manipulações Articulares HVLA&quot;</span>}}<span class="ot">,</span></span>
+<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a>          {<span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;Offer&quot;</span><span class="ot">,</span> <span class="st">&quot;itemOffered&quot;</span><span class="ot">:</span> {<span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;MedicalProcedure&quot;</span><span class="ot">,</span> <span class="st">&quot;name&quot;</span><span class="ot">:</span> <span class="st">&quot;Acupuntura Clínica&quot;</span>}}<span class="ot">,</span></span>
+<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a>          {<span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;Offer&quot;</span><span class="ot">,</span> <span class="st">&quot;itemOffered&quot;</span><span class="ot">:</span> {<span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;MedicalProcedure&quot;</span><span class="ot">,</span> <span class="st">&quot;name&quot;</span><span class="ot">:</span> <span class="st">&quot;Reabilitação Neuromuscular&quot;</span>}}<span class="ot">,</span></span>
+<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a>          {<span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;Offer&quot;</span><span class="ot">,</span> <span class="st">&quot;itemOffered&quot;</span><span class="ot">:</span> {<span class="st">&quot;@type&quot;</span><span class="ot">:</span> <span class="st">&quot;MedicalProcedure&quot;</span><span class="ot">,</span> <span class="st">&quot;name&quot;</span><span class="ot">:</span> <span class="st">&quot;Ergonomia Corporativa&quot;</span>}}</span>
+<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a>        ]</span>
+<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;/</span>script<span class="op">&gt;</span></span>
+<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span><span class="ot">?</span>php</span>
+<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a>}<span class="ot">,</span> <span class="dv">1</span>)<span class="ot">;</span></span></code></pre></div>
+<ol start="4" type="1">
+<li><strong>Run snippet everywhere</strong> (default)</li>
+<li><strong>Save and Activate</strong></li>
+</ol>
+<h2 id="como-validar">3.2 — Como validar</h2>
+<p>Depois de adicionares o snippet:</p>
+<ol type="1">
+<li>Vai a https://search.google.com/test/rich-results</li>
+<li>Cola: <code>https://leomonteiro.pt</code></li>
+<li>Deve mostrar “MedicalClinic” detetado, sem erros</li>
+</ol>
+<h2 id="schema-faqpage-para-a-página-de-faq">3.3 — Schema FAQPage para a
+página de FAQ</h2>
+<p>Vais adicionar este <strong>via Rank Math</strong> diretamente na
+página FAQ (instruções na Parte 4.7).</p>
+<hr />
+<h1 id="parte-4-conteúdo-otimizado-de-cada-página">PARTE 4 — Conteúdo
+otimizado de cada página</h1>
+<blockquote>
+<p><strong>Como usar esta secção:</strong> para cada página, tens 5
+campos a preencher no WordPress (Title, Meta Description, Slug, H1,
+Conteúdo). Copia e cola cada um no campo correspondente.</p>
+<p>No editor da página WordPress, encontras os campos SEO no fundo
+(caixa do Rank Math). O conteúdo principal vai no editor normal.</p>
+</blockquote>
+<hr />
+<h2 id="página-home">4.1 — Página HOME</h2>
+<p><strong>URL/Slug:</strong> <code>/</code> (página inicial — em
+<em>Definições → Leitura</em> deve estar “A sua página inicial mostra:
+Uma página estática”)</p>
+<h3 id="title-tag-rank-math">Title tag (Rank Math)</h3>
+<pre><code>Clínica da Dor no Taguspark · Coluna, Acupuntura e Manipulações | Leo Monteiro</code></pre>
+<p><em>(63 caracteres — ideal)</em></p>
+<h3 id="meta-description-rank-math">Meta description (Rank Math)</h3>
+<pre><code>Tratamento da dor de coluna, manipulações articulares e acupuntura clínica no Taguspark, Oeiras. Avaliação por WhatsApp em 30 segundos. Cédula C-05000400.</code></pre>
+<p><em>(155 caracteres — ideal)</em></p>
+<h3 id="focus-keyword-rank-math">Focus Keyword (Rank Math)</h3>
+<pre><code>clínica da dor taguspark</code></pre>
+<h3 id="conteúdo-da-página">Conteúdo da página</h3>
+<blockquote>
+<p>Cola este conteúdo no editor da página inicial. Os títulos com
+<code>##</code> são H2, <code>###</code> são H3. No editor visual do
+WordPress, marca-os como Heading 2 e Heading 3.</p>
+</blockquote>
+<pre><code># A clínica da dor dentro do Taguspark
+
+**Tratamento da coluna vertebral, manipulações articulares e acupuntura clínica.
+A cinco minutos a pé do teu escritório — sem perder a tarde.**
+
+[Marcar avaliação pelo WhatsApp →](https://wa.me/351916345523)
+
+---
+
+## Oito horas em frente ao ecrã têm um custo
+
+Cervicalgia ao final do dia, lombalgia depois das reuniões longas, dores de cabeça que não passam. Não é &quot;normal&quot; — é tratável. E provavelmente não está só num músculo.
+
+No Taguspark, vejo diariamente trabalhadores das empresas do parque com o mesmo padrão: dor cervical e dorsal por postura prolongada, lombalgia mecânica, tendinopatias do membro superior, e cefaleias tensionais. Todas estas condições respondem bem ao tratamento integrado.
+
+---
+
+## Para quem é esta clínica
+
+### Para o trabalhador do Taguspark
+
+Engenheiros, consultores, gestores e developers que passam o dia em frente ao ecrã. A dor não desaparece com almofadas ergonómicas nem com vídeos de YouTube. Precisa de avaliação biomecânica e tratamento dirigido.
+
+### Para quem treina
+
+Corredores, jogadores de padel, praticantes de crossfit. Microlesões e desequilíbrios biomecânicos que tornam o desporto menos prazeroso do que devia ser.
+
+### Para quem sofre de dor crónica
+
+Dor cervical persistente, lombalgia recorrente, ciática, cefaleias tensionais. Casos onde a abordagem fragmentada (médico → exames → fisioterapia → repetir) não está a resolver.
+
+---
+
+## Uma abordagem. Três ferramentas.
+
+Não há uma técnica única que resolva tudo. A diferença está em saber quando usar cada uma — e quando combinar.
+
+### Tratamento da coluna vertebral
+
+Avaliação biomecânica completa e plano de tratamento para dor cervical, dorsal e lombar. Trabalho focado na causa, não apenas no sintoma.
+
+### Manipulações articulares HVLA
+
+Técnicas Thrust específicas, executadas com precisão. Restauram mobilidade articular e aliviam tensão muscular protetora. Seguras, rápidas e indolores.
+
+### Acupuntura clínica
+
+Abordagem moderna, baseada em pontos anatómicos precisos. Eficaz na dor crónica, cefaleias e regulação do sistema nervoso autónomo. Reconhecida pela OMS.
+
+[Conhecer todos os tratamentos →](https://leomonteiro.pt/terapeuticas/)
+
+---
+
+## Como funciona
+
+### 1. Avaliação inicial — 30 minutos
+
+Vens, contas o que te incomoda, examino. No final tens um diagnóstico funcional claro e um plano por escrito. Sem pressa, sem medicina defensiva.
+
+### 2. Plano personalizado
+
+Combinação de manipulações, acupuntura e exercício orientado — adaptado ao teu caso, à tua agenda e ao teu trabalho. Sessões geralmente entre 5 e 20, dependendo da gravidade.
+
+### 3. Manutenção opcional
+
+Quando estiveres melhor, sessões esporádicas (1x cada 6-8 semanas) para não voltares ao ponto inicial. Investimento na prevenção que se paga sozinho.
+
+[Ver perguntas frequentes →](https://leomonteiro.pt/faq/)
+
+---
+
+## O que dizem os pacientes
+
+&gt; &quot;Houve, sem dúvida, resultados, quer no alívio das dores e outros sintomas da minha hérnia cervical, quer no controlo e compreensão da ansiedade. A recetividade para ouvir e compreender o problema a fundo foi um diferencial no atendimento e no tratamento.&quot;
+&gt;
+&gt; **Alexandre Oliveira** — Dor cervical e ansiedade
+
+&gt; &quot;Os resultados para mim, particularmente, foram os melhores possíveis. Se voltei a andar e praticar desporto foi graças a si, graças a si voltei a ter vida. O tratamento é completo, não só benefício para saúde física como mental que é muito importante.&quot;
+&gt;
+&gt; **Rogério Miranda** — Dor lombar após trauma
+
+&gt; &quot;Com o Leonardo encontrei um profissional que olha para as minhas lesões e trata a causa e não o sintoma. Em pouquíssimas sessões fiquei a 100% outra vez. Já tive muitas lesões, algumas delas graves, e neste momento não sinto dor em nenhuma delas nem tenho nenhuma limitação nos desportos que faço.&quot;
+&gt;
+&gt; **Ricardo Nascimento** — Lesões desportivas
+
+---
+
+## Para empresas no Taguspark
+
+A consultoria em ergonomia corporativa e o programa de saúde da coluna são pensados para empresas que querem reduzir absentismo e oferecer um benefício real aos colaboradores.
+
+[Saber mais sobre o programa corporativo →](https://leomonteiro.pt/corporate/)
+
+---
+
+## Marcar consulta
+
+A forma mais rápida é o WhatsApp — resposta em minutos durante o horário comercial.
+
+**WhatsApp: +351 916 345 523**
+**Email: leo@leomonteiro.pt**
+**Localização: Taguspark, Núcleo Central, 3º piso, Sala 340 · 2740-122 Porto Salvo, Oeiras**
+
+[Marcar pelo WhatsApp →](https://wa.me/351916345523?text=Olá%2C%20gostaria%20de%20marcar%20uma%20consulta)</code></pre>
+<h3 id="notas-de-implementação">Notas de implementação</h3>
+<ul>
+<li><strong>Substitui o conteúdo atual da home</strong> por este
+texto.</li>
+<li>Se o teu tema permite, usa um bloco “Hero” para o título principal e
+botão de WhatsApp.</li>
+<li>Os testemunhos devem ficar em destaque visual (caixa ou
+citação).</li>
+<li>O telefone deve ser <strong>clicável</strong> (link
+<code>tel:+351916345523</code>).</li>
+<li>O WhatsApp deve abrir conversa direta com mensagem
+pré-preenchida.</li>
+</ul>
+<hr />
+<h2 id="página-tratamentos">4.2 — Página TRATAMENTOS</h2>
+<p><strong>URL/Slug:</strong> <code>/tratamentos/</code> (manter)</p>
+<h3 id="title-tag-rank-math-1">Title tag (Rank Math)</h3>
+<pre><code>Tratamentos da Dor · Coluna, Cervical, Lombar e Articulações | Taguspark</code></pre>
+<h3 id="meta-description-rank-math-1">Meta description (Rank Math)</h3>
+<pre><code>Tratamento de dor cervical, lombalgia, ciática, dor de ombro, cefaleias tensionais e mais. Avaliação clínica no Taguspark, Oeiras. Marcação pelo WhatsApp.</code></pre>
+<h3 id="focus-keyword-rank-math-1">Focus Keyword (Rank Math)</h3>
+<pre><code>tratamento dor coluna oeiras</code></pre>
+<h3 id="conteúdo">Conteúdo</h3>
+<pre><code># Tratamentos da dor — por área do corpo
+
+A dor raramente está onde dói. Numa primeira consulta, faz-se sempre avaliação completa para identificar a causa biomecânica — não apenas o local do sintoma. Abaixo, as queixas mais frequentes tratadas no consultório.
+
+[Marcar avaliação pelo WhatsApp →](https://wa.me/351916345523)
+
+---
+
+## Dor cervical
+
+Dor na parte superior do pescoço, muitas vezes causada por tensão muscular, postura inadequada, lesões por esforço repetitivo, lesões traumáticas ou condições mais sérias como hérnia discal cervical.
+
+**Sintomas frequentes:** rigidez ao acordar, dor que irradia para o ombro, cefaleia tensional associada, formigueiro no braço.
+
+**Abordagem:** manipulações cervicais específicas, acupuntura local e tratamento de pontos-gatilho miofasciais.
+
+---
+
+## Dor torácica (entre as omoplatas)
+
+A dor na parte média das costas pode dever-se a tensão muscular, má postura (frequentemente associada a ergonomia laboral inadequada) e disfunções costovertebrais. É uma das queixas mais comuns em quem trabalha em frente ao computador.
+
+**Sintomas frequentes:** ardor entre as omoplatas, dor que piora com inspiração profunda, sensação de &quot;trinco&quot; nas costas.
+
+**Abordagem:** manipulação dorsal, mobilização costal e libertação miofascial.
+
+---
+
+## Dor lombar e ciática
+
+A dor na região lombar é uma queixa muito comum e pode ser causada por tensão muscular, postura inadequada, hérnia discal lombar ou até por problemas renais. A dor ciática surge quando o nervo ciático é comprimido, resultando em dor que irradia da parte inferior das costas para as nádegas e pernas.
+
+**Sintomas frequentes:** dor lombar que piora ao sentar, irradiação para a perna, formigueiro ou perda de força no membro inferior.
+
+**Abordagem:** manipulação lombar e sacroilíaca, acupuntura para descompressão neural, plano de exercício terapêutico.
+
+---
+
+## Dor de ombro e braço
+
+A má postura, levantamento inadequado de pesos e esforço repetitivo podem causar tensão muscular nos ombros, resultando em dor e propiciando inflamações em várias regiões, comprometendo a força, a mobilidade e principalmente a funcionalidade.
+
+**Sintomas frequentes:** dor ao elevar o braço, dor noturna que acorda, perda de amplitude de movimento.
+
+**Abordagem:** mobilização da articulação gleno-umeral e escápulo-torácica, agulhamento seco, reeducação postural.
+
+---
+
+## Dor no punho e mãos
+
+As compressões nervosas no punho podem resultar em dor, dormência e formigueiro na mão e nos dedos. As lesões por esforço repetitivo (atividades como digitar no computador ou usar ferramentas manuais) podem causar dor no punho e nos dedos devido ao stress repetitivo nas articulações e tendões, além de inflamações e entorses.
+
+**Sintomas frequentes:** dormência noturna nos dedos, dor ao pegar objetos, sensação de fraqueza.
+
+**Abordagem:** libertação do túnel cárpico, manipulação dos carpos, acupuntura local.
+
+---
+
+## Dor na anca
+
+A dor na anca pode ter origem em inflamação articular, bursite, tendinopatias ou problemas referenciados da coluna lombar.
+
+**Sintomas frequentes:** dor ao caminhar, dor noturna ao deitar de lado, rigidez matinal.
+
+**Abordagem:** avaliação biomecânica completa do conjunto pélvis-anca-joelho, manipulação articular e acupuntura.
+
+---
+
+## Dor no joelho
+
+Lesões de ligamentos, tendinites, desgaste da cartilagem, edemas e condromalácia patelar são algumas das causas comuns de dor no joelho. Comum em corredores e praticantes de desportos de impacto.
+
+**Sintomas frequentes:** dor ao subir/descer escadas, crepitação, inchaço após atividade.
+
+**Abordagem:** mobilização patelar, agulhamento de pontos-gatilho, reequilíbrio muscular.
+
+---
+
+## Dor no tornozelo e pés
+
+Lesões nos ligamentos, tendinites, fraturas mal consolidadas ou condições crónicas como a tendinite do tendão de Aquiles podem causar dor no tornozelo. Nos pés, as queixas mais comuns são fascite plantar, esporão de calcâneo, artrite do pé e disfunções metatársicas.
+
+**Sintomas frequentes:** dor no primeiro passo da manhã, dor após longos períodos de pé, instabilidade.
+
+**Abordagem:** manipulação do tornozelo, libertação da fáscia plantar, acupuntura.
+
+---
+
+## Cefaleias e enxaquecas
+
+Dores de cabeça, especialmente cefaleias tensionais, estão frequentemente relacionadas com problemas no pescoço e com má postura. De acordo com a Medicina Chinesa, o diagnóstico da dor em cada área da cabeça relaciona-se com sistemas funcionais específicos.
+
+**Sintomas frequentes:** dor em &quot;capacete&quot;, dor que piora ao final do dia, sensibilidade à luz e ao ruído.
+
+**Abordagem:** manipulação cervical alta, acupuntura craniana, identificação e modificação de fatores desencadeantes.
+
+---
+
+## Marcar avaliação
+
+Não sabes em qual destas categorias se enquadra a tua dor? Não faz mal — é exatamente o que se determina na avaliação inicial.
+
+[Marcar pelo WhatsApp →](https://wa.me/351916345523?text=Olá%2C%20gostaria%20de%20marcar%20uma%20avaliação)</code></pre>
+<h3 id="notas">Notas</h3>
+<ul>
+<li>Cada secção (cervical, torácica, etc.) deve ser um H2 separado.</li>
+<li>Considera transformar cada secção numa <strong>subpágina
+futura</strong> (<code>/tratamentos/dor-cervical/</code>, etc.) para SEO
+mais granular. Por agora, mantém tudo numa só página.</li>
+<li>Adiciona imagens próprias (não banco de imagens) para cada secção —
+mesmo que sejam fotos do consultório, mãos a trabalhar, etc.</li>
+</ul>
+<hr />
+<h2 id="página-terapêuticas">4.3 — Página TERAPÊUTICAS</h2>
+<p><strong>URL/Slug:</strong> <code>/terapeuticas/</code> (manter)</p>
+<h3 id="title-tag">Title tag</h3>
+<pre><code>Terapêuticas · Manipulações, Acupuntura e Tratamento da Dor | Leo Monteiro</code></pre>
+<h3 id="meta-description">Meta description</h3>
+<pre><code>Manipulações articulares HVLA, acupuntura clínica, reabilitação neuromuscular e tratamento da coluna vertebral no Taguspark, Oeiras. 28+ anos de experiência.</code></pre>
+<h3 id="focus-keyword">Focus Keyword</h3>
+<pre><code>manipulações articulares oeiras</code></pre>
+<h3 id="conteúdo-1">Conteúdo</h3>
+<pre><code># Terapêuticas
+
+**As ferramentas que uso para tratar a dor.** Cada caso pede uma combinação diferente — mas o princípio é o mesmo: precisão técnica, abordagem global e respeito pelo tempo de cada corpo.
+
+---
+
+## Tratamento da coluna vertebral
+
+Utilizando técnicas de manipulação e mobilização articular, contribui para diminuir a dor e a tensão, restaurando o movimento fisiológico das articulações e prevenindo interferências biomecânicas não fisiológicas no aparelho locomotor.
+
+É a abordagem central para quem sofre de:
+
+- Cervicalgia mecânica
+- Dor dorsal (entre as omoplatas)
+- Lombalgia aguda e crónica
+- Ciática e cruralgia
+- Cefaleias tensionais de origem cervical
+
+A avaliação inicial inclui anamnese detalhada, exame ortopédico e neurológico, e — quando necessário — análise postural e biomecânica.
+
+---
+
+## Manipulações articulares (HVLA Thrust)
+
+O aperfeiçoamento das técnicas de manipulação é algo que acompanha as respostas inerentes à quantidade de estudos e procedimentos. A técnica de **HVLA-Thrust** (High-Velocity Low-Amplitude) consiste numa mobilização rápida e restrita, aplicada a um segmento articular, que ultrapassa o alcance articular fisiológico (barreira) sem ultrapassar o limite anatómico.
+
+As técnicas são **seguras e indolores**. Devem ser aplicadas de forma específica e dirigida ao segmento em que se deseja atuar.
+
+Quando não contraindicadas, permitem:
+
+- **Libertação articular**, frequentemente responsável pela rigidez/tensão e pela dor/inflamação
+- **Libertação de endorfinas** — neurotransmissores produzidos pela glândula pituitária, com poderoso efeito analgésico e anti-inflamatório
+- **Melhoria da dor por via neural reflexa**
+
+&gt; **Nota importante:** as manipulações articulares não são iguais a uma massagem. O foco está na correção de disfunções articulares, não no relaxamento muscular. Os pacientes podem sentir uma sensação de &quot;treino intenso&quot; nas 24-48h seguintes.
+
+---
+
+## Acupuntura clínica
+
+A acupuntura atua através da estimulação de pontos com localização anatómica precisa. Ao receber estímulos (agulha, laser, eletroestimulação ou pressão), são desencadeados impulsos que percorrem o sistema nervoso, atingindo áreas do encéfalo mais elevadas, como o hipotálamo e a hipófise, equilibrando o funcionamento destes centros.
+
+A acupuntura pode interferir nos sistemas supressores de dor, obtendo-se uma analgesia mais intensa e prolongada.
+
+Segundo normativas da **Organização Mundial da Saúde (OMS)**, os efeitos mais comprovados relacionam-se com:
+
+- Ação analgésica e anti-inflamatória
+- Relaxamento muscular
+- Melhoria da imunidade
+- Ação ansiolítica e antidepressiva
+- Regulação da motilidade intestinal
+- Alívio do stress e melhoria do sono
+
+---
+
+## Reabilitação neuromuscular
+
+Além das técnicas de mobilização de tecidos, utiliza-se a **acupuntura craniana** (*Scalp Acupuncture*) — um microsistema da acupuntura que trata distúrbios neurológicos através do estímulo de zonas específicas do couro cabeludo, relacionadas com a projeção de áreas corticais.
+
+Apresenta bons resultados em:
+
+- AVC (sequelas)
+- Doença de Parkinson (sintomas)
+- Hemiplegia
+- Tremores
+
+É uma das especializações modernas da acupuntura, baseada na teoria da medicina tradicional chinesa (MTC) combinada com conhecimento neurológico atual.
+
+---
+
+## Clínica da dor
+
+A dor é uma resposta do sistema nervoso a lesões ou estímulos nocivos. Quando ocorre uma lesão, os neurónios sensoriais transmitem sinais ao cérebro, alertando-o para a necessidade de tomar medidas. O problema surge quando este sistema permanece em &quot;alerta&quot; mesmo depois de a causa inicial estar resolvida — é assim que a dor se torna crónica.
+
+Na clínica da dor, a abordagem é multimodal: combina manipulação articular para resolver disfunções biomecânicas, acupuntura para modular a transmissão de sinais de dor, e educação do paciente sobre o seu próprio quadro.
+
+Os mecanismos pelos quais a acupuntura modula a dor incluem:
+
+- Libertação de endorfinas e encefalinas
+- Redução da inflamação local
+- Modulação da atividade neural
+- Aumento do fluxo sanguíneo
+- Redução do tónus muscular excessivo
+
+---
+
+## Ergonomia corporativa
+
+A consultoria em ergonomia corporativa, com ênfase na intervenção terapêutica, desempenha um papel fundamental no bem-estar dos trabalhadores e na produtividade das empresas.
+
+Foca-se em criar ambientes de trabalho que promovam posturas saudáveis e intervém diretamente, tratando as lesões já existentes e reduzindo o risco de novas lesões.
+
+[Conhecer o programa corporativo →](https://leomonteiro.pt/corporate/)
+
+---
+
+## Testemunhos
+
+&gt; &quot;Houve, sem dúvida, resultados, quer no alívio das dores e outros sintomas da minha hérnia cervical, quer no controlo e compreensão da ansiedade. A recetividade para ouvir e compreender o problema a fundo foi um diferencial no atendimento e no tratamento. Para além dos resultados óbvios ao longo das sessões, o bem-estar geral no final de cada uma é um valioso extra!&quot;
+&gt;
+&gt; **Alexandre Oliveira** — Dor cervical, ansiedade
+
+&gt; &quot;Os resultados para mim, particularmente, foram os melhores possíveis. Se voltei a andar e praticar desporto foi graças a si, graças a si voltei a ter vida. O tratamento é excelente e logo se veem resultados. O tratamento é completo, não só benefício para saúde física como mental, que é muito importante.&quot;
+&gt;
+&gt; **Rogério Miranda** — Dor lombar após trauma
+
+&gt; &quot;Seguindo as orientações do Leonardo, encontrei resultados como apoio e cura a nível físico e emocional. A primeira vez que fui ter com o Leonardo, foi porque tinha uma dor no ombro há algum tempo. Passadas 2 sessões a dor tinha desaparecido e nunca mais a tive, e isso foi há uns 17 anos.&quot;
+&gt;
+&gt; **Marianne Willot** — Dor no ombro
+
+&gt; &quot;Com o Leonardo encontrei um profissional que olha para as minhas lesões e trata a causa e não o sintoma. Com ele posso continuar a fazer os desportos que faço — surf, escalada e skate — sabendo que o meu corpo está equilibrado e que não preciso de recorrer a medicamentos. Em pouquíssimas sessões fiquei a 100% outra vez.&quot;
+&gt;
+&gt; **Ricardo Nascimento** — Lesões desportivas
+
+&gt; &quot;Há muito tempo os meus colegas de trabalho insistiam para que eu conhecesse o Leo. Do meu lado, queixas constantes de dor no pescoço, costas, braço, pulso, dormências nas pernas enquanto trabalhava. Decidi que era hora de mudar. Além de uma aula de anatomia, biomecânica e ergonomia, ajustou-me todo. Imediatamente desapareceram mais de 75% das maleitas.&quot;
+&gt;
+&gt; **Pedro Antunes** — Dores relacionadas com má postura
+
+&gt; &quot;O Léo é um profissional de muito conhecimento e experiência. Mas o mais importante no atendimento dele é a empatia e o respeito ao paciente. É um ser humano sensível e dedicado, que busca trazer qualidade de vida e bem-estar.&quot;
+&gt;
+&gt; **Renata Wolf** — Dor lombar
+
+---
+
+## Marcar consulta
+
+[Marcar pelo WhatsApp →](https://wa.me/351916345523)</code></pre>
+<hr />
+<h2 id="página-corporate-b2b">4.4 — Página CORPORATE (B2B)</h2>
+<blockquote>
+<p>Esta página é a tua <strong>maior alavanca de crescimento</strong> —
+RHs de empresas do Taguspark devem encontrar-te aqui. O texto atual está
+fraco; substitui completamente.</p>
+</blockquote>
+<p><strong>URL/Slug:</strong> <code>/corporate/</code> (manter)</p>
+<h3 id="title-tag-1">Title tag</h3>
+<pre><code>Programa de Saúde Corporativa no Taguspark | Ergonomia + Tratamento da Dor</code></pre>
+<h3 id="meta-description-1">Meta description</h3>
+<pre><code>Programa de ergonomia e tratamento da dor para empresas do Taguspark. Reduza absentismo, ofereça um benefício real ao colaborador. Solicite reunião.</code></pre>
+<h3 id="focus-keyword-1">Focus Keyword</h3>
+<pre><code>saúde corporativa taguspark</code></pre>
+<h3 id="conteúdo-2">Conteúdo</h3>
+<pre><code># Programa de Saúde Corporativa
+
+**Para empresas do Taguspark que querem reduzir absentismo, oferecer um benefício diferenciador, e mostrar aos colaboradores que se importam — de forma concreta.**
+
+[Solicitar reunião →](https://wa.me/351916345523?text=Sou%20de%20RH%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20programa%20corporativo)
+
+---
+
+## O custo silencioso da dor de coluna em ambiente de escritório
+
+A lombalgia é a causa número um de baixa por doença em ambientes de escritório em Portugal. Mas a maior parte do impacto não está nas baixas — está nos dias em que o colaborador está presente mas em desempenho reduzido (*presentismo*).
+
+Em equipas tech, onde a concentração e o foco são essenciais, uma dor cervical persistente ou uma lombalgia que não passa significam:
+
+- Reuniões mais curtas e menos produtivas
+- Menos horas de trabalho focado
+- Maior rotação em equipas críticas
+- Custos médicos diretos e indiretos
+
+A nossa proposta é simples: estar a cinco minutos a pé do escritório, com uma abordagem prática e clinicamente sólida — não wellness genérico.
+
+---
+
+## O programa em três níveis
+
+### Nível 1 — Friends of [Empresa]
+
+**Para empresas que querem oferecer um benefício sem custo direto.**
+
+- Sem custo para a empresa
+- Colaboradores com 15% de desconto vitalício
+- Avaliação inicial a preço reduzido
+- Comunicação via newsletter interna ou Slack
+- Workshop gratuito anual sobre postura no trabalho
+
+Ideal para empresas que ainda não têm orçamento de benefícios definido, mas querem testar a recetividade.
+
+### Nível 2 — Programa de Saúde da Coluna
+
+**Avença mensal por colaborador. Cobertura preventiva e reativa.**
+
+- Rastreios posturais trimestrais on-site (na empresa)
+- 1 consulta anual incluída por colaborador
+- Workshops trimestrais sobre ergonomia, postura e gestão do stress
+- Relatórios anonimizados de utilização
+- Priority booking para colaboradores em crise aguda
+
+Para empresas com 20+ colaboradores que queiram um benefício de saúde concreto e mensurável.
+
+### Nível 3 — Spine Care Premium (Executivos)
+
+**Programa anual personalizado para C-level e key talent.**
+
+- Avaliação trimestral aprofundada
+- Sessões on-site na empresa (executivo não sai do escritório)
+- Plano de manutenção individualizado
+- Apoio em viagens e deslocações
+- Linha direta para situações urgentes
+
+Para empresas que querem proteger executivos críticos cuja indisponibilidade tem custo elevado.
+
+---
+
+## Como funciona uma intervenção corporativa
+
+### Coffee &amp; Spine (formato de entrada)
+
+Talk de 25-30 minutos no escritório da empresa, sobre postura e ergonomia no trabalho de secretária. Prática, sem comerciais, sem catálogos.
+
+Útil para:
+
+- Demonstrar valor antes de uma proposta formal
+- Sensibilizar a equipa sem custos
+- Identificar colaboradores com queixas atuais
+
+### Rastreio Postural Express
+
+Avaliação postural de 5-10 minutos por colaborador, num espaço disponibilizado pela empresa. Relatório individual com recomendações e — quando indicado — sugestão de consulta clínica.
+
+Útil para:
+
+- Eventos de saúde e bem-estar internos
+- Onboarding de novos colaboradores
+- Programas trimestrais de prevenção
+
+### Workshop &quot;Postura no Home Office&quot;
+
+Sessão de 60-90 minutos com componente teórica e prática. Os colaboradores aprendem a identificar erros posturais nos seus próprios postos de trabalho e a corrigi-los.
+
+### Programa contínuo
+
+Combinação dos formatos acima, integrada na agenda anual da empresa. A presença regular reduz fricção e maximiza adesão.
+
+---
+
+## Localização: o diferencial Taguspark
+
+O consultório está **dentro do parque** — Núcleo Central, 3º piso, Sala 340. Para os colaboradores das empresas vizinhas, isto significa:
+
+- 5 minutos a pé desde qualquer ponto do parque
+- Possibilidade de marcação à hora de almoço
+- Zero deslocações em hora de ponta
+- Atendimento same-day em situações agudas
+
+Para a empresa, significa que o benefício é genuinamente utilizado — não fica no papel.
+
+---
+
+## Solicitar reunião
+
+A proposta personalizada é feita após uma conversa de 30 minutos onde percebemos:
+
+- O contexto da empresa (dimensão, tipologia de funções, orçamento)
+- As queixas mais frequentes da equipa
+- O formato de intervenção mais adequado
+- Orçamento envolvido
+
+Sem compromisso. Sem proposta enlatada.
+
+**Contacto direto:**
+
+WhatsApp: +351 916 345 523
+Email: leo@leomonteiro.pt
+
+[Solicitar reunião por WhatsApp →](https://wa.me/351916345523?text=Sou%20de%20RH%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20programa%20corporativo)</code></pre>
+<hr />
+<h2 id="página-marcar-consulta">4.5 — Página MARCAR CONSULTA</h2>
+<p><strong>URL/Slug:</strong> <code>/marcar-consulta/</code>
+(manter)</p>
+<h3 id="title-tag-2">Title tag</h3>
+<pre><code>Marcar Consulta · Taguspark, Oeiras | Leo Monteiro</code></pre>
+<h3 id="meta-description-2">Meta description</h3>
+<pre><code>Marcar consulta de tratamento da dor, manipulações ou acupuntura no Taguspark. WhatsApp rápido ou agendamento online. Avaliação inicial 25€.</code></pre>
+<h3 id="focus-keyword-2">Focus Keyword</h3>
+<pre><code>marcar consulta taguspark</code></pre>
+<h3 id="conteúdo-3">Conteúdo</h3>
+<pre><code># Marcar consulta
+
+**A forma mais rápida é o WhatsApp.** Respondo dentro de minutos em horário comercial. Se preferires marcação automática, usa o calendário abaixo.
+
+---
+
+## Opção 1 — WhatsApp (recomendado)
+
+[Marcar pelo WhatsApp →](https://wa.me/351916345523?text=Olá%2C%20gostaria%20de%20marcar%20uma%20consulta)
+
+Em duas linhas, descreve o que sentes. Eu respondo com horários disponíveis e tiramos as dúvidas pelo chat.
+
+---
+
+## Opção 2 — Agendamento online
+
+[Calendário Cal.eu embebido aqui — manter integração atual]
+
+---
+
+## O que esperar da primeira consulta
+
+**Duração:** 60 minutos
+**Valor da avaliação inicial:** 25€ (promoção Taguspark — colaboradores das empresas do parque)
+**Valor das sessões seguintes:** consultar diretamente
+
+### Estrutura da consulta
+
+1. **Conversa inicial** — sem pressa, com intuito de entender o motivo da procura, as queixas e o que esperas como resposta
+2. **Recolha de informação** — histórico clínico, exames anteriores se relevantes
+3. **Exame físico** — observação postural, testes ortopédicos e neurológicos
+4. **Discussão da estratégia** — explicação clara do que está a acontecer e do plano proposto
+5. **Intervenção** — primeira sessão de tratamento incluída
+
+### O que trazer
+
+- Exames recentes (RM, TAC, raio-X) se os tiveres
+- Lista de medicação atual
+- Roupa confortável que não prenda os movimentos
+
+### Política de cancelamento
+
+Por favor, avisa com pelo menos 24 horas de antecedência se precisares de cancelar ou reagendar — assim posso ocupar o espaço com outro paciente em lista de espera.
+
+---
+
+## Pagamentos
+
+Aceito várias formas de pagamento: numerário, multibanco, MB Way, Revolut e PayPal.
+
+**Seguros:** trabalho com a Medicare.
+
+---
+
+## Localização
+
+Taguspark, Núcleo Central, 3º Piso, Sala 340
+2740-122 Porto Salvo, Oeiras
+
+[Ver no mapa →](https://maps.app.goo.gl/a18hJq334fjEPqxh7)
+
+**Como chegar:**
+
+- A 5 minutos a pé de qualquer ponto do Taguspark
+- Estacionamento gratuito disponível no parque
+- Paragem de autocarro mais próxima: Taguspark (linhas 113, 156, 411)
+
+---
+
+[Marcar pelo WhatsApp →](https://wa.me/351916345523)</code></pre>
+<hr />
+<h2 id="página-contactos">4.6 — Página CONTACTOS</h2>
+<p><strong>URL/Slug:</strong> mudar de <code>/contato/</code> (PT-BR)
+para <code>/contactos/</code> (PT-PT correto)</p>
+<blockquote>
+<p><strong>Atenção:</strong> vais ter que criar um redirect 301 do URL
+antigo para o novo. Instruções na Parte 6.</p>
+</blockquote>
+<h3 id="title-tag-3">Title tag</h3>
+<pre><code>Contactos · Taguspark, Oeiras | Leo Monteiro</code></pre>
+<h3 id="meta-description-3">Meta description</h3>
+<pre><code>Contactos do consultório Leo Monteiro no Taguspark, Oeiras. WhatsApp, email, morada e mapa. Marcação rápida pelo WhatsApp.</code></pre>
+<h3 id="focus-keyword-3">Focus Keyword</h3>
+<pre><code>contacto leo monteiro taguspark</code></pre>
+<h3 id="conteúdo-4">Conteúdo</h3>
+<pre><code># Contactos
+
+Disponível para esclarecer dúvidas, marcar consultas, ou conversar sobre programas corporativos. A forma mais rápida de resposta é o WhatsApp.
+
+---
+
+## Contacto direto
+
+**WhatsApp / Telemóvel**
++351 916 345 523
+[Abrir conversa no WhatsApp →](https://wa.me/351916345523)
+
+**Email**
+leo@leomonteiro.pt
+
+**Horário de atendimento**
+Segunda a sexta-feira, das 09h00 às 19h00
+
+---
+
+## Localização
+
+**Leo Monteiro — Clínica da Dor Taguspark**
+Taguspark, Núcleo Central
+3º Piso, Sala 340
+2740-122 Porto Salvo, Oeiras
+
+[Ver no Google Maps →](https://maps.app.goo.gl/a18hJq334fjEPqxh7)
+
+[Inserir mapa Google embebido aqui — usar o iframe gerado pelo Google Maps]
+
+---
+
+## Como chegar
+
+**De carro**
+- A5 (saída Taguspark) → estacionamento gratuito disponível no parque
+
+**De transporte público**
+- Autocarros 113, 156, 411 — paragem &quot;Taguspark&quot;
+- Comboio: estação de Cacém ou Oeiras + autocarro
+
+**A pé (para quem trabalha no Taguspark)**
+- 5 minutos do edifício Inovação I, II, III, IV
+- 7 minutos da Torre Oeiras
+- 3 minutos do BUS Taguspark
+
+---
+
+## Redes sociais
+
+[LinkedIn](https://www.linkedin.com/in/leomonteiropt) — onde partilho conteúdo profissional sobre postura, dor de coluna e clínica da dor.
+
+[Instagram](https://www.instagram.com/leomonteiro.pt/) — dicas práticas e bastidores do consultório.
+
+[Facebook](https://www.facebook.com/LeoMonteiro.pt) — atualizações gerais.
+
+---
+
+## Para empresas
+
+Se representas o departamento de Recursos Humanos de uma empresa do Taguspark e queres conhecer o programa corporativo, [contacta diretamente pelo WhatsApp](https://wa.me/351916345523?text=Sou%20de%20RH%20e%20gostaria%20de%20saber%20mais) ou conhece o [programa completo aqui](https://leomonteiro.pt/corporate/).</code></pre>
+<h3 id="notas-1">Notas</h3>
+<ul>
+<li><strong>Mudança importante de URL:</strong> <code>/contato/</code> →
+<code>/contactos/</code> (correção PT-PT). Configura redirect 301
+(instruções na Parte 6).</li>
+<li>O formulário de contacto atual pode ser mantido — mas o foco
+principal deve ser o WhatsApp.</li>
+</ul>
+<hr />
+<h2 id="página-faq">4.7 — Página FAQ</h2>
+<p><strong>URL/Slug:</strong> <code>/faq/</code> (manter)</p>
+<h3 id="title-tag-4">Title tag</h3>
+<pre><code>Perguntas Frequentes · Consultas, Tratamentos e Marcações | Leo Monteiro</code></pre>
+<h3 id="meta-description-4">Meta description</h3>
+<pre><code>Respostas às perguntas mais frequentes sobre consultas, tipos de tratamento, valores, marcações e localização no Taguspark, Oeiras.</code></pre>
+<h3 id="focus-keyword-4">Focus Keyword</h3>
+<pre><code>perguntas frequentes acupuntura oeiras</code></pre>
+<h3 id="conteúdo-5">Conteúdo</h3>
+<blockquote>
+<p><strong>IMPORTANTE:</strong> Esta página deve ter schema FAQPage. No
+Rank Math, ao editares a página, vai à secção “Schema” → “Add Schema” →
+escolhe <strong>FAQ</strong> → preenche cada pergunta e resposta. Isto
+faz com que o Google mostre as perguntas diretamente nos resultados de
+pesquisa.</p>
+</blockquote>
+<pre><code># Perguntas frequentes
+
+Respostas às dúvidas mais comuns. Se não encontrares aqui o que procuras, contacta diretamente pelo [WhatsApp](https://wa.me/351916345523).
+
+---
+
+## Sobre o consultório
+
+### O que é o consultório Leo Monteiro?
+
+Um espaço de saúde dedicado ao tratamento da dor, manipulações articulares e acupuntura clínica, localizado no Taguspark, em Oeiras. Foco em quem trabalha em ambiente de escritório (especialmente colaboradores das empresas do parque), praticantes de desporto, e casos de dor crónica.
+
+### Quem é o Leo Monteiro?
+
+Leonardo Monteiro, acupuntor e terapeuta manual com mais de 28 anos de experiência no tratamento da coluna vertebral, reabilitação neuromuscular, manipulações articulares e acupuntura clínica. Cédula profissional C-05000400. Cuidados personalizados, abordagem clínica baseada em evidência.
+
+### Qual é a filosofia do consultório?
+
+Tratamento da dor com abordagem integrada e prática. Olhar o ser humano como um todo — sistema musculoesquelético, neurológico e funcional — sem perder rigor clínico nem cair em discurso esotérico. O objetivo é resolver o problema, não criar dependência.
+
+### O consultório aceita novos pacientes?
+
+Sim. A marcação mais rápida é via WhatsApp (916 345 523).
+
+### Atende crianças?
+
+Sim, pacientes de todas as idades.
+
+### Oferece atendimento remoto / telemedicina?
+
+Sim, para casos específicos: avaliação inicial e triagem, educação postural, planos de exercício, orientações de autotratamento, avaliação postural virtual, e acompanhamento de casos em curso.
+
+---
+
+## Marcação de consultas
+
+### Como posso marcar uma consulta?
+
+Três formas:
+
+1. **WhatsApp** (mais rápido): +351 916 345 523
+2. **Email**: leo@leomonteiro.pt
+3. **Formulário online**: na página de [marcar consulta](https://leomonteiro.pt/marcar-consulta/)
+
+Atendimento apenas com marcação prévia.
+
+### Qual o valor de uma consulta?
+
+A **avaliação inicial Taguspark** tem o valor de 25€. As sessões seguintes têm valor variável dependendo da duração e complexidade — peça orçamento personalizado pelo WhatsApp.
+
+### Como devo preparar-me para a consulta?
+
+Roupa confortável que não prenda os movimentos. Se tiveres exames recentes (raio-X, RM, TAC), traz contigo.
+
+### Quanto tempo de espera há para marcar?
+
+Geralmente é possível marcar no próprio dia ou no dia seguinte, dependendo da disponibilidade. Em situações de dor aguda, há sempre tentativa de encaixe same-day.
+
+### Qual é a política de cancelamento?
+
+Sem penalização, desde que avises com pelo menos 24 horas de antecedência.
+
+### Existe política de confidencialidade?
+
+Sim, todas as informações clínicas e pessoais são tratadas com a máxima discrição e protegidas pela legislação de privacidade em vigor (RGPD).
+
+---
+
+## Como decorre uma consulta?
+
+### Estrutura da consulta
+
+Toda a consulta começa com uma conversa, sem pressa, para entender o motivo da procura, as queixas e expetativas.
+
+Depois:
+
+1. **Histórico e avaliação** — recolha de informação clínica e exames anteriores
+2. **Observação** — análise postural e biomecânica
+3. **Exames ortopédicos e testes neurológicos** — para definir o quadro
+4. **Estratégia de intervenção** — explicação clara do que está a acontecer e do plano proposto
+5. **Intervenção** — pode incluir manipulação articular, acupuntura, eletroestimulação digital, laser, kinesio-taping
+6. **Orientações para casa** — quando aplicável, plano de exercícios ou recomendações posturais
+
+### Qual a frequência das sessões?
+
+No início, geralmente 1 a 3 sessões por semana, dependendo do diagnóstico. A frequência reduz à medida que o quadro melhora. O tratamento completo varia entre 1 e 3 meses na maioria dos casos.
+
+### Quantas sessões são necessárias?
+
+Entre 5 e 20 sessões, dependendo da gravidade. Em casos agudos, pode ser preciso sessões diárias inicialmente; em casos crónicos, espaçamento semanal funciona melhor.
+
+### As manipulações são iguais a uma massagem?
+
+Não. Embora ambas envolvam o uso das mãos, as manipulações articulares (HVLA Thrust) são tecnicamente diferentes:
+
+- **Foco:** correção de desalinhamentos articulares, não relaxamento muscular
+- **Sensação:** podem causar a sensação de &quot;treino intenso&quot; nos 2-4 dias seguintes
+- **Eficácia:** geralmente resolvem em poucas sessões o que massagens convencionais não resolvem
+
+### Quais as fases do tratamento?
+
+1. **Fase intensiva** — foco em aliviar dor, sessões frequentes (1-3 por semana)
+2. **Fase de estabilização** — manter ganhos, sessões espaçadas (10-15 dias)
+3. **Fase preventiva** — manutenção mensal ou semestral
+
+### A acupuntura dói?
+
+Em geral, não. As agulhas usadas são extremamente finas (0,16-0,30mm de diâmetro) e a inserção é praticamente indolor. Pode haver sensações de calor, peso ou formigueiro nos pontos — isso é normal e indica que o ponto está a ser estimulado corretamente.
+
+---
+
+## Pagamentos e seguros
+
+### Que formas de pagamento aceita?
+
+Numerário, multibanco, cartões de crédito e débito, MB Way, Revolut, N26 e PayPal. Pagamento no momento da sessão, salvo acordo prévio diferente.
+
+### Trabalha com seguros?
+
+Atualmente com a **Medicare**.
+
+---
+
+## Programa corporativo
+
+### Trabalha com empresas?
+
+Sim. Existe um programa de saúde corporativa específico para empresas do Taguspark e arredores, focado em ergonomia, redução de absentismo e bem-estar dos colaboradores.
+
+[Conhecer o programa corporativo →](https://leomonteiro.pt/corporate/)
+
+---
+
+## Localização
+
+### Onde fica o consultório?
+
+Taguspark — o maior parque de ciência e tecnologia em Portugal, onde estão instaladas empresas como Microsoft, Critical Software, Novabase, Indra, Deloitte Digital, entre outras.
+
+**Morada:** Núcleo Central, 3º piso, Sala 340 · 2740-122 Porto Salvo, Oeiras
+
+[Ver no mapa →](https://maps.app.goo.gl/a18hJq334fjEPqxh7)
+
+### Há estacionamento?
+
+Sim — estacionamento gratuito disponível no parque, com várias entradas e saídas convenientes.
+
+### Como chegar de transporte público?
+
+Autocarros das linhas 113, 156 e 411 com paragem direta no Taguspark.
+
+---
+
+## Ainda tem dúvidas?
+
+[Contactar pelo WhatsApp →](https://wa.me/351916345523)</code></pre>
+<h3 id="configuração-do-schema-faq-no-rank-math">Configuração do Schema
+FAQ no Rank Math</h3>
+<ol type="1">
+<li>Edita a página FAQ no WordPress</li>
+<li>Na coluna lateral, abre <strong>Rank Math SEO</strong></li>
+<li>Vai a <strong>Schema</strong> → <strong>Add Schema</strong></li>
+<li>Escolhe <strong>FAQ</strong></li>
+<li>Adiciona cada pergunta como item (no mínimo 5-8 perguntas —
+preferencialmente todas as principais)</li>
+<li>Em cada item, preenche <strong>Question</strong> e
+<strong>Answer</strong></li>
+<li>Save</li>
+</ol>
+<p>Isto faz aparecer as perguntas no Google — aumenta CTR em 20-30%.</p>
+<hr />
+<h2 id="página-sobre-nova-criar">4.8 — Página SOBRE (NOVA — criar)</h2>
+<blockquote>
+<p>Esta página não existe no teu site atual mas <strong>é fundamental
+para SEO E-A-T (Expertise, Authoritativeness, Trustworthiness)</strong>,
+especialmente em saúde. O Google dá muito peso ao perfil do profissional
+em sites de saúde.</p>
+</blockquote>
+<p><strong>URL/Slug:</strong> <code>/sobre/</code> (criar nova
+página)</p>
+<h3 id="title-tag-5">Title tag</h3>
+<pre><code>Sobre · Leonardo Monteiro, Acupuntor e Terapeuta Manual | Taguspark</code></pre>
+<h3 id="meta-description-5">Meta description</h3>
+<pre><code>Leonardo Monteiro, mais de 28 anos a tratar dor de coluna no Taguspark. Cédula profissional C-05000400. Acupuntura, manipulações articulares, reabilitação.</code></pre>
+<h3 id="focus-keyword-5">Focus Keyword</h3>
+<pre><code>leonardo monteiro acupuntor oeiras</code></pre>
+<h3 id="conteúdo-6">Conteúdo</h3>
+<pre><code># Sobre Leonardo Monteiro
+
+**Acupuntor e terapeuta manual com mais de 28 anos de prática clínica.**
+**Cédula profissional C-05000400.**
+
+[Marcar avaliação pelo WhatsApp →](https://wa.me/351916345523)
+
+---
+
+## Como cheguei até aqui
+
+A minha prática nasceu da convicção de que a dor não é um inimigo a silenciar — é informação que o corpo nos dá. Cabe ao clínico saber lê-la corretamente.
+
+Comecei a minha formação no Brasil, há quase três décadas, com o foco no tratamento da coluna vertebral e nas manipulações articulares. Ao longo dos anos, integrei a acupuntura clínica e a reabilitação neuromuscular como ferramentas complementares — não substitutas — da medicina manual.
+
+Vivo em Portugal há mais de duas décadas. O consultório no Taguspark é o resultado natural de uma trajetória: estar onde estão as pessoas que mais precisam de uma abordagem prática, séria e acessível à dor.
+
+---
+
+## Formação e prática
+
+### Áreas de atuação clínica
+
+- **Tratamento da coluna vertebral** — cervical, dorsal, lombar
+- **Manipulações articulares HVLA** (técnica Thrust)
+- **Acupuntura clínica** — incluindo acupuntura craniana (Scalp Acupuncture)
+- **Reabilitação neuromuscular**
+- **Clínica da dor crónica e aguda**
+- **Ergonomia corporativa**
+
+### Casos especiais
+
+- Pediatria — atendimento a crianças com queixas musculoesqueléticas
+- Atletas amadores — corredores, jogadores de padel, surfistas, praticantes de crossfit
+- Casos pós-cirúrgicos e pós-AVC
+- Cefaleias crónicas e enxaqueca
+
+### Conhecimentos integrados
+
+A abordagem combina:
+
+- Anatomia funcional e biomecânica
+- Medicina tradicional chinesa moderna
+- Neurociência da dor
+- Filosofia oriental (Tao e estoicismo aplicado à clínica)
+
+---
+
+## A filosofia
+
+Trabalho com três princípios fundamentais:
+
+**1. A causa, não o sintoma.** A dor lombar raramente é apenas lombar. A cefaleia raramente está só na cabeça. A avaliação é sempre global — mesmo quando a queixa é local.
+
+**2. O paciente é parte do tratamento.** Não acredito em tratamentos passivos infinitos. O paciente precisa de compreender o seu próprio corpo, fazer escolhas posturais conscientes e, quando aplicável, manter um plano de exercícios.
+
+**3. Respeito pelo tempo do corpo.** O corpo tem capacidades curativas extraordinárias quando damos os estímulos certos e o tempo necessário. Pressa não cura.
+
+---
+
+## O consultório no Taguspark
+
+Estar dentro do Taguspark não é acaso. O perfil dos pacientes que mais beneficia da minha abordagem — pessoas que trabalham horas em frente ao ecrã, com dor crónica musculoesquelética e exigências de performance — está concentrado neste parque tecnológico.
+
+A localização significa:
+
+- Cinco minutos a pé das principais empresas do parque
+- Possibilidade de consulta à hora de almoço
+- Zero deslocações em hora de ponta
+- Atendimento same-day em casos agudos
+
+---
+
+## Para empresas
+
+Além da prática clínica individual, existe um programa de saúde corporativa estruturado para empresas do parque.
+
+[Conhecer o programa corporativo →](https://leomonteiro.pt/corporate/)
+
+---
+
+## Contacto
+
+**WhatsApp:** +351 916 345 523
+**Email:** leo@leomonteiro.pt
+**Localização:** Taguspark · Núcleo Central · 3º piso · Sala 340
+
+[Marcar consulta pelo WhatsApp →](https://wa.me/351916345523)</code></pre>
+<h3 id="schema-person-para-esta-página">Schema Person para esta
+página</h3>
+<p>Adicionar via Rank Math nesta página: Schema → Add Schema →
+Person.</p>
+<p>Campos: - Name: Leonardo Monteiro - Job Title: Acupuntor e Terapeuta
+Manual - Email: leo@leomonteiro.pt - Telephone: +351916345523 - Image:
+foto profissional (criar nova — não usar banco de imagens) - Works For:
+link para o schema da clínica</p>
+<hr />
+<h1 id="parte-5-otimização-de-imagens">PARTE 5 — Otimização de
+imagens</h1>
+<p>A maior causa de lentidão do site atual. Plano de ação:</p>
+<h2 id="substituir-imagens-de-banco">5.1 — Substituir imagens de
+banco</h2>
+<p><strong>Prioridade alta:</strong> trocar gradualmente as imagens
+atuais (que são todas de banco) por fotos próprias.</p>
+<p><strong>Sugestão de calendário:</strong></p>
+<ul>
+<li><strong>Mês 1:</strong> fotografar consultório (5-8 fotos) e
+detalhes (mãos a trabalhar, equipamento, agulhas)</li>
+<li><strong>Mês 2:</strong> fotos de pacientes (com autorização escrita
+— modelos)</li>
+<li><strong>Mês 3:</strong> retrato profissional para a página
+Sobre</li>
+</ul>
+<p>Profissional de fotografia em Oeiras: 150-300€ por sessão.
+<strong>Investimento que se paga</strong>.</p>
+<h2 id="otimização-técnica-de-imagens">5.2 — Otimização técnica de
+imagens</h2>
+<p><strong>Antes de subir</strong> qualquer imagem ao WordPress:</p>
+<ol type="1">
+<li><strong>Dimensão máxima:</strong> 1920px de largura (para hero) ou
+1200px (resto)</li>
+<li><strong>Formato:</strong> JPG para fotos, PNG só se precisar de
+transparência</li>
+<li><strong>Compressão:</strong> usar https://tinypng.com (grátis) antes
+de upload</li>
+</ol>
+<p><strong>Depois de subir:</strong></p>
+<ol type="1">
+<li>ShortPixel comprime automaticamente</li>
+<li>WebP é gerado automaticamente</li>
+</ol>
+<h2 id="alt-text-regras">5.3 — Alt text — regras</h2>
+<p>Todas as imagens precisam de <strong>alt text descritivo</strong>
+(não decorativo):</p>
+<p><strong>Mau:</strong> - “neck pain” - “IMG_3412” - “consultorio1”</p>
+<p><strong>Bom:</strong> - “Tratamento de dor cervical no Taguspark,
+Oeiras” - “Manipulação articular da coluna lombar” - “Consultório Leo
+Monteiro no Núcleo Central do Taguspark”</p>
+<p><strong>Regra prática:</strong> descreve o que está na imagem
+<strong>+ contexto SEO</strong> (Taguspark, Oeiras, dor de coluna, etc.)
+quando faz sentido natural.</p>
+<h2 id="configuração-no-shortpixel">5.4 — Configuração no
+ShortPixel</h2>
+<p>Após instalar:</p>
+<ul>
+<li>Settings → General:
+<ul>
+<li>Compression: <strong>Glossy</strong> (equilibrio
+qualidade/tamanho)</li>
+<li>Resize images: ON, max 2048px</li>
+<li>Image backup: ON (segurança)</li>
+<li>WebP/AVIF Images: <strong>Create both</strong></li>
+</ul></li>
+<li>Settings → Advanced:
+<ul>
+<li>Optimize PDFs: ON</li>
+<li>Optimize Retina images: ON</li>
+</ul></li>
+</ul>
+<p>Clica em <strong>“Bulk Optimize”</strong> para processar todas as
+imagens existentes (pode demorar 1-2h).</p>
+<hr />
+<h1 id="parte-6-redirects-de-urls-antigos">PARTE 6 — Redirects de URLs
+antigos</h1>
+<p>Quando mudas URLs, os links antigos (em Google, redes sociais,
+cartões de visita) deixam de funcionar — a não ser que faças redirects
+301.</p>
+<h2 id="plugin-redirection-gratuito">6.1 — Plugin Redirection
+(gratuito)</h2>
+<p>Já instalado. Vai a: WordPress → Ferramentas → Redirection.</p>
+<h2 id="redirects-a-criar">6.2 — Redirects a criar</h2>
+<table>
+<thead>
+<tr class="header">
+<th>URL antigo</th>
+<th>URL novo</th>
+<th>Tipo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>/contato/</code></td>
+<td><code>/contactos/</code></td>
+<td>301</td>
+</tr>
+<tr class="even">
+<td><code>/contato</code></td>
+<td><code>/contactos/</code></td>
+<td>301</td>
+</tr>
+<tr class="odd">
+<td><code>/privacy-policy-2-2/</code></td>
+<td><code>/termos/</code></td>
+<td>301</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Como adicionar cada um:</strong></p>
+<ol type="1">
+<li>Tools → Redirection</li>
+<li>Source URL: <code>/contato/</code></li>
+<li>Target URL: <code>/contactos/</code></li>
+<li>Group: WordPress</li>
+<li>Match: URL only</li>
+<li>HTTP code: 301 — Moved Permanently</li>
+<li>Add Redirect</li>
+</ol>
+<p>Repetir para os outros.</p>
+<h2 id="verificar-redirects">6.3 — Verificar redirects</h2>
+<p>Após criar, abre uma janela anónima e testa:
+<code>https://leomonteiro.pt/contato/</code>. Deve redirecionar
+automaticamente para <code>/contactos/</code>.</p>
+<hr />
+<h1 id="parte-7-validação-e-submissão">PARTE 7 — Validação e
+submissão</h1>
+<h2 id="lighthouse-performance">7.1 — Lighthouse (performance)</h2>
+<ol type="1">
+<li>Abre o teu site no Chrome</li>
+<li>F12 (DevTools) → tab “Lighthouse”</li>
+<li>Marca todas as categorias</li>
+<li>Device: Mobile</li>
+<li>“Analyze page load”</li>
+</ol>
+<p><strong>Targets:</strong> - Performance: 85+ - Accessibility: 95+ -
+Best Practices: 95+ - SEO: 95+</p>
+<p>Se algum estiver baixo, clica nos issues para ver recomendações
+específicas.</p>
+<h2 id="schema-validator">7.2 — Schema Validator</h2>
+<p>https://search.google.com/test/rich-results</p>
+<ul>
+<li>Cola URL: <code>https://leomonteiro.pt</code></li>
+<li>Verifica que aparece “MedicalClinic” detetado</li>
+<li>Sem erros vermelhos</li>
+<li>Avisos amarelos não são críticos</li>
+</ul>
+<p>Repete para cada página principal.</p>
+<h2 id="google-search-console">7.3 — Google Search Console</h2>
+<ol type="1">
+<li>Vai a https://search.google.com/search-console</li>
+<li>Adicionar propriedade → URL prefix:
+<code>https://leomonteiro.pt</code></li>
+<li>Verificar via HTML tag (cola no Rank Math → Configuration →
+Webmaster Tools → Google Search Console)</li>
+<li>Submeter sitemap:
+<code>https://leomonteiro.pt/sitemap_index.xml</code></li>
+<li>Aguardar 1-2 semanas para começar a ver dados</li>
+</ol>
+<h2 id="google-business-profile">7.4 — Google Business Profile</h2>
+<p><strong>Esta é a maior alavanca de SEO local que tens.</strong></p>
+<ol type="1">
+<li>https://business.google.com</li>
+<li>Reclamar/criar o perfil “Leo Monteiro”</li>
+<li>Categoria principal: <strong>Medical Clinic</strong> (ou
+Chiropractor, Acupuncturist)</li>
+<li>Categorias adicionais: Pain Management Clinic, Wellness Center</li>
+<li>Morada completa: Taguspark, Núcleo Central, Sala 340, 2740-122 Porto
+Salvo</li>
+<li>Horários</li>
+<li>Fotos: mínimo 10 (consultório, exterior, profissional, mapa)</li>
+<li>Link ao site: <code>https://leomonteiro.pt</code></li>
+<li>Telefone clicável</li>
+<li><strong>Pedir reviews</strong> sistematicamente — objetivo: 25
+reviews em 3 meses, 50 em 6 meses</li>
+</ol>
+<h2 id="analytics">7.5 — Analytics</h2>
+<p><strong>Opção A — Google Analytics 4 (grátis)</strong></p>
+<ol type="1">
+<li>https://analytics.google.com</li>
+<li>Criar propriedade</li>
+<li>Obter Measurement ID (G-XXXXXXXX)</li>
+<li>Rank Math → Analytics → Google Analytics → colar ID</li>
+</ol>
+<p><strong>Opção B — Plausible (€9/mês, melhor para RGPD)</strong></p>
+<p>Mais privacy-friendly, sem cookies, dados claros. Vale o
+investimento.</p>
+<hr />
+<h1 id="parte-8-checklist-final">PARTE 8 — Checklist final</h1>
+<p>Imprime ou copia esta secção. Marca à medida que avanças.</p>
+<h2 id="pré-implementação">Pré-implementação</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>Backup completo com
+UpdraftPlus</label></li>
+<li><label><input type="checkbox"></input>Backup local guardado em pelo menos
+2 sítios</label></li>
+<li><label><input type="checkbox"></input>Acesso wp-admin
+confirmado</label></li>
+<li><label><input type="checkbox"></input>(Opcional) Site de staging
+criado</label></li>
+</ul>
+<h2 id="plugins">Plugins</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>Rank Math SEO instalado e
+configurado (wizard concluído)</label></li>
+<li><label><input type="checkbox"></input>LiteSpeed Cache ou WP Rocket
+instalado</label></li>
+<li><label><input type="checkbox"></input>ShortPixel instalado e
+ativado</label></li>
+<li><label><input type="checkbox"></input>Redirection instalado</label></li>
+<li><label><input type="checkbox"></input>Code Snippets instalado</label></li>
+<li><label><input type="checkbox"></input>Wordfence Security
+instalado</label></li>
+<li><label><input type="checkbox"></input>(Opcional) Antigos plugins de SEO
+removidos (Yoast, etc.)</label></li>
+</ul>
+<h2 id="schema-markup">Schema markup</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>Snippet MedicalClinic adicionado e
+ativo no Code Snippets</label></li>
+<li><label><input type="checkbox"></input>Validado em
+https://search.google.com/test/rich-results</label></li>
+<li><label><input type="checkbox"></input>Schema FAQ adicionado na página FAQ
+via Rank Math</label></li>
+</ul>
+<h2 id="conteúdo-das-páginas-cada-um-deve-ter-title-meta-h1-conteúdo-schema">Conteúdo
+das páginas (cada um deve ter Title, Meta, H1, conteúdo, schema)</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>Home</label></li>
+<li><label><input type="checkbox"></input>Tratamentos</label></li>
+<li><label><input type="checkbox"></input>Terapêuticas</label></li>
+<li><label><input type="checkbox"></input>Corporate</label></li>
+<li><label><input type="checkbox"></input>Marcar Consulta</label></li>
+<li><label><input type="checkbox"></input>Contactos (URL mudado de
+<code>/contato/</code> para <code>/contactos/</code>)</label></li>
+<li><label><input type="checkbox"></input>FAQ (com schema FAQ
+ativo)</label></li>
+<li><label><input type="checkbox"></input>Sobre (página nova
+criada)</label></li>
+</ul>
+<h2 id="imagens">Imagens</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>ShortPixel bulk optimize
+executado</label></li>
+<li><label><input type="checkbox"></input>WebP a ser gerado
+automaticamente</label></li>
+<li><label><input type="checkbox"></input>Alt text adicionado em todas as
+imagens principais</label></li>
+<li><label><input type="checkbox"></input>(Médio prazo) Sessão fotográfica
+profissional agendada</label></li>
+</ul>
+<h2 id="redirects">Redirects</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"></input><code>/contato/</code> →
+<code>/contactos/</code></label></li>
+<li><label><input type="checkbox"></input>Outros URLs antigos identificados e
+redirecionados</label></li>
+</ul>
+<h2 id="configurações-globais">Configurações globais</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>Permalinks em “Nome da
+publicação”</label></li>
+<li><label><input type="checkbox"></input>robots.txt configurado no Rank
+Math</label></li>
+<li><label><input type="checkbox"></input>Sitemap acessível em
+<code>/sitemap_index.xml</code></label></li>
+<li><label><input type="checkbox"></input>Cache ativo</label></li>
+<li><label><input type="checkbox"></input>HTTPS confirmado em todas as
+páginas</label></li>
+</ul>
+<h2 id="validação-externa">Validação externa</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>Lighthouse mobile score &gt; 85 em
+Performance</label></li>
+<li><label><input type="checkbox"></input>Schema validator sem
+erros</label></li>
+<li><label><input type="checkbox"></input>Google Search Console verificado e
+sitemap submetido</label></li>
+<li><label><input type="checkbox"></input>Google Business Profile reclamado e
+otimizado</label></li>
+<li><label><input type="checkbox"></input>Google Analytics ou Plausible
+instalado</label></li>
+</ul>
+<h2 id="pequenas-correções-textuais">Pequenas correções textuais</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>“Temos e Condições” → “Termos e
+Condições” no footer</label></li>
+<li><label><input type="checkbox"></input>Email <code>info@</code> →
+<code>leo@</code> (mais pessoal)</label></li>
+<li><label><input type="checkbox"></input>Footer copyright atualizado de 2023
+para 2026</label></li>
+<li><label><input type="checkbox"></input>Mensagem de chat/contacto sem PT-BR
+(“Contato” → “Contacto”)</label></li>
+</ul>
+<h2 id="comunicação-pós-go-live">Comunicação pós-go-live</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>Post no LinkedIn anunciando “site
+renovado”</label></li>
+<li><label><input type="checkbox"></input>Atualizar link do site nos cartões
+de visita (já está correto)</label></li>
+<li><label><input type="checkbox"></input>Atualizar link nas assinaturas de
+email</label></li>
+<li><label><input type="checkbox"></input>Pedir aos primeiros pacientes para
+deixar review no Google</label></li>
+</ul>
+<hr />
+<h2 id="tempo-total-estimado-de-implementação">Tempo total estimado de
+implementação</h2>
+<ul>
+<li><strong>Backup e plugins:</strong> 1 hora</li>
+<li><strong>Schema e configurações globais:</strong> 1 hora</li>
+<li><strong>Reescrita do conteúdo das páginas:</strong> 4-6 horas
+(espalhado em 2-3 sessões)</li>
+<li><strong>Otimização de imagens:</strong> 30 min de setup + 1-2h de
+bulk optimize automático</li>
+<li><strong>Redirects e validação:</strong> 1 hora</li>
+<li><strong>Google Search Console, Analytics, GBP:</strong> 1-2
+horas</li>
+</ul>
+<p><strong>Total: 10-13 horas de trabalho ativo.</strong> Recomendo
+dividir em 4 sessões de 2-3h ao longo de 2 semanas, não tudo de uma
+vez.</p>
+<hr />
+<h2 id="suporte-e-próximos-passos">Suporte e próximos passos</h2>
+<p>Quando tiveres terminado, ou se ficares preso em algum ponto
+específico:</p>
+<ol type="1">
+<li>Faz screenshot do problema</li>
+<li>Diz exatamente em que ponto do checklist estavas</li>
+<li>Volto a ajudar a destravar</li>
+</ol>
+<p><strong>Próxima evolução natural (3-6 meses depois):</strong></p>
+<ul>
+<li>Começar blog com artigos pilares para SEO de longo prazo</li>
+<li>Criar páginas individuais para cada tratamento (ex:
+<code>/tratamentos/dor-cervical/</code>)</li>
+<li>Considerar migração para Astro quando WordPress começar a limitar
+performance</li>
+</ul>
+<hr />
+<p><em>Documento preparado para Leonardo Monteiro · Cédula C-05000400 ·
+Taguspark, Oeiras</em> <em>Atualizado em 2026</em></p>
+</body>
+</html>

@@ -1,0 +1,137 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Termos e Condições | leomonteiro.pt"
+  description="Termos e condições de utilização do site leomonteiro.pt."
+  currentPage=""
+>
+
+  <section class="legal-hero">
+    <div class="container">
+      <p class="eyebrow">Legal</p>
+      <h1>Termos e <em class="accent">Condições</em></h1>
+      <p class="legal-meta">Última atualização: junho de 2026</p>
+    </div>
+  </section>
+
+  <section class="legal-body">
+    <div class="container">
+
+      <h2>Introdução</h2>
+      <p>
+        Bem-vindo ao site leomonteiro.pt. Estes Termos e Condições regem a utilização deste site,
+        operado por Leonardo Monteiro (Cédula profissional C-05000400, Registo ERS E143188).
+        Ao aceder ou utilizar o site, aceita cumprir estes Termos. Caso não concorde, pedimos
+        que não utilize o site.
+      </p>
+
+      <h2>Utilização do site</h2>
+      <h3>Idade mínima</h3>
+      <p>
+        Ao utilizar o site, declara ter pelo menos 18 anos de idade ou a idade legal para celebrar
+        contratos na sua jurisdição.
+      </p>
+      <h3>Conteúdo do site</h3>
+      <p>
+        O conteúdo disponível, incluindo textos, imagens e outros materiais, é disponibilizado
+        exclusivamente para fins informativos. Não garantimos a exatidão, integralidade ou
+        atualidade do conteúdo e não assumimos responsabilidade por decisões tomadas com
+        base nas informações aqui publicadas.
+      </p>
+      <h3>Propriedade intelectual</h3>
+      <p>
+        Todos os direitos de propriedade intelectual relativos ao site e ao seu conteúdo são da
+        nossa titularidade ou dos nossos licenciadores. Fica expressamente proibida a cópia,
+        distribuição, modificação ou criação de obras derivadas sem autorização prévia por escrito.
+      </p>
+
+      <h2>Privacidade e proteção de dados</h2>
+      <h3>Política de Privacidade</h3>
+      <p>
+        A recolha e utilização de informações pessoais está sujeita à nossa
+        <a href="/politica-de-privacidade">Política de Privacidade</a>. Ao utilizar o site,
+        aceita as práticas descritas nesse documento.
+      </p>
+      <h3>Cookies</h3>
+      <p>
+        Podemos utilizar cookies para melhorar a experiência de navegação. Ao utilizar o site,
+        consente a utilização de cookies conforme descrito na nossa
+        <a href="/politica-de-privacidade">Política de Privacidade e Cookies</a>.
+      </p>
+
+      <h2>Responsabilidade e limitação de responsabilidade</h2>
+      <h3>Exclusão de garantias</h3>
+      <p>
+        O site é disponibilizado "tal como está", sem garantias de qualquer tipo, expressas ou
+        implícitas. Não garantimos que o site estará livre de erros ou interrupções.
+      </p>
+      <h3>Limitação de responsabilidade</h3>
+      <p>
+        Em nenhuma circunstância seremos responsáveis por danos diretos, indiretos, incidentais,
+        especiais ou consequentes decorrentes da utilização ou impossibilidade de utilização
+        do site.
+      </p>
+
+      <h2>Links para terceiros</h2>
+      <p>
+        O site pode conter links para sites de terceiros que não controlamos. Não assumimos
+        responsabilidade pelo conteúdo ou pelas práticas de privacidade desses sites.
+        A inclusão de links não implica endosso ou associação com terceiros.
+      </p>
+
+      <h2>Alterações aos Termos</h2>
+      <p>
+        Reservamo-nos o direito de modificar estes Termos a qualquer momento. As modificações
+        produzem efeito imediatamente após publicação. É da responsabilidade do utilizador
+        consultar periodicamente os Termos para tomar conhecimento de eventuais alterações.
+      </p>
+
+      <h2>Disposições gerais</h2>
+      <h3>Lei aplicável</h3>
+      <p>
+        Estes Termos são regidos pela legislação portuguesa e pela legislação da União Europeia
+        aplicável.
+      </p>
+      <h3>Resolução de litígios</h3>
+      <p>
+        Qualquer litígio decorrente destes Termos será resolvido preferencialmente por negociação
+        de boa fé. Na impossibilidade de acordo, as partes submetem-se à jurisdição competente
+        nos termos da lei portuguesa.
+      </p>
+
+      <h2>Contacto</h2>
+      <p>
+        Para questões relacionadas com estes Termos e Condições:
+        <a href="mailto:leo@leomonteiro.pt">leo@leomonteiro.pt</a>
+      </p>
+
+      <div class="legal-nav">
+        <a href="/politica-de-privacidade">Política de Privacidade</a>
+        <a href="/disclaimer">Disclaimer</a>
+        <a href="/faq">FAQ</a>
+      </div>
+
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .legal-hero { padding: clamp(3rem, 6vw, 5rem) 0 2rem; }
+  .legal-hero h1 { font-size: clamp(2rem, 4vw, 3rem); margin-top: 1rem; }
+  .legal-meta { font-size: 0.88rem; color: var(--gray); margin-top: 0.5rem; }
+
+  .legal-body { padding-bottom: clamp(4rem, 8vw, 6rem); }
+  .legal-body .container { max-width: 720px; }
+
+  .legal-body h2 { font-size: 1.35rem; color: var(--ink-deep); margin: 2.5rem 0 0.75rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+  .legal-body h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+  .legal-body h3 { font-size: 1.05rem; color: var(--ink-deep); margin: 1.5rem 0 0.5rem; font-weight: 600; }
+  .legal-body p { font-size: 0.97rem; color: var(--charcoal); line-height: 1.75; margin-bottom: 1rem; }
+  .legal-body a { color: var(--teal); border-bottom: 1px solid transparent; transition: border-color 0.15s; }
+  .legal-body a:hover { border-bottom-color: var(--teal); }
+
+  .legal-nav { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); font-size: 0.9rem; }
+</style>

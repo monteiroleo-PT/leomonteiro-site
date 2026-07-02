@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Contactos · Taguspark, Oeiras | Leo Monteiro</title>
+  <meta name="description" content="Contactos do consultório Leo Monteiro no Taguspark, Oeiras. WhatsApp, email, morada e mapa. Marcação rápida pelo WhatsApp.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:title" content="Contactos · Leo Monteiro">
+  <meta property="og:description" content="Consultório no Taguspark, Núcleo Central, Oeiras. WhatsApp para marcação rápida.">
+  <meta property="og:image" content="leo-monteiro.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .contact-hero {
+      padding: clamp(3rem, 6vw, 5rem) 0 clamp(2rem, 4vw, 3rem);
+      text-align: center;
+    }
+
+    .contact-hero h1 {
+      font-size: clamp(2.5rem, 4.5vw, 3.75rem);
+      margin-bottom: 1rem;
+    }
+
+    .contact-hero .lead {
+      font-size: 1.2rem;
+      max-width: 36rem;
+      margin: 0 auto 2rem;
+    }
+
+    /* Contact main grid */
+    .contact-main {
+      padding-bottom: clamp(4rem, 8vw, 6rem);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: clamp(2rem, 4vw, 4rem);
+      align-items: start;
+    }
+
+    /* Info card */
+    .info-card {
+      background: var(--cream-warm);
+      padding: 2.5rem;
+      border-radius: 4px;
+    }
+
+    .info-block {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .info-block:first-of-type { padding-top: 0; }
+    .info-block:last-of-type { border-bottom: none; padding-bottom: 0; }
+
+    .info-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--teal);
+      font-weight: 600;
+      margin-bottom: 0.65rem;
+    }
+
+    .info-value {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--ink-deep);
+      font-weight: 500;
+      line-height: 1.3;
+      margin-bottom: 0.25rem;
+    }
+
+    .info-value a {
+      color: var(--ink-deep);
+      border-bottom: 1px solid transparent;
+      transition: border-color var(--t-fast);
+    }
+
+    .info-value a:hover {
+      color: var(--teal);
+      border-bottom-color: var(--teal);
+    }
+
+    .info-sub {
+      font-size: 0.92rem;
+      color: var(--gray);
+      line-height: 1.5;
+    }
+
+    .info-cta {
+      margin-top: 1.5rem;
+    }
+
+    .info-cta .btn { width: 100%; justify-content: center; }
+
+    /* Map and details */
+    .map-wrapper {
+      background: linear-gradient(135deg, var(--ink) 0%, var(--ink-deep) 100%);
+      aspect-ratio: 4/3;
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--cream);
+      text-decoration: none;
+      transition: transform var(--t-base);
+    }
+
+    .map-wrapper:hover { transform: translateY(-2px); }
+
+    .map-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      filter: grayscale(0.2);
+    }
+
+    /* How to get */
+    .directions {
+      background: var(--cream);
+      padding-top: 1rem;
+    }
+
+    .directions h2 {
+      font-size: clamp(1.85rem, 3.5vw, 2.5rem);
+      margin-bottom: 0.5rem;
+    }
+
+    .directions-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+      margin-top: 3rem;
+    }
+
+    .direction-item {
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-dark);
+    }
+
+    .direction-icon {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--teal);
+      margin-bottom: 0.5rem;
+    }
+
+    .direction-item h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .direction-item p {
+      color: var(--gray);
+      font-size: 0.97rem;
+      line-height: 1.65;
+    }
+
+    /* Hours */
+    .hours-section {
+      background: var(--cream-warm);
+    }
+
+    .hours-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hours-table {
+      width: 100%;
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border-dark);
+      align-items: center;
+    }
+
+    .hours-row:last-child { border-bottom: none; }
+
+    .hours-day {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      color: var(--ink-deep);
+      font-weight: 500;
+    }
+
+    .hours-time {
+      font-family: var(--font-body);
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    .hours-row.closed .hours-day { color: var(--gray-light); }
+    .hours-row.closed .hours-time { color: var(--gray-light); }
+
+    /* CTA */
+    .contact-cta {
+      background: var(--ink-deep);
+      color: var(--cream);
+      text-align: center;
+      padding: clamp(4rem, 8vw, 6rem) 0;
+    }
+
+    .contact-cta h2 {
+      color: var(--cream);
+      max-width: 32rem;
+      margin: 0 auto 1.5rem;
+    }
+
+    .contact-cta h2 em { color: var(--teal-light); }
+    .contact-cta .eyebrow { color: var(--teal-light); }
+    .contact-cta .eyebrow::before { background: var(--teal-light); }
+
+    .contact-cta p {
+      font-size: 1.1rem;
+      color: rgba(250,247,242,0.8);
+      max-width: 32rem;
+      margin: 0 auto 2rem;
+    }
+
+    .contact-cta .actions { justify-content: center; }
+
+    @media (max-width: 900px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .directions-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .hours-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">leo<span>monteiro</span></a>
+      <nav aria-label="Navegação principal">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="corporate.html">Para empresas</a></li>
+          <li><a href="contactos.html" class="active">Contactos</a></li>
+          <li><a href="https://wa.me/351916345523?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20avalia%C3%A7%C3%A3o" class="nav-cta">Marcar consulta</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="contact-hero">
+      <div class="container">
+        <p class="eyebrow center">Contactos</p>
+        <h1>Vamos <em class="accent">conversar.</em></h1>
+        <p class="lead">
+          A forma mais rápida de resposta é o WhatsApp. Em horário comercial, respondo em minutos.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT MAIN -->
+    <section class="contact-main">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Info card -->
+          <div class="info-card">
+            <div class="info-block">
+              <div class="info-label">WhatsApp</div>
+              <div class="info-value">
+                <a href="https://wa.me/351916345523?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20avalia%C3%A7%C3%A3o">+351 916 345 523</a>
+              </div>
+              <div class="info-sub">Resposta em minutos durante o horário comercial</div>
+              <div class="info-cta">
+                <a href="https://wa.me/351916345523?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20avalia%C3%A7%C3%A3o" class="btn btn-primary">
+                  Abrir conversa
+                  <span class="btn-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <div class="info-label">Email</div>
+              <div class="info-value">
+                <a href="mailto:leo@leomonteiro.pt">leo@leomonteiro.pt</a>
+              </div>
+              <div class="info-sub">Para questões mais detalhadas ou contactos corporativos</div>
+            </div>
+
+            <div class="info-block">
+              <div class="info-label">Localização</div>
+              <div class="info-value" style="font-size: 1.2rem; line-height: 1.4;">
+                Taguspark · Núcleo Central<br>
+                3º Piso · Sala 340
+              </div>
+              <div class="info-sub">2740-122 Porto Salvo · Oeiras</div>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div>
+            <a href="https://maps.app.goo.gl/a18hJq334fjEPqxh7" target="_blank" rel="noopener" class="map-wrapper">
+              <iframe
+                src="https://www.google.com/maps?q=Taguspark+N%C3%BAcleo+Central,+Porto+Salvo,+Oeiras&output=embed"
+                title="Localização do consultório no Taguspark"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </a>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--gray); text-align: center;">
+              <a href="https://maps.app.goo.gl/a18hJq334fjEPqxh7" target="_blank" rel="noopener">
+                Abrir no Google Maps →
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIRECTIONS -->
+    <section class="directions">
+      <div class="container">
+        <p class="eyebrow">Como chegar</p>
+        <h2>Três formas <em class="accent">simples.</em></h2>
+
+        <div class="directions-grid">
+          <div class="direction-item">
+            <div class="direction-icon">i.</div>
+            <h3>De carro</h3>
+            <p>
+              Saída do Taguspark na A5. Estacionamento gratuito disponível em todo o parque,
+              com várias entradas convenientes.
+            </p>
+          </div>
+
+          <div class="direction-item">
+            <div class="direction-icon">ii.</div>
+            <h3>De transportes</h3>
+            <p>
+              Autocarros das linhas 113, 156 e 411 com paragem direta no Taguspark.
+              De comboio, estação de Cacém ou Oeiras + autocarro.
+            </p>
+          </div>
+
+          <div class="direction-item">
+            <div class="direction-icon">iii.</div>
+            <h3>A pé</h3>
+            <p>
+              Cinco minutos dos edifícios Inovação I, II, III, IV. Sete minutos da Torre Oeiras.
+              Três minutos do BUS Taguspark.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOURS -->
+    <section class="hours-section">
+      <div class="container container-content">
+        <div class="hours-grid">
+          <div>
+            <p class="eyebrow">Horário</p>
+            <h2>Quando <em class="accent">atendo.</em></h2>
+            <p style="color: var(--gray); font-size: 1.05rem; line-height: 1.7; margin-top: 1rem;">
+              Atendimento por marcação prévia.
+              Em casos de dor aguda, há sempre tentativa de encaixe same-day.
+            </p>
+          </div>
+
+          <div class="hours-table">
+            <div class="hours-row">
+              <span class="hours-day">Segunda</span>
+              <span class="hours-time">10:00 — 17:00</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Terça</span>
+              <span class="hours-time">10:00 — 17:00</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Quarta</span>
+              <span class="hours-time">10:00 — 17:00</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Quinta</span>
+              <span class="hours-time">10:00 — 17:00</span>
+            </div>
+            <div class="hours-row closed">
+              <span class="hours-day">Sexta</span>
+              <span class="hours-time">Encerrado</span>
+            </div>
+            <div class="hours-row closed">
+              <span class="hours-day">Fim-de-semana</span>
+              <span class="hours-time">Encerrado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="contact-cta">
+      <div class="container">
+        <p class="eyebrow center">Pronto para começar?</p>
+        <h2>Marca <em class="accent">pelo WhatsApp.</em></h2>
+        <p>
+          Em duas linhas, conta-me o que sentes e há quanto tempo.
+          Respondo com horários disponíveis e qualquer dúvida que tenhas.
+        </p>
+        <div class="actions">
+          <a href="https://wa.me/351916345523?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20avalia%C3%A7%C3%A3o" class="btn btn-primary">
+            Abrir WhatsApp
+            <span class="btn-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">leo<span>monteiro</span></div>
+          <p>Clínica de tratamento da dor, manipulações articulares e acupuntura clínica
+          no coração do Taguspark, Oeiras.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="corporate.html">Para empresas</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="https://wa.me/351916345523">+351 916 345 523</a></li>
+            <li><a href="mailto:leo@leomonteiro.pt">leo@leomonteiro.pt</a></li>
+            <li><a href="https://maps.app.goo.gl/a18hJq334fjEPqxh7">Ver no mapa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Redes</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/leomonteiropt">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/leomonteiro.pt/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/LeoMonteiro.pt">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Leo Monteiro · Cédula nº C-05000400</span>
+        <span>Taguspark · Oeiras · Portugal</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/351916345523?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20avalia%C3%A7%C3%A3o" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    document.getElementById('menuToggle').addEventListener('click', function() {
+      var links = document.getElementById('navLinks');
+      var isOpen = links.classList.toggle('open');
+      this.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+</body>
+</html>

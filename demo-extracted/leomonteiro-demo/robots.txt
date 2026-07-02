@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+
+# Esta demo é privada e não deve ser indexada pelos motores de busca.
+# Quando passares a versão final para produção, substitui por:
+# User-agent: *
+# Allow: /
+# Sitemap: https://leomonteiro.pt/sitemap.xml

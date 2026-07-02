@@ -1,0 +1,63 @@
+---
+const { currentPage = 'home' } = Astro.props;
+
+const nav = [
+  { href: '/', label: 'Home', id: 'home' },
+  { href: '/sobre', label: 'Sobre', id: 'sobre' },
+  { href: '/corporate', label: 'Para empresas', id: 'corporate' },
+  { href: '/contactos', label: 'Contactos', id: 'contactos' },
+];
+---
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="/" class="logo-img" aria-label="Leo Monteiro, página inicial">
+      <img
+        src="/logo-leomonteiro.png"
+        alt="Leo Monteiro, acupuntura, saúde, longevidade"
+        height="48"
+        width="auto"
+        loading="eager"
+      />
+    </a>
+
+    <nav aria-label="Navegação principal">
+      <ul class="nav-links" id="navLinks">
+        {nav.map(item => (
+          <li>
+            <a href={item.href} class={currentPage === item.id ? 'active' : ''}>
+              {item.label}
+            </a>
+          </li>
+        ))}
+        <li>
+          <a href="/marcar-consulta" class="nav-cta">
+            Marcar consulta
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+    >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const links = document.getElementById('navLinks');
+  toggle?.addEventListener('click', () => {
+    const isOpen = links?.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+</script>

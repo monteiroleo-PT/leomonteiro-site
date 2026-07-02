@@ -1,0 +1,494 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Programa de Saúde Corporativa no Taguspark | Leo Monteiro"
+  description="Programa de ergonomia e tratamento da dor para empresas do Taguspark. Reduza absentismo e ofereça um benefício real aos colaboradores. Solicite reunião."
+  currentPage="corporate"
+>
+
+  <!-- HERO -->
+  <section class="corp-hero">
+    <div class="container">
+      <div class="corp-hero-content">
+        <p class="eyebrow">Para empresas</p>
+        <h1>A dor de coluna dos seus colaboradores <em class="accent">está a custar dinheiro.</em></h1>
+        <p class="lead">
+          Absentismo, presenteísmo, baixas médicas repetidas por lombalgia e cervicalgia.
+          O consultório está a dez minutos a pé das principais empresas do Taguspark.
+        </p>
+        <blockquote class="corp-hero-quote">
+          O bem-estar no trabalho não é um benefício.<br/>
+          É uma condição física para que as pessoas consigam trabalhar sem dor.<br/>
+          <span>Quando o corpo está em sofrimento, a função cai e a empresa sente.</span>
+        </blockquote>
+        <div class="actions">
+          <a
+            href="https://wa.me/351916345523?text=Sou%20de%20RH%20e%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20sobre%20o%20programa%20corporativo"
+            class="btn btn-primary"
+            target="_blank" rel="noopener noreferrer"
+          >
+            Solicitar reunião
+            <span class="btn-arrow">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+          <a href="#formatos" class="btn-ghost">Ver formatos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem">
+    <div class="container">
+      <p class="eyebrow">O problema</p>
+      <h2>60% dos trabalhadores europeus têm queixas musculoesqueléticas. <em class="accent">A dor de coluna é a mais prevalente.</em></h2>
+      <p class="problem-intro">
+        Dor cervical, lombalgia e cefaleias de tensão são as queixas mais frequentes em trabalhadores do conhecimento.
+        São preveníveis e tratáveis em poucas sessões quando abordadas cedo.
+      </p>
+
+      <!-- STATS BAR -->
+      <div class="kpi-bar">
+        <div class="kpi">
+          <div class="kpi-num">60%</div>
+          <div class="kpi-label">dos trabalhadores europeus com queixas MSE</div>
+          <div class="kpi-source">EU-OSHA</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-num">50%</div>
+          <div class="kpi-label">dos dias de trabalho perdidos na UE por dor MSE</div>
+          <div class="kpi-source">European Commission</div>
+        </div>
+        <div class="kpi kpi-accent">
+          <div class="kpi-num">3x</div>
+          <div class="kpi-label">o custo do presenteísmo vs. absentismo</div>
+          <div class="kpi-source">Eurofound</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-num">10 min</div>
+          <div class="kpi-label">do escritório ao consultório no Taguspark</div>
+          <div class="kpi-source">Taguspark</div>
+        </div>
+      </div>
+
+      <!-- VISUAL SECTION -->
+      <div class="problem-visuals">
+
+        <!-- Chart: prevalência -->
+        <div class="prob-card">
+          <p class="prob-card-title">Queixas mais frequentes em trabalhadores de secretária</p>
+          <div class="bar-chart" aria-label="Gráfico de queixas musculoesqueléticas">
+            <div class="bar-row">
+              <span class="bar-name">Lombalgia</span>
+              <div class="bar-track"><div class="bar-fill" style="width:78%"></div></div>
+              <span class="bar-pct">78%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-name">Cervicalgia</span>
+              <div class="bar-track"><div class="bar-fill" style="width:68%"></div></div>
+              <span class="bar-pct">68%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-name">Ombros</span>
+              <div class="bar-track"><div class="bar-fill" style="width:55%"></div></div>
+              <span class="bar-pct">55%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-name">Cefaleias</span>
+              <div class="bar-track"><div class="bar-fill" style="width:44%"></div></div>
+              <span class="bar-pct">44%</span>
+            </div>
+          </div>
+          <p class="prob-card-source">Fonte: EU-OSHA, European Agency for Safety and Health at Work</p>
+        </div>
+
+        <!-- Chart: impacto económico -->
+        <div class="prob-card">
+          <p class="prob-card-title">Impacto económico real: absentismo vs. presenteísmo</p>
+          <div class="impact-visual">
+            <div class="impact-col impact-col--small">
+              <div class="impact-bar-wrap">
+                <div class="impact-bar impact-bar--abs" style="height: 33%"></div>
+              </div>
+              <div class="impact-label">Absentismo</div>
+              <div class="impact-value">1x</div>
+              <div class="impact-desc">Dias de trabalho perdidos. Visível, mensurável.</div>
+            </div>
+            <div class="impact-arrow">→</div>
+            <div class="impact-col impact-col--large">
+              <div class="impact-bar-wrap">
+                <div class="impact-bar impact-bar--pres" style="height: 100%"></div>
+              </div>
+              <div class="impact-label">Presenteísmo</div>
+              <div class="impact-value impact-value--accent">2-3x</div>
+              <div class="impact-desc">Presente no trabalho, desempenho reduzido. Difícil de medir, fácil de ignorar.</div>
+            </div>
+          </div>
+          <p class="prob-card-source">Fonte: Eurofound, European Foundation for the Improvement of Living and Working Conditions</p>
+        </div>
+
+        <!-- Card: o que está associado -->
+        <div class="prob-card prob-card--dark">
+          <p class="prob-card-title" style="color:var(--teal-light)">A dor persistente no trabalho está associada a</p>
+          <ul class="impact-list">
+            <li>Redução da capacidade funcional</li>
+            <li>Diminuição da concentração</li>
+            <li>Fadiga precoce</li>
+            <li>Limitação de mobilidade</li>
+            <li>Menor tolerância à carga laboral</li>
+          </ul>
+          <div class="prob-card-stat">
+            <span class="stat-big">67%</span>
+            <span class="stat-text">dos trabalhadores não tratam a dor por falta de tempo</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPOSTA -->
+  <section class="proposta">
+    <div class="container">
+      <p class="eyebrow">Proposta diferenciadora</p>
+      <h2>Não é <em class="accent">wellness.</em> É clínica.</h2>
+      <p class="lead">
+        Intervenção clínica direta na dor musculoesquelética laboral.
+        Avaliação, diagnóstico funcional, tratamento manual específico.
+      </p>
+      <div class="proposta-grid">
+        <div class="proposta-col proposta-col--no">
+          <p class="proposta-col-label proposta-col-label--no">Não se trata de</p>
+          <ul class="proposta-list proposta-list--no">
+            <li>Massagem de relaxamento</li>
+            <li>Sessões generalistas de bem-estar</li>
+            <li>Programas de wellness sem diagnóstico</li>
+            <li>Palestras motivacionais sobre postura</li>
+          </ul>
+        </div>
+        <div class="proposta-divider" aria-hidden="true">
+          <svg viewBox="0 0 40 120" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="120">
+            <line x1="20" y1="0" x2="20" y2="120" stroke="var(--border-dark)" stroke-width="1" stroke-dasharray="4 4"/>
+          </svg>
+        </div>
+        <div class="proposta-col proposta-col--yes">
+          <p class="proposta-col-label proposta-col-label--yes">Trata-se de</p>
+          <ul class="proposta-list proposta-list--yes">
+            <li>Avaliação clínica funcional individual</li>
+            <li>Identificação de disfunções musculoesqueléticas</li>
+            <li>Intervenção manual específica e orientada</li>
+            <li>Orientação postural e funcional personalizada</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proposta-cred">
+        <span>Cédula profissional C-05000400</span>
+        <span class="dot">·</span>
+        <span>28+ anos de experiência em clínica da dor</span>
+        <span class="dot">·</span>
+        <span>Taguspark, Núcleo Central, Sala 340</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODELOS -->
+  <section class="tiers">
+    <div class="container">
+      <p class="eyebrow">Modelos de parceria</p>
+      <h2>Três formas de <em class="accent">trabalhar juntos.</em></h2>
+      <p class="lead">Cada empresa tem uma realidade diferente. Os modelos adaptam-se.</p>
+      <div class="tiers-grid tiers-grid--3">
+
+        <div class="tier">
+          <span class="tier-label">Modelo 1</span>
+          <h3>Consultório na Empresa</h3>
+          <p class="tier-tagline">O tratamento vai até às instalações da empresa.</p>
+          <ul class="tier-features">
+            <li>Sessões realizadas no espaço da empresa, com periodicidade definida</li>
+            <li>Sem deslocações para o colaborador</li>
+            <li>Agendamento autónomo pelos colaboradores, online</li>
+            <li>Triagem digital prévia para maximizar o tempo de cada sessão</li>
+          </ul>
+          <p class="tier-mechanic">
+            <strong>Como funciona:</strong> a empresa cede o espaço. Os colaboradores pagam as suas sessões. A empresa não tem custo.
+          </p>
+          <div class="tier-cta">
+            <a
+              href="https://wa.me/351916345523?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20modelo%20Consultório%20na%20Empresa"
+              class="btn btn-secondary"
+              target="_blank" rel="noopener noreferrer"
+            >
+              Solicitar proposta
+            </a>
+          </div>
+        </div>
+
+        <div class="tier featured">
+          <span class="tier-label">Modelo 2</span>
+          <h3>Plano Empresa</h3>
+          <p class="tier-tagline">A empresa investe. Os colaboradores beneficiam.</p>
+          <ul class="tier-features">
+            <li>A empresa adquire um plafond de consultas</li>
+            <li>Agenda dedicada comunicada internamente</li>
+            <li>Colaboradores marcam autonomamente até esgotar o plafond</li>
+            <li>Relatório de utilização anonimizado no final do período</li>
+          </ul>
+          <p class="tier-mechanic">
+            <strong>Como funciona:</strong> a empresa define o investimento e o período. O resto é gerido automaticamente, sem burocracia.
+          </p>
+          <div class="tier-cta">
+            <a
+              href="https://wa.me/351916345523?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Plano%20Empresa"
+              class="btn btn-primary"
+              target="_blank" rel="noopener noreferrer"
+            >
+              Solicitar proposta
+            </a>
+          </div>
+        </div>
+
+        <div class="tier">
+          <span class="tier-label">Modelo 3</span>
+          <h3>Acesso Preferencial</h3>
+          <p class="tier-tagline">Condições exclusivas para colaboradores e empresas parceiras.</p>
+          <ul class="tier-features">
+            <li>Desconto exclusivo em todas as consultas para colaboradores e familiares diretos</li>
+            <li>Marcação prioritária, com agenda dedicada</li>
+            <li>Material de comunicação interna fornecido</li>
+            <li>Sem qualquer custo ou compromisso para a empresa</li>
+          </ul>
+          <p class="tier-mechanic">
+            <strong>Como funciona:</strong> a empresa assina o protocolo. Os colaboradores marcam e pagam diretamente, com desconto garantido.
+          </p>
+          <div class="tier-cta">
+            <a
+              href="https://wa.me/351916345523?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20modelo%20de%20Acesso%20Preferencial"
+              class="btn btn-secondary"
+              target="_blank" rel="noopener noreferrer"
+            >
+              Solicitar protocolo
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFFERENTIAL -->
+  <section class="differential">
+    <div class="container">
+      <p class="eyebrow">O diferencial Taguspark</p>
+      <h2>No coração do <em class="accent">Oeiras Valley.</em></h2>
+      <p class="lead">
+        O consultório está localizado no Taguspark, Núcleo Central, 3.º piso, Sala 340,
+        no centro do maior ecossistema empresarial de Portugal. Esta proximidade torna
+        o benefício genuinamente utilizável.
+      </p>
+      <div class="differential-list">
+        <div class="differential-item">
+          <strong>10 minutos a pé</strong>
+          <p>Desde qualquer empresa do Taguspark até ao consultório. Sem deslocações, sem trânsito.</p>
+        </div>
+        <div class="differential-item">
+          <strong>Hora de almoço</strong>
+          <p>Possibilidade de marcação no slot habitual de pausa, sem afetar o horário de trabalho.</p>
+        </div>
+        <div class="differential-item">
+          <strong>Urgente, mesmo-dia</strong>
+          <p>Atendimento no próprio dia em situações agudas, sempre que a agenda permite.</p>
+        </div>
+        <div class="differential-item">
+          <strong>Oeiras Valley</strong>
+          <p>Para empresas do Lagoas Park, Quinta da Fonte ou Arquiparque, fácil acesso e proximidade. Sem necessidade de grandes deslocações.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="corp-cta">
+    <div class="container">
+      <p class="eyebrow center">Próximo passo</p>
+      <h2>Vamos <em class="accent">conversar 30 minutos?</em></h2>
+      <p class="corp-cta-text">
+        A proposta personalizada é feita após uma conversa de 30 minutos onde percebemos
+        o contexto da empresa, as queixas mais frequentes da equipa e o formato de intervenção
+        mais adequado. Sem compromisso. Sem proposta enlatada.
+      </p>
+      <div class="actions" style="justify-content:center;">
+        <a
+          href="https://wa.me/351916345523?text=Sou%20de%20RH%20e%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20sobre%20o%20programa%20corporativo"
+          class="btn btn-primary"
+          target="_blank" rel="noopener noreferrer"
+        >
+          Solicitar reunião
+          <span class="btn-arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+      </div>
+      <div class="corp-contact-direct">
+        <p><strong>Contacto direto</strong></p>
+        <p>WhatsApp: +351 916 345 523</p>
+        <p>Email: leo@leomonteiro.pt</p>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .corp-hero-quote {
+    margin-top: 2rem; padding: 1.25rem 1.5rem;
+    border-left: 3px solid var(--coral);
+    font-size: 1.05rem; line-height: 1.65; color: var(--charcoal);
+    font-style: normal; background: rgba(224, 120, 86, 0.06);
+  }
+  .corp-hero-quote span { color: var(--gray); font-size: 0.95rem; display: block; margin-top: 0.4rem; }
+
+  .corp-hero {
+    background: linear-gradient(180deg, var(--cream) 0%, var(--cream-warm) 100%);
+    padding: clamp(4rem, 8vw, 7rem) 0 clamp(3rem, 6vw, 5rem);
+  }
+  .corp-hero-content { max-width: 760px; }
+  .corp-hero h1 { font-size: clamp(2.5rem, 5vw, 4.25rem); line-height: 1.05; }
+  .corp-hero .lead { font-size: 1.25rem; max-width: 36rem; }
+
+  /* PROBLEM */
+  .problem { background: var(--cream); }
+  .problem h2 { max-width: 52rem; font-size: clamp(1.85rem, 3.5vw, 2.75rem); }
+  .problem-intro { font-size: 1.1rem; color: var(--gray); max-width: 46rem; margin: 1rem 0 0; line-height: 1.7; }
+
+  .kpi-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin: 3rem 0; }
+  .kpi { padding: 1.5rem; background: var(--cream-warm); border-top: 3px solid var(--border-dark); }
+  .kpi.kpi-accent { border-top-color: var(--coral); }
+  .kpi-num { font-size: 2.5rem; font-weight: 600; color: var(--ink-deep); line-height: 1; margin-bottom: 0.35rem; }
+  .kpi-accent .kpi-num { color: var(--coral); }
+  .kpi-label { font-size: 0.88rem; color: var(--charcoal); line-height: 1.45; margin-bottom: 0.5rem; }
+  .kpi-source { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--teal); font-weight: 600; }
+
+  .problem-visuals { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin-top: 1rem; }
+
+  .prob-card { background: var(--cream-warm); padding: 1.75rem; border: 1px solid var(--border); }
+  .prob-card--dark { background: var(--ink-deep); color: var(--cream); border-color: transparent; }
+  .prob-card-title { font-size: 0.88rem; font-weight: 600; color: var(--ink-deep); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 1.25rem; line-height: 1.4; }
+  .prob-card--dark .prob-card-title { color: var(--teal-light); }
+  .prob-card-source { font-size: 0.72rem; color: var(--gray-light); margin-top: 1rem; margin-bottom: 0; }
+  .prob-card--dark .prob-card-source { color: rgba(250,247,242,0.4); }
+
+  /* Bar chart */
+  .bar-chart { display: flex; flex-direction: column; gap: 0.85rem; }
+  .bar-row { display: flex; align-items: center; gap: 0.75rem; }
+  .bar-name { font-size: 0.88rem; color: var(--charcoal); min-width: 80px; }
+  .bar-track { flex: 1; height: 8px; background: var(--border); border-radius: 99px; overflow: hidden; }
+  .bar-fill { height: 100%; background: linear-gradient(90deg, var(--teal) 0%, var(--ink) 100%); border-radius: 99px; }
+  .bar-pct { font-size: 0.85rem; font-weight: 600; color: var(--ink-deep); min-width: 2.5rem; text-align: right; }
+
+  /* Impact visual */
+  .impact-visual { display: flex; align-items: flex-end; gap: 1rem; height: 160px; }
+  .impact-col { display: flex; flex-direction: column; align-items: center; flex: 1; height: 100%; }
+  .impact-bar-wrap { flex: 1; width: 100%; display: flex; align-items: flex-end; }
+  .impact-bar { width: 100%; border-radius: 2px 2px 0 0; }
+  .impact-bar--abs { background: var(--border-dark); }
+  .impact-bar--pres { background: linear-gradient(180deg, var(--coral) 0%, #c0613c 100%); }
+  .impact-arrow { align-self: center; font-size: 1.5rem; color: var(--gray-light); flex-shrink: 0; padding-bottom: 2rem; }
+  .impact-label { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gray); margin-top: 0.5rem; }
+  .impact-value { font-size: 1.75rem; font-weight: 600; color: var(--ink-deep); line-height: 1.1; }
+  .impact-value--accent { color: var(--coral); }
+  .impact-desc { font-size: 0.78rem; color: var(--gray); line-height: 1.4; text-align: center; margin-top: 0.25rem; }
+
+  /* Impact list (dark card) */
+  .impact-list { list-style: none; padding: 0; margin: 0 0 1.5rem 0; display: flex; flex-direction: column; gap: 0.6rem; }
+  .impact-list li { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.92rem; color: rgba(250,247,242,0.85); line-height: 1.4; }
+  .impact-list li::before { content: "→"; color: var(--teal-light); font-size: 0.85rem; flex-shrink: 0; margin-top: 0.05em; }
+  .prob-card-stat { display: flex; align-items: center; gap: 1rem; padding-top: 1rem; border-top: 1px solid rgba(250,247,242,0.15); }
+  .stat-big { font-size: 2.5rem; font-weight: 600; color: var(--coral); line-height: 1; flex-shrink: 0; }
+  .stat-text { font-size: 0.88rem; color: rgba(250,247,242,0.7); line-height: 1.45; }
+
+  /* PROPOSTA */
+  .proposta { background: var(--cream-warm); }
+  .proposta h2 { font-size: clamp(2rem, 4vw, 3rem); }
+  .proposta-grid { display: grid; grid-template-columns: 1fr 40px 1fr; gap: 0; margin: 3rem 0 2rem; align-items: start; }
+  .proposta-col { padding: 2rem; }
+  .proposta-col--no { background: var(--cream); border: 1px solid var(--border); }
+  .proposta-col--yes { background: var(--ink-deep); color: var(--cream); }
+  .proposta-col-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600; margin-bottom: 1.25rem; }
+  .proposta-col-label--no { color: var(--gray-light); }
+  .proposta-col-label--yes { color: var(--teal-light); }
+  .proposta-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0; }
+  .proposta-list li { padding: 0.75rem 0; font-size: 0.97rem; line-height: 1.5; }
+  .proposta-list--no li { color: var(--gray); border-bottom: 1px solid var(--border); text-decoration: line-through; text-decoration-color: var(--gray-light); }
+  .proposta-list--no li:last-child { border-bottom: none; }
+  .proposta-list--yes li { color: rgba(250,247,242,0.9); border-bottom: 1px solid rgba(250,247,242,0.1); display: flex; gap: 0.6rem; }
+  .proposta-list--yes li:last-child { border-bottom: none; }
+  .proposta-list--yes li::before { content: "✓"; color: var(--teal-light); font-weight: 700; flex-shrink: 0; }
+  .proposta-divider { display: flex; justify-content: center; padding-top: 4rem; }
+  .proposta-cred { display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center; font-size: 0.85rem; color: var(--gray); }
+  .proposta-cred .dot { color: var(--teal); }
+
+  .tiers { background: var(--cream-warm); }
+  .tiers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem; }
+  .tiers-grid--3 { grid-template-columns: repeat(3, 1fr); }
+  .tier { background: var(--cream); padding: 2.25rem; border: 1px solid var(--border); display: flex; flex-direction: column; border-radius: 2px; }
+  .tier.featured { border: 2px solid var(--ink); background: var(--ink-deep); color: var(--cream); }
+  .tier-label { display: inline-block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--teal); font-weight: 600; margin-bottom: 0.85rem; }
+  .tier.featured .tier-label { color: var(--coral); }
+  .tier h3 { font-size: 1.6rem; line-height: 1.2; margin-bottom: 0.5rem; color: var(--ink-deep); }
+  .tier.featured h3 { color: var(--cream); }
+  .tier-tagline { font-style: italic; font-size: 1rem; color: var(--gray); margin-bottom: 1.75rem; line-height: 1.4; }
+  .tier.featured .tier-tagline { color: rgba(250,247,242,0.75); }
+  .tier-features { list-style: none; padding: 0; margin: 0 0 1.5rem 0; flex-grow: 1; }
+  .tier-features li { padding: 0.65rem 0; border-bottom: 1px solid var(--border); display: flex; gap: 0.75rem; align-items: flex-start; font-size: 0.92rem; color: var(--charcoal); line-height: 1.5; }
+  .tier.featured .tier-features li { border-bottom: 1px solid rgba(250,247,242,0.15); color: rgba(250,247,242,0.9); }
+  .tier-features li::before { content: "✓"; color: var(--teal); font-weight: 700; flex-shrink: 0; }
+  .tier.featured .tier-features li::before { color: var(--teal-light); }
+  .tier-mechanic { font-size: 0.88rem; color: var(--gray); line-height: 1.55; margin-bottom: 1.5rem; padding: 0.85rem; background: rgba(58,139,158,0.06); border-left: 2px solid var(--teal); }
+  .tier.featured .tier-mechanic { color: rgba(250,247,242,0.7); background: rgba(58,139,158,0.12); border-left-color: var(--teal-light); }
+  .tier-mechanic strong { color: var(--ink-deep); }
+  .tier.featured .tier-mechanic strong { color: var(--cream); }
+  .tier-price { font-style: italic; font-size: 1.05rem; color: var(--gray); margin-bottom: 1.25rem; padding-top: 0.5rem; }
+  .tier.featured .tier-price { color: rgba(250,247,242,0.6); }
+  .tier-cta .btn, .tier-cta .btn-secondary { width: 100%; justify-content: center; }
+
+  .formats { background: var(--cream); }
+  .formats-list { margin-top: 3rem; display: flex; flex-direction: column; gap: 0; }
+  .format-item { padding: 2rem 0; display: grid; grid-template-columns: 3rem 1fr; gap: 1.25rem; border-bottom: 1px solid var(--border); }
+  .format-item:last-child { border-bottom: none; }
+  .format-num { font-style: italic; font-size: 1.5rem; color: var(--teal); font-weight: 400; padding-top: 0.15rem; }
+  .format-item h3 { font-size: 1.4rem; margin-bottom: 0.35rem; }
+  .format-meta { font-size: 0.85rem; color: var(--teal); font-weight: 500; margin-bottom: 0.75rem; }
+  .format-item p { color: var(--gray); font-size: 0.97rem; line-height: 1.65; margin-bottom: 0; }
+
+  .differential { background: var(--cream-warm); }
+  .differential-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 3rem; }
+  .differential-item { padding-top: 1.5rem; border-top: 1px solid var(--border-dark); }
+  .differential-item strong { font-size: 1.1rem; color: var(--ink-deep); display: block; margin-bottom: 0.5rem; }
+  .differential-item p { color: var(--gray); font-size: 0.92rem; line-height: 1.6; margin-bottom: 0; }
+
+  .corp-cta { background: var(--cream); text-align: center; padding: clamp(4rem, 8vw, 6rem) 0; }
+  .corp-cta h2 { max-width: 34rem; margin: 0 auto 1.5rem; }
+  .corp-cta-text { font-size: 1.08rem; color: var(--gray); max-width: 38rem; margin: 0 auto 2.5rem; line-height: 1.7; }
+  .corp-contact-direct { margin-top: 2.5rem; font-size: 0.92rem; color: var(--gray); line-height: 1.9; }
+  .corp-contact-direct strong { color: var(--ink-deep); }
+
+  @media (max-width: 1100px) {
+    .tiers-grid--3 { grid-template-columns: 1fr 1fr; }
+    .kpi-bar { grid-template-columns: repeat(2, 1fr); }
+    .problem-visuals { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 900px) {
+    .tiers-grid, .tiers-grid--3 { grid-template-columns: 1fr; }
+    .differential-list { grid-template-columns: 1fr 1fr; }
+    .problem-visuals { grid-template-columns: 1fr; }
+    .proposta-grid { grid-template-columns: 1fr; }
+    .proposta-divider { display: none; }
+  }
+  @media (max-width: 560px) {
+    .differential-list { grid-template-columns: 1fr; }
+    .kpi-bar { grid-template-columns: 1fr 1fr; }
+  }
+</style>

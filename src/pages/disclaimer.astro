@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Disclaimer | leomonteiro.pt"
+  description="Isenção de responsabilidade do site leomonteiro.pt."
+  currentPage=""
+>
+
+  <section class="legal-hero">
+    <div class="container">
+      <p class="eyebrow">Legal</p>
+      <h1><em class="accent">Disclaimer</em></h1>
+      <p class="legal-meta">Última atualização: junho de 2026</p>
+    </div>
+  </section>
+
+  <section class="legal-body">
+    <div class="container">
+
+      <h2>Utilização do site</h2>
+      <p>
+        O site leomonteiro.pt é disponibilizado para fins informativos e educativos. O proprietário
+        e operador, Leonardo Monteiro, não assume responsabilidade pela exatidão, integralidade
+        ou atualidade das informações e materiais publicados. A utilização do site é feita por
+        sua conta e risco.
+      </p>
+
+      <h2>Informações de saúde</h2>
+      <p>
+        As informações relacionadas com saúde, bem-estar e medicina disponibilizadas neste site
+        têm caráter meramente informativo e não devem ser interpretadas como aconselhamento médico.
+        Consulte sempre um profissional de saúde qualificado antes de tomar decisões clínicas com
+        base em informações aqui publicadas.
+      </p>
+
+      <h2>Links para terceiros</h2>
+      <p>
+        O site pode conter links para sites de terceiros. Esses links são disponibilizados apenas
+        para conveniência do utilizador. O proprietário do site não controla o conteúdo desses
+        sites externos e não assume qualquer responsabilidade pela informação, produtos, serviços
+        ou práticas de privacidade aí disponibilizados.
+      </p>
+
+      <h2>Alterações ao conteúdo</h2>
+      <p>
+        O proprietário do site reserva-se o direito de alterar o conteúdo a qualquer momento,
+        sem aviso prévio. O site pode conter informação desatualizada ou imprecisa e não
+        garantimos a sua exatidão ou atualidade permanente.
+      </p>
+
+      <h2>Limitação de responsabilidade</h2>
+      <p>
+        Em nenhuma circunstância Leonardo Monteiro será responsável por danos diretos, indiretos,
+        incidentais, especiais, punitivos ou consequentes decorrentes da utilização ou
+        impossibilidade de utilização do site ou do conteúdo nele disponibilizado.
+      </p>
+
+      <h2>Legislação aplicável</h2>
+      <p>
+        Esta isenção de responsabilidade é regida pela legislação portuguesa e pela legislação
+        da União Europeia aplicável.
+      </p>
+
+      <h2>Contacto</h2>
+      <p>
+        Para qualquer questão relacionada com este Disclaimer:
+        <a href="mailto:leo@leomonteiro.pt">leo@leomonteiro.pt</a>
+      </p>
+
+      <div class="legal-nav">
+        <a href="/politica-de-privacidade">Política de Privacidade</a>
+        <a href="/termos-e-condicoes">Termos e Condições</a>
+        <a href="/faq">FAQ</a>
+      </div>
+
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .legal-hero { padding: clamp(3rem, 6vw, 5rem) 0 2rem; }
+  .legal-hero h1 { font-size: clamp(2rem, 4vw, 3rem); margin-top: 1rem; }
+  .legal-meta { font-size: 0.88rem; color: var(--gray); margin-top: 0.5rem; }
+
+  .legal-body { padding-bottom: clamp(4rem, 8vw, 6rem); }
+  .legal-body .container { max-width: 720px; }
+
+  .legal-body h2 { font-size: 1.35rem; color: var(--ink-deep); margin: 2.5rem 0 0.75rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+  .legal-body h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+  .legal-body p { font-size: 0.97rem; color: var(--charcoal); line-height: 1.75; margin-bottom: 1rem; }
+  .legal-body a { color: var(--teal); border-bottom: 1px solid transparent; transition: border-color 0.15s; }
+  .legal-body a:hover { border-bottom-color: var(--teal); }
+
+  .legal-nav { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); font-size: 0.9rem; }
+</style>
