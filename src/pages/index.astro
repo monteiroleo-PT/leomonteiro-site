@@ -353,7 +353,7 @@ import Layout from '../layouts/Layout.astro';
   .personas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; margin-top: 3rem; }
   .personas-grid--2 { grid-template-columns: repeat(2, 1fr); max-width: 52rem; }
   .persona { padding-top: 1.5rem; border-top: 1px solid var(--border-dark); }
-  .persona-num { font-style: italic; font-size: 1rem; color: var(--teal); margin-bottom: 0.75rem; }
+  .persona-num { font-style: italic; font-size: 1rem; color: var(--teal); margin-bottom: 0.75rem; display: inline-block; min-width: 2rem; }
   .persona h3 { font-size: 1.5rem; margin-bottom: 1rem; }
   .persona p { color: var(--gray); font-size: 0.97rem; line-height: 1.65; }
 
@@ -377,14 +377,14 @@ import Layout from '../layouts/Layout.astro';
   .treatment-item:nth-child(odd) { padding-right: 2.5rem; }
   .treatment-item:nth-child(even) { padding-left: 2.5rem; border-left: 1px solid rgba(250,247,242,0.15); }
   .treatment-item:nth-last-child(-n+2) { border-bottom: none; }
-  .treatment-num { font-style: italic; font-size: 1.5rem; color: var(--teal-light); font-weight: 400; }
+  .treatment-num { font-style: italic; font-size: 1.5rem; color: var(--teal-light); font-weight: 400; display: inline-block; min-width: 2.5rem; }
   .treatment-title { font-size: 1.4rem; color: var(--cream); font-weight: 500; margin-bottom: 0.5rem; line-height: 1.25; }
   .treatment-desc { font-size: 0.92rem; color: rgba(250, 247, 242, 0.72); line-height: 1.6; }
 
   /* PROCESSO */
   .process { background: var(--cream-warm); }
   .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; margin-top: 3rem; }
-  .process-step .process-num { font-style: italic; font-size: 3.5rem; color: var(--coral); line-height: 1; margin-bottom: 1rem; font-weight: 400; }
+  .process-step .process-num { font-style: italic; font-size: 3.5rem; color: var(--coral); line-height: 1; margin-bottom: 1rem; font-weight: 400; display: inline-block; min-width: 4rem; }
   .process-step h3 { font-size: 1.4rem; margin-bottom: 0.75rem; }
   .process-step p { color: var(--gray); font-size: 0.97rem; line-height: 1.65; }
 
