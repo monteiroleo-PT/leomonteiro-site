@@ -136,7 +136,7 @@ section.section-tight { padding: clamp(3rem, 6vw, 5rem) 0; }
 /* ============================================ TIPOGRAFIA */
 .eyebrow {
   display: inline-block;
-  font-size: 0.72rem; color: var(--teal); font-weight: 600;
+  font-size: 0.72rem; color: var(--ink); font-weight: 600;
   letter-spacing: 0.1em; text-transform: uppercase;
   background: rgba(58, 139, 158, 0.1);
   border: 1px solid rgba(58, 139, 158, 0.25);
