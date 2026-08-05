@@ -1,0 +1,15 @@
+# Redirecionamentos do antigo site WordPress para o novo site Astro.
+# Formato: /endereco-antigo   /endereco-novo   301
+# 301 = "mudou-se em definitivo" — o Google transfere a autoridade do endereço
+# antigo para o novo. Não apagar.
+
+/privacy-policy-2-2     /politica-de-privacidade   301
+/privacy-policy         /politica-de-privacidade   301
+/termos-e-conditicoes   /termos-e-condicoes        301
+/google-maps            /contactos                 301
+/terapeuticas           /                          301
+/tratamentos            /                          301
+/servicos               /                          301
+/empresas               /corporate                 301
+/marcacoes              /marcar-consulta           301
+/contacto               /contactos                 301
