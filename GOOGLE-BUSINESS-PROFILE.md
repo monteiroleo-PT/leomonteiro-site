@@ -68,23 +68,28 @@ Ricardo Nascimento, Pedro Antunes.
 
 ---
 
-## 2. Categorias
+## 2. Categorias — BLOQUEIO ATUAL
 
-A categoria principal decide em que pesquisas apareces. É a definição mais
-importante da ficha inteira.
+**A ficha está com alterações pendentes.** O Google mudou categorias com base
+em "feedback de utilizadores ou outras fontes" e a edição fica limitada até
+resolveres. É preciso clicar em **"Revisar alterações"** antes de tudo o resto.
 
-**Principal sugerida:** Acupunturista
+Estado a 5/8/2026 (duas categorias aparecem como principal, o que é impossível
+— é a alteração pendente a ser mostrada em duplicado):
 
-**Secundárias a considerar:**
+- Acupunturista — principal
+- Clínica de acupuntura — principal
+- Clínica de controle da dor — adicional
 
-- Clínica de dor / Pain control clinic
-- Massagista terapêutico
+**Decisão:** manter **Acupunturista** como principal. Corresponde à cédula
+C-05000400 e é a categoria padrão para prática individual. As outras duas
+ficam como adicionais e cobrem quem pesquisa por "clínica".
 
 **Cuidado:** não uses categorias que impliquem credenciais que não tens
 (fisioterapeuta, quiroprático, médico). Em Portugal as terapêuticas não
 convencionais são reguladas pela ERS e pela Lei 71/2013 — a tua cédula
-C-05000400 é de acupuntura. Reclamar outra profissão é risco desnecessário,
-e o benefício de posicionamento não compensa.
+é de acupuntura. Reclamar outra profissão é risco desnecessário, e o benefício
+de posicionamento não compensa.
 
 ---
 
@@ -130,7 +135,84 @@ Máximo 750 caracteres. Cola tal e qual:
 
 ## 5. Serviços
 
-Adiciona um a um em "Serviços". Nome curto, descrição por baixo.
+Já existem 11 serviços na ficha, e são bons — vários são diferenciadores que
+a concorrência não tem (Ryodoraku, Laserpuntura, Tecarterapia). O que falta
+são **descrições**: aparecem só como nomes.
+
+### Correções a fazer
+
+| Serviço | Ação |
+|---|---|
+| Acupuntura aplicada a Estética | **Remover.** Fora da estratégia de dor e Taguspark. |
+| Acupuntura Craneana | **Renomear** para "Acupuntura Craniana" (português europeu). |
+| Clínica da dor | **Renomear** para "Tratamento da Dor Crónica". É um serviço, não uma categoria. |
+
+O campo de descrição do Google admite cerca de 300 caracteres. Todos os textos
+abaixo cabem. Estão em português europeu.
+
+### Descrições para os serviços existentes
+
+**Acupuntura**
+> Acupuntura clínica com protocolos sustentados por evidência científica,
+> aplicada sobretudo em dor musculoesquelética, cefaleias tensionais e
+> regulação do sistema nervoso autónomo. Reconhecida pela Organização
+> Mundial da Saúde.
+
+**Manipulação articular**
+> Técnicas manipulativas de alta velocidade e baixa amplitude (HVLA),
+> aplicadas segundo critérios clínicos rigorosos para restaurar mobilidade
+> articular e reduzir a proteção muscular excessiva.
+
+**Eletroacupuntura**
+> Acupuntura com eletroestimulação: a agulha, já colocada no ponto, recebe
+> uma corrente elétrica suave que reforça e prolonga o efeito analgésico.
+> Usada para modular a dor crónica musculoesquelética e neuropática e
+> reduzir a necessidade de medicação, dentro de um plano multimodal.
+
+*Nota clínica (não para o Google, para a tua consulta):* bem tolerada na
+generalidade. Contraindicações principais — pacemaker e outros dispositivos
+eletrónicos implantados, aplicação sobre a área desses dispositivos, e gravidez.
+
+**Acupuntura Craniana**
+> Utiliza pontos cefálicos e zonas de craniopuntura para modular a dor,
+> reduzindo a frequência e a intensidade das crises de cefaleia tensional e
+> de enxaqueca. Atua sobre a rede nervosa da face, couro cabeludo e pescoço,
+> por neuromodulação. Tratamento adjuvante, integrado no acompanhamento médico.
+
+*Nota clínica:* não age diretamente sobre o crânio nem sobre o cérebro. Não
+dispensa a avaliação que exclui causas perigosas de dor de cabeça.
+
+**Diagnóstico Digital Ryodoraku SNPA**
+> Avaliação instrumental que mede a atividade do sistema nervoso autónomo
+> através da condutância cutânea, permitindo objetivar o estado funcional
+> antes e depois do tratamento.
+
+**Laserpuntura**
+> Estimulação dos pontos de acupuntura por laser de baixa intensidade,
+> sem agulhas. Alternativa para quem tem receio de agulhas ou em zonas
+> de maior sensibilidade.
+
+**Radiofrequência (Tecarterapia)**
+> Tecnologia de transferência energética capacitiva e resistiva, que atua
+> em profundidade sobre os tecidos para acelerar a recuperação de lesões
+> e reduzir a dor.
+
+**Kinesio Taping**
+> Aplicação de ligaduras elásticas funcionais para suporte articular e
+> muscular sem restringir o movimento, usada como complemento entre sessões.
+
+**Acupuntura aplicada ao Desporto**
+> Dirigida a corredores, jogadores de padel, praticantes de crossfit e
+> remadores. Trata microlesões e desequilíbrios biomecânicos que limitam
+> o rendimento e o prazer da prática.
+
+**Tratamento da Dor Crónica**
+> Abordagem integrada para dor cervical persistente, lombalgia recorrente,
+> ciática e cefaleias tensionais. Inclui as queixas de origem ergonómica de
+> quem passa o dia ao computador: pescoço, ombros e zona lombar. Indicada
+> em casos onde a abordagem fragmentada não está a resolver.
+
+### Serviços a acrescentar
 
 **Tratamento da Coluna Vertebral**
 > Avaliação clínica e biomecânica da coluna cervical, dorsal e lombar, com
@@ -138,27 +220,20 @@ Adiciona um a um em "Serviços". Nome curto, descrição por baixo.
 > dor. O tratamento dirige-se à origem do problema, não ao alívio temporário
 > dos sintomas.
 
-**Manipulações Articulares HVLA**
-> Técnicas manipulativas de alta velocidade e baixa amplitude, aplicadas
-> segundo critérios clínicos rigorosos, para restaurar mobilidade articular
-> e melhorar a função biomecânica.
-
-**Acupuntura Clínica**
-> Protocolos contemporâneos sustentados por evidência científica, aplicados
-> em dor musculoesquelética, cefaleias, disfunções neurológicas e regulação
-> do sistema nervoso autónomo.
-
-**Reabilitação Neuromuscular**
-> Recuperação da função neurológica e motora, incluindo acupuntura craniana,
-> com aplicação em AVC, Parkinson, hemiplegia e tremores.
-
 **Avaliação Inicial (30 minutos)**
 > Avaliação clínica completa com diagnóstico funcional e plano de tratamento
 > personalizado, entregue por escrito no final da consulta.
 
+**Reabilitação Neuromuscular**
+> Recuperação da função neurológica e motora através da integração de
+> diferentes estratégias terapêuticas, com aplicação em sequelas
+> neurológicas e perda de controlo motor.
+
 **Programa de Saúde Corporativa**
-> Programas para empresas do Taguspark e do Oeiras Valley, dirigidos a
-> absentismo e baixas recorrentes por dor lombar e cervical.
+> Programas para empresas do Taguspark e do Oeiras Valley dirigidos ao
+> absentismo e ao presentismo por dor relacionada com o trabalho. 60% dos
+> trabalhadores europeus têm queixas musculoesqueléticas, e o custo do
+> presentismo é o triplo do absentismo. Consultório a 10 minutos a pé.
 
 ---
 
@@ -194,9 +269,12 @@ Fotos reais, tiradas com telemóvel, funcionam melhor do que banco de imagens.
 
 ## Ordem sugerida
 
-1. Ver as outras 2 empresas e o ponto vermelho do lápis
-2. Confirmar categoria principal
-3. Alinhar morada, telefone, horário e site
-4. Colar descrição e serviços
-5. Carregar fotos
-6. Começar a pedir avaliações, poucas de cada vez
+1. **"Revisar alterações"** — desbloqueia tudo o resto
+2. Fixar Acupunturista como categoria principal
+3. Mudar o nome para "Leo Monteiro - Acupuntura", sozinho, sem mexer em mais nada
+4. Ver as outras 2 empresas da conta (duplicados?)
+5. Alinhar morada, telefone, horário e site
+6. Colar a descrição da empresa
+7. Corrigir e descrever os serviços
+8. Carregar fotos
+9. Começar a pedir avaliações, poucas de cada vez
