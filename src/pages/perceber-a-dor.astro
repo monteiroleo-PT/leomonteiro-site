@@ -1,0 +1,155 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const prontos = [
+  {
+    href: '/acupuntura-dor-lombar',
+    titulo: 'Acupuntura para dor nas costas',
+    resumo:
+      'Como é que uma agulha tira a dor, que pontos se usam e porque é que um ponto na perna alivia a lombar. Sem termos técnicos.',
+    tag: 'Dor lombar',
+  },
+];
+
+const aCaminho = [
+  { titulo: 'Dor no pescoço e ombros', tag: 'Cervicalgia' },
+  { titulo: 'Quando a dor desce pela perna', tag: 'Ciática' },
+  { titulo: 'Dores de cabeça de tensão', tag: 'Cefaleias' },
+  { titulo: 'Hérnia discal: o que muda e o que não muda', tag: 'Coluna' },
+  { titulo: 'Manipulações articulares: o que é aquele estalido', tag: 'Terapia manual' },
+];
+---
+
+<Layout
+  title="Perceber a dor | Leo Monteiro, Acupuntura no Taguspark"
+  description="Explicações claras sobre dor de coluna, acupuntura e terapia manual, escritas por Leonardo Monteiro, acupuntor no Taguspark, Oeiras. Sem jargão."
+  currentPage="perceber-a-dor"
+>
+
+  <section class="hub-hero">
+    <div class="container">
+      <p class="eyebrow">Para quem gosta de saber mais</p>
+      <h1>Quer que eu <em class="accent">explique?</em></h1>
+      <p class="hub-lead">
+        Na consulta, boa parte do tempo é passada a explicar. O que dói, porque dói,
+        e o que estamos a fazer para que deixe de doer. Percebi ao longo dos anos que
+        quem entende o próprio corpo recupera melhor e volta menos vezes.
+      </p>
+      <p class="hub-lead">
+        Estas páginas são essa conversa, por escrito. Sem termos que obriguem a
+        ir ao dicionário e sem promessas que ninguém pode cumprir.
+      </p>
+    </div>
+  </section>
+
+  <section class="hub-body">
+    <div class="container">
+
+      <div class="hub-list">
+        {prontos.map((a) => (
+          <a href={a.href} class="hub-card">
+            <p class="hub-card-tag">{a.tag}</p>
+            <h2>{a.titulo}</h2>
+            <p class="hub-card-resumo">{a.resumo}</p>
+            <span class="hub-card-link">Ler <span aria-hidden="true">→</span></span>
+          </a>
+        ))}
+      </div>
+
+      <div class="hub-next">
+        <p class="eyebrow">A caminho</p>
+        <h2>Os próximos temas</h2>
+        <p class="hub-next-intro">
+          Vou escrevendo à medida que as perguntas se repetem em consulta.
+          Se houver algo que gostaria de ver aqui, diga-me.
+        </p>
+        <ul class="hub-next-list">
+          {aCaminho.map((t) => (
+            <li>
+              <span class="hub-next-tag">{t.tag}</span>
+              <span class="hub-next-title">{t.titulo}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="hub-cta">
+        <p class="eyebrow">Prefere perguntar diretamente?</p>
+        <h2>Não é preciso ler nada disto para marcar.</h2>
+        <p>
+          Descreva o que sente e há quanto tempo, em duas linhas.
+          Resposta rápida pelo WhatsApp.
+        </p>
+        <div class="actions">
+          <a
+            href="https://wa.me/351916345523?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20avalia%C3%A7%C3%A3o"
+            class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+          >Marcar pelo WhatsApp</a>
+          <a href="/faq" class="btn-ghost">Ver perguntas frequentes</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .hub-hero { padding: clamp(3rem, 6vw, 5rem) 0 2rem; }
+  .hub-hero .container { max-width: 780px; }
+  .hub-hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); margin-top: 1rem; line-height: 1.1; }
+  .hub-lead { font-size: clamp(1rem, 1.5vw, 1.12rem); color: var(--charcoal); line-height: 1.7; margin-top: 1.25rem; }
+
+  .hub-body { padding-bottom: clamp(4rem, 8vw, 6rem); }
+  .hub-body .container { max-width: 900px; }
+
+  .hub-list { display: grid; gap: 1.25rem; margin-bottom: 4rem; }
+
+  .hub-card {
+    display: block;
+    background: var(--cream-warm);
+    border-left: 3px solid var(--teal);
+    padding: clamp(1.5rem, 3vw, 2rem);
+    color: inherit;
+    transition: background var(--t-base);
+  }
+  .hub-card:hover { background: var(--cream-dark); color: inherit; }
+  .hub-card-tag {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--teal); font-weight: 600; margin-bottom: 0.6rem;
+  }
+  .hub-card h2 { font-size: clamp(1.2rem, 2.2vw, 1.5rem); color: var(--ink-deep); margin-bottom: 0.6rem; }
+  .hub-card-resumo { font-size: 0.97rem; color: var(--charcoal); line-height: 1.7; margin-bottom: 1rem; }
+  .hub-card-link { font-size: 0.9rem; color: var(--coral-deep); font-weight: 500; }
+
+  .hub-next { padding-top: 3rem; border-top: 1px solid var(--border); }
+  .hub-next h2 { font-size: clamp(1.4rem, 2.4vw, 1.8rem); color: var(--ink-deep); margin: 0.75rem 0 0.75rem; }
+  .hub-next-intro { font-size: 0.97rem; color: var(--gray); line-height: 1.7; margin-bottom: 1.75rem; max-width: 620px; }
+  .hub-next-list { list-style: none; }
+  .hub-next-list li {
+    display: flex; align-items: baseline; gap: 1rem;
+    padding: 0.9rem 0; border-bottom: 1px solid var(--border);
+  }
+  .hub-next-tag {
+    font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--gray-light); font-weight: 600; min-width: 110px; flex-shrink: 0;
+  }
+  .hub-next-title { font-size: 0.97rem; color: var(--gray); }
+
+  .hub-cta {
+    background: var(--ink-deep);
+    padding: clamp(2.25rem, 5vw, 3.25rem);
+    margin-top: 4rem;
+    text-align: center;
+  }
+  .hub-cta .eyebrow { color: var(--teal-light); }
+  .hub-cta h2 { color: var(--cream); font-size: clamp(1.35rem, 2.6vw, 1.9rem); margin: 0.75rem 0; }
+  .hub-cta p { color: #C9D6DB; font-size: 0.97rem; max-width: 480px; margin: 0 auto 1.75rem; line-height: 1.7; }
+  .hub-cta .actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; align-items: center; }
+  .hub-cta .btn-ghost { color: var(--teal-light); }
+
+  @media (max-width: 560px) {
+    .hub-next-list li { flex-direction: column; gap: 0.3rem; }
+    .hub-next-tag { min-width: 0; }
+  }
+</style>
