@@ -23,3 +23,11 @@ pnpm-debug.log*
 
 # VS Code
 .vscode/
+
+# Ficheiros de trabalho que nao fazem parte do site.
+# Continuam na pasta do projeto, apenas nao sao enviados para o repositorio.
+Claude outputs/
+/*.pdf
+/Carrossel 168 horas, texto final.md
+/Frase da semana.md
+/Posts Instagram — reescritos PT.md
