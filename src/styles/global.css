@@ -41,6 +41,10 @@
 /* ============================================ RESET */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+/* O cabecalho fica colado ao topo, por isso um salto para uma ancora
+   esconderia o titulo da seccao por baixo dele. Esta margem afasta o
+   destino do salto o suficiente para o titulo ficar visivel. */
+[id] { scroll-margin-top: 7rem; }
 body {
   font-family: var(--font-body);
   color: var(--charcoal);

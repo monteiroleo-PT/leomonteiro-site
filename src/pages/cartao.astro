@@ -1,0 +1,372 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const tel = '+351916345523';
+const telDisplay = '+351 916 345 523';
+const email = 'info@leomonteiro.pt';
+const maps = 'https://maps.app.goo.gl/a18hJq334fjEPqxh7';
+const wa = 'https://wa.me/351916345523?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20avalia%C3%A7%C3%A3o';
+
+const links = [
+  {
+    href: wa,
+    label: 'WhatsApp',
+    sub: 'Marcações e dúvidas rápidas',
+    ext: true,
+    icon: 'whatsapp',
+  },
+  {
+    href: `tel:${tel}`,
+    label: 'Telefonar',
+    sub: telDisplay,
+    ext: false,
+    icon: 'phone',
+  },
+  {
+    href: `mailto:${email}`,
+    label: 'Email',
+    sub: email,
+    ext: false,
+    icon: 'mail',
+  },
+  {
+    href: '/marcar-consulta',
+    label: 'Marcar consulta',
+    sub: 'Agenda online',
+    ext: false,
+    icon: 'calendar',
+  },
+  {
+    href: maps,
+    label: 'Como chegar',
+    sub: 'Taguspark, Núcleo Central, Sala 340',
+    ext: true,
+    icon: 'pin',
+  },
+  {
+    href: '/',
+    label: 'leomonteiro.pt',
+    sub: 'Site, artigos e informação clínica',
+    ext: false,
+    icon: 'globe',
+  },
+];
+---
+
+<Layout
+  title="Cartão digital | Leonardo Monteiro, acupuntor clínico"
+  description="Cartão de visita digital de Leonardo Monteiro, acupuntor clínico no Taguspark, Oeiras. Guardar contacto, WhatsApp, email e marcação de consulta."
+  currentPage="cartao"
+  bare={true}
+  noindex={true}
+>
+
+  <div class="card-page">
+    <div class="card">
+
+      <div class="card-top">
+        <img
+          src="/leo-avatar.jpg"
+          alt="Leonardo Monteiro"
+          width="132"
+          height="132"
+          class="avatar"
+          loading="eager"
+        />
+      </div>
+
+      <div class="card-head">
+        <h1>Leonardo Monteiro</h1>
+        <p class="role">Tratamento da dor, mobilização articular e acupuntura clínica</p>
+        <p class="local">Taguspark, Oeiras</p>
+        <p class="cedula">Cédula profissional C-05000400 · Registo ERS E143188</p>
+      </div>
+
+      <a href="/leonardo-monteiro.vcf" class="save-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <line x1="19" y1="8" x2="19" y2="14"/>
+          <line x1="22" y1="11" x2="16" y2="11"/>
+        </svg>
+        Guardar contacto
+      </a>
+      <p class="save-hint">Adiciona os meus dados aos contactos do seu telemóvel</p>
+
+      <ul class="links">
+        {links.map(item => (
+          <li>
+            <a
+              href={item.href}
+              target={item.ext ? '_blank' : undefined}
+              rel={item.ext ? 'noopener noreferrer' : undefined}
+            >
+              <span class="ico" aria-hidden="true">
+                {item.icon === 'whatsapp' && (
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                )}
+                {item.icon === 'phone' && (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                )}
+                {item.icon === 'mail' && (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                )}
+                {item.icon === 'calendar' && (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                )}
+                {item.icon === 'pin' && (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                )}
+                {item.icon === 'globe' && (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                )}
+              </span>
+              <span class="txt">
+                <span class="label">{item.label}</span>
+                <span class="sub">{item.sub}</span>
+              </span>
+              <span class="chev" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <div class="social">
+        <a href="https://instagram.com/leomonteiropt" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/leomonteiropt" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.64h.05c.53-1 1.82-2.06 3.75-2.06C21.4 8.58 22 10.9 22 14.1V21h-4v-6.1c0-1.45-.03-3.32-2.02-3.32-2.02 0-2.33 1.58-2.33 3.21V21h-3.98z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/LeoMonteiro.pt" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.45 2.89h-2.33v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+
+      <div class="tools">
+        <button type="button" id="qrToggle" class="tool-btn" aria-expanded="false" aria-controls="qrBox">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM18 18h3v3h-3z"/></svg>
+          <span id="qrLabel">Mostrar QR</span>
+        </button>
+        <button type="button" id="shareBtn" class="tool-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>
+          <span id="shareLabel">Partilhar</span>
+        </button>
+      </div>
+
+      <div class="qr-box" id="qrBox" hidden>
+        <img src="/cartao-qr.svg" alt="Código QR para leomonteiro.pt/cartao" width="220" height="220" />
+        <p>Aponte a câmara para abrir este cartão</p>
+      </div>
+
+      <p class="foot">
+        Consultas de segunda a quinta, 10h00 às 17h00<br />
+        Taguspark, Edifício Núcleo Central, 3º Piso, Sala 340, Porto Salvo, Oeiras
+      </p>
+
+    </div>
+  </div>
+
+</Layout>
+
+<style>
+  .card-page {
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--ink-deep) 0%, var(--ink-deep) 190px, var(--cream) 190px, var(--cream) 100%);
+    padding: 0 1.25rem 3rem;
+  }
+  .card {
+    max-width: 28rem;
+    margin: 0 auto;
+    padding-top: 2.75rem;
+  }
+
+  .card-top { display: flex; justify-content: center; }
+  .avatar {
+    width: 132px; height: 132px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--cream);
+    box-shadow: 0 10px 30px rgba(20, 56, 71, 0.22);
+    background: var(--cream-warm);
+  }
+
+  .card-head { text-align: center; margin-top: 1.25rem; }
+  .card-head h1 {
+    font-size: clamp(1.7rem, 6vw, 2.1rem);
+    margin-bottom: 0.35rem;
+    letter-spacing: -0.02em;
+  }
+  .role {
+    color: var(--teal);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    max-width: 21rem;
+    margin: 0 auto 0.35rem;
+    /* Reparte o texto pelas duas linhas de forma equilibrada,
+       para não sobrar uma palavra solta na segunda linha. */
+    text-wrap: balance;
+  }
+  .local {
+    color: var(--ink-deep);
+    font-size: 0.92rem;
+    font-weight: 500;
+    margin-bottom: 0.45rem;
+  }
+  .cedula {
+    color: var(--gray);
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  .save-btn {
+    display: flex; align-items: center; justify-content: center; gap: 0.6rem;
+    margin-top: 1.75rem;
+    width: 100%;
+    padding: 1.05rem 1.5rem;
+    border-radius: 999px;
+    background: var(--coral);
+    color: white;
+    font-weight: 600;
+    font-size: 1.02rem;
+    box-shadow: 0 6px 18px rgba(224, 120, 86, 0.28);
+    transition: all var(--t-base);
+  }
+  .save-btn:hover { background: var(--coral-deep); color: white; transform: translateY(-1px); }
+  .save-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+  .save-hint {
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--gray);
+    margin: 0.7rem 0 0;
+  }
+
+  .links { list-style: none; margin-top: 1.75rem; display: grid; gap: 0.6rem; }
+  .links a {
+    display: flex; align-items: center; gap: 0.95rem;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 0.95rem 1.1rem;
+    color: var(--ink-deep);
+    transition: all var(--t-fast);
+  }
+  .links a:hover {
+    border-color: var(--teal);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(20, 56, 71, 0.08);
+    color: var(--ink-deep);
+  }
+  .ico {
+    flex-shrink: 0;
+    width: 40px; height: 40px;
+    border-radius: 11px;
+    background: rgba(58, 139, 158, 0.1);
+    color: var(--teal);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .ico svg { width: 20px; height: 20px; }
+  .txt { display: flex; flex-direction: column; gap: 0.12rem; min-width: 0; }
+  .label { font-weight: 600; font-size: 0.98rem; line-height: 1.25; }
+  .sub { font-size: 0.82rem; color: var(--gray); line-height: 1.35; }
+  .chev { margin-left: auto; color: var(--gray-light); display: flex; }
+  .chev svg { width: 18px; height: 18px; }
+
+  .social { display: flex; justify-content: center; gap: 0.75rem; margin-top: 1.5rem; }
+  .social a {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: white;
+    color: var(--ink);
+    display: flex; align-items: center; justify-content: center;
+    transition: all var(--t-fast);
+  }
+  .social a:hover { background: var(--ink-deep); color: var(--cream); border-color: var(--ink-deep); }
+  .social svg { width: 19px; height: 19px; }
+
+  .tools { display: flex; gap: 0.6rem; margin-top: 1.5rem; }
+  .tool-btn {
+    flex: 1;
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--border-dark);
+    background: transparent;
+    color: var(--ink-deep);
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--t-fast);
+  }
+  .tool-btn:hover { background: var(--cream-warm); border-color: var(--teal); }
+  .tool-btn svg { width: 17px; height: 17px; }
+
+  .qr-box {
+    margin-top: 1.25rem;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .qr-box img { width: 220px; height: 220px; margin: 0 auto; }
+  .qr-box p { font-size: 0.82rem; color: var(--gray); margin: 0.9rem 0 0; }
+
+  .foot {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 480px) {
+    .card { padding-top: 3.25rem; }
+  }
+</style>
+
+<script>
+  const qrToggle = document.getElementById('qrToggle');
+  const qrBox = document.getElementById('qrBox');
+  const qrLabel = document.getElementById('qrLabel');
+
+  if (qrToggle && qrBox && qrLabel) {
+    qrToggle.addEventListener('click', () => {
+      const abrir = qrBox.hidden;
+      qrBox.hidden = !abrir;
+      qrToggle.setAttribute('aria-expanded', String(abrir));
+      qrLabel.textContent = abrir ? 'Esconder QR' : 'Mostrar QR';
+      if (abrir) qrBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+  }
+
+  const shareBtn = document.getElementById('shareBtn');
+  const shareLabel = document.getElementById('shareLabel');
+
+  if (shareBtn && shareLabel) {
+    shareBtn.addEventListener('click', async () => {
+      const dados = {
+        title: 'Leonardo Monteiro, acupuntor clínico',
+        text: 'Contacto de Leonardo Monteiro, acupuntura no Taguspark',
+        url: window.location.href,
+      };
+      try {
+        if (navigator.share) {
+          await navigator.share(dados);
+        } else {
+          await navigator.clipboard.writeText(window.location.href);
+          shareLabel.textContent = 'Link copiado';
+          setTimeout(() => { shareLabel.textContent = 'Partilhar'; }, 2000);
+        }
+      } catch (e) {
+        // O utilizador cancelou a partilha ou o navegador recusou. Nada a fazer.
+      }
+    });
+  }
+</script>

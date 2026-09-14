@@ -1,0 +1,9 @@
+# Cabeçalhos que o Netlify envia com cada ficheiro.
+# Formato: o caminho do ficheiro numa linha, as regras indentadas por baixo.
+
+# O ficheiro do cartão de contacto precisa do tipo certo. Sem isto o Netlify
+# serve-o como ficheiro genérico e o telemóvel descarrega-o em vez de
+# perguntar "quer adicionar aos contactos?".
+/leonardo-monteiro.vcf
+  Content-Type: text/vcard; charset=utf-8
+  Cache-Control: public, max-age=3600

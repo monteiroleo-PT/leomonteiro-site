@@ -6,7 +6,8 @@ export default defineConfig({
   site: 'https://leomonteiro.pt',
   integrations: [
     tailwind(),
-    // Não incluir a página de erro no sitemap
-    sitemap({ filter: (page) => !page.includes('/404') }),
+    // Não incluir no sitemap a página de erro nem o cartão digital.
+    // O cartão existe para quem recebe o link, não para chegar pelo Google.
+    sitemap({ filter: (page) => !page.includes('/404') && !page.includes('/cartao') }),
   ],
 });
