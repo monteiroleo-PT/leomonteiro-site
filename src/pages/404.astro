@@ -42,3 +42,16 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
 </Layout>
+
+<style>
+  .legal-hero { padding: clamp(3rem, 6vw, 5rem) 0 2rem; }
+  .legal-hero h1 { font-size: clamp(2rem, 4vw, 3rem); margin-top: 1rem; }
+  .legal-meta { font-size: 0.97rem; color: var(--gray); margin-top: 0.75rem; max-width: 620px; }
+  .legal-body { padding-top: 1rem; padding-bottom: clamp(4rem, 8vw, 6rem); }
+  .legal-body .container { max-width: 720px; }
+  .legal-body h2 { font-size: 1.35rem; color: var(--ink-deep); margin: 2.5rem 0 0.75rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+  .legal-body h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+  .legal-body p, .legal-body li { font-size: 0.97rem; color: var(--charcoal); line-height: 1.7; }
+  .legal-body ul { list-style: none; padding: 0; margin: 0 0 1rem; display: flex; flex-direction: column; gap: 0.5rem; }
+  .legal-body a { color: var(--teal); }
+</style>
