@@ -1,0 +1,447 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const causas = [
+  {
+    n: 'i',
+    titulo: 'O disco',
+    texto: 'Uma hérnia ou protrusão toca na raiz do nervo e irrita-a. Costuma piorar sentado, a tossir ou a espirrar.',
+  },
+  {
+    n: 'ii',
+    titulo: 'O canal apertado',
+    texto: 'Mais frequente depois dos 60. As pernas ficam pesadas ou dormentes a andar e aliviam ao sentar ou ao inclinar o tronco para a frente.',
+  },
+  {
+    n: 'iii',
+    titulo: 'A nádega',
+    texto: 'Os músculos profundos da nádega, quando contraídos, também irritam o nervo. Dói sobretudo na nádega e piora sentado muito tempo.',
+  },
+];
+
+const pontos = [
+  {
+    ponto: 'Huatuojiaji',
+    nome: 'Pontos paravertebrais',
+    local: 'Junto às vértebras lombares, de cada lado',
+    razao: 'Para atuar perto do sítio onde a raiz do nervo está irritada',
+  },
+  {
+    ponto: 'VB30',
+    nome: 'Huantiao',
+    local: 'Na nádega, em profundidade',
+    razao: 'O ponto clássico da ciática. Fica sobre o caminho do nervo',
+  },
+  {
+    ponto: 'B54',
+    nome: 'Zhibian',
+    local: 'Na nádega, ao lado do osso sacro',
+    razao: 'Sobre os músculos profundos da nádega',
+  },
+  {
+    ponto: 'B40',
+    nome: 'Weizhong',
+    local: 'Atrás do joelho, no meio da prega',
+    razao: 'Na linha da dor que desce pela parte de trás da perna',
+  },
+  {
+    ponto: 'VB34',
+    nome: 'Yanglingquan',
+    local: 'Do lado de fora da perna, logo abaixo do joelho',
+    razao: 'Quando a dor desce pelo lado de fora da perna',
+  },
+  {
+    ponto: 'B57',
+    nome: 'Chengshan',
+    local: 'A meio da barriga da perna',
+    razao: 'Para a dor e as cãibras na parte de trás da perna',
+  },
+  {
+    ponto: 'Ah shi',
+    nome: 'Pontos doridos',
+    local: 'Onde dói quando se apalpa',
+    razao: 'Os pontinhos "trigger" na nádega e na coxa, muitas vezes o alvo principal',
+  },
+];
+
+const faqs = [
+  {
+    q: 'Devo ficar em repouso?',
+    a: 'Repouso total na cama atrasa a recuperação. Caminhadas curtas e frequentes, dentro do que é tolerável, costumam ajudar mais. Alguns dias mais calmos no início, sim. Semanas deitado, não.',
+  },
+  {
+    q: 'Preciso de fazer uma ressonância?',
+    a: 'No início, normalmente não. Faz sentido quando há sinais de alarme, quando há perda de força, quando não melhora ao fim de cerca de seis semanas ou quando se pondera cirurgia.',
+  },
+  {
+    q: 'Quanto tempo dura uma ciática?',
+    a: 'Muitas pessoas melhoram bastante em seis a doze semanas. Há casos mais rápidos e outros que levam mais tempo. A dor costuma ir-se primeiro, o "formigueiro" e a dormência às vezes demoram mais.',
+  },
+  {
+    q: 'Tenho ciática na gravidez. A acupuntura pode ajudar?',
+    a: 'A dor na nádega e na perna é frequente na gravidez e pode ser tratada com segurança, com cuidados próprios: há pontos que não uso nesta fase e as posições adaptam-se. Diga-me sempre se está grávida.',
+  },
+  {
+    q: 'Qual a diferença entre ciática e dor lombar?',
+    a: 'Na dor lombar a dor fica nas costas. Na ciática a dor principal está na perna, muitas vezes abaixo do joelho. Podem aparecer juntas, e o tratamento tem pontos em comum.',
+  },
+];
+---
+
+<Layout
+  title="Ciática: quando a dor desce pela perna | Leo Monteiro, Taguspark"
+  description="O que é a ciática, porque dói tanto, quanto tempo dura e como a acupuntura e as terapias manuais ajudam. Explicado sem termos técnicos por Leonardo Monteiro, acupuntor no Taguspark, Oeiras."
+  currentPage=""
+>
+
+  <!-- HERO -->
+  <section class="art-hero">
+    <div class="container">
+      <p class="eyebrow">Ciática · Dor na perna</p>
+      <h1>Quando a dor <em class="accent">desce pela perna.</em></h1>
+      <p class="art-lead">
+        Ciática não é um diagnóstico, é uma descrição: dor que segue o caminho do
+        nervo ciático, da nádega para a perna e às vezes até ao pé. Assusta, porque
+        é forte e estranha. A boa notícia é que, na grande maioria dos casos, melhora.
+        E há muito que se pode fazer enquanto isso acontece.
+      </p>
+      <p class="art-meta">
+        Leonardo Monteiro · Acupuntor clínico · 28 anos de prática · Cédula C-05000400
+      </p>
+    </div>
+  </section>
+
+  <section class="art-body">
+    <div class="container">
+
+      <div class="art-summary">
+        <p class="art-summary-title">Em três linhas</p>
+        <ul>
+          <li>A ciática é um nervo irritado, quase sempre à saída da coluna lombar.</li>
+          <li>Na maior parte das pessoas melhora em semanas ou poucos meses, sem cirurgia.</li>
+          <li>Movimento ajustado ajuda mais do que repouso total. O tratamento serve para tornar esse movimento possível.</li>
+        </ul>
+      </div>
+
+      <h2>O que se passa, afinal</h2>
+
+      <p>
+        O nervo ciático é o mais grosso do corpo. Nasce de várias raízes que saem da
+        parte baixa da coluna, juntam-se na nádega e descem pela parte de trás da perna.
+        Quando uma dessas raízes fica apertada ou inflamada, a dor não fica onde está
+        o problema: aparece ao longo de todo o caminho do nervo.
+      </p>
+
+      <p>As causas mais comuns são três.</p>
+
+      <ul class="art-causas">
+        {causas.map((c) => (
+          <li>
+            <span class="art-causas-n" aria-hidden="true">{c.n}</span>
+            <div>
+              <p class="art-causas-titulo">{c.titulo}</p>
+              <p>{c.texto}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+
+      <p>
+        E há uma "falsa ciática", muito frequente: dor que vem da lombar ou da articulação
+        da bacia e se espalha para a nádega e para a coxa, mas não passa do joelho nem dá
+        "formigueiro". Não é o nervo. Trata-se de outra forma, e é por isso que o exame importa.
+      </p>
+
+      <!-- INFOGRÁFICO -->
+      <figure class="art-figure art-figure-img">
+        <a href="/ciatica-infografia.webp" target="_blank" rel="noopener">
+          <img
+            src="/ciatica-infografia.webp"
+            width="768"
+            height="1024"
+            loading="lazy"
+            decoding="async"
+            alt="Infografia da ciática. À esquerda, uma vértebra com disco saudável ao lado de outra com hérnia de disco a comprimir a raiz do nervo, e o nervo ciático a descer da lombar pela parte de trás da perna até ao pé. À direita, as zonas de dor de cada raiz: L4 na frente da coxa e no joelho, L5 no lado de fora da perna, peito do pé e dedo grande, S1 na parte de trás da coxa e da perna, calcanhar e bordo de fora do pé."
+          />
+        </a>
+        <figcaption>Do disco até ao pé: onde o nervo é irritado e por onde a dor desce. Toque na imagem para ampliar.</figcaption>
+      </figure>
+
+      <div class="art-callout">
+        <p class="art-callout-label">Numa frase</p>
+        <p>
+          Na ciática o nervo não está "cortado" nem "esmagado". Está irritado e sensível.
+          Acalmá-lo e dar-lhe espaço é o que permite que a recuperação natural aconteça.
+        </p>
+      </div>
+
+      <h2>Até onde desce a dor diz muito</h2>
+
+      <p>
+        O sítio exato onde a dor chega à perna e ao pé dá uma pista sobre qual é a raiz
+        envolvida. Quando desce pelo lado de fora da perna e chega ao peito do pé e ao dedo
+        grande, costuma ser a raiz L5. Quando segue pela parte de trás da perna até ao
+        calcanhar, à planta do pé e ao dedo mindinho, costuma ser a S1. São as duas mais
+        frequentes. A L4 é menos comum e fica mais pela frente da coxa e pelo joelho.
+      </p>
+
+      <p>
+        Estes mapas são aproximados e variam de pessoa para pessoa. São uma pista, não um
+        diagnóstico: quem confirma é o exame.
+      </p>
+
+      <h2>Que pontos se usam na ciática</h2>
+
+      <p>
+        Seguem o caminho da dor: junto à coluna, na nádega e ao longo da perna. Tal como
+        expliquei a propósito da <a href="/acupuntura-dor-lombar">dor lombar</a>, os códigos
+        são apenas moradas. O que interessa é o músculo e o nervo que estão por baixo da agulha.
+      </p>
+
+      <div class="art-table-wrap">
+        <table class="art-table">
+          <thead>
+            <tr>
+              <th scope="col">Ponto</th>
+              <th scope="col">Onde fica</th>
+              <th scope="col">Porque se usa</th>
+            </tr>
+          </thead>
+          <tbody>
+            {pontos.map((p) => (
+              <tr>
+                <td><strong>{p.ponto}</strong><br/><span class="art-table-alt">{p.nome}</span></td>
+                <td>{p.local}</td>
+                <td>{p.razao}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Na ciática uso muitas vezes eletroacupuntura: uma corrente muito suave nas agulhas,
+        que ajuda a acalmar um nervo que está a enviar dor sem parar. Sente-se uma pulsação,
+        um "formigueiro", e nunca deve doer.
+      </p>
+
+      <h2>Como decorre, na prática</h2>
+
+      <p>
+        Primeiro conversamos e examino. Os testes "neurológicos" aqui são essenciais:
+        peço para andar em bicos de pés e nos calcanhares, testo reflexos, sensibilidade
+        e força, e levanto a perna esticada para ver quando a dor aparece. Isto diz-me se
+        é mesmo o nervo, qual é a raiz e se há algum sinal que exija exames.
+      </p>
+
+      <p>
+        Na fase mais aguda o objetivo é aliviar: encontrar posições que tirem pressão ao
+        nervo, radiofrequência (tecarterapia) para o corpo sair do estado de alerta, e
+        acupuntura. Manipulações na lombar, só quando o caso o permite e o corpo as tolera
+        bem. Depois entram exercícios simples para o nervo "deslizar" melhor e voltar a
+        ganhar tolerância ao movimento.
+      </p>
+
+      <p>
+        Ao início costumam ser <strong>uma a três sessões por semana</strong>. Depois vai
+        espaçando. Na maioria dos casos o tratamento ativo dura <strong>entre um e três meses</strong>.
+      </p>
+
+      <div class="art-myth">
+        <div class="art-myth-col">
+          <p class="art-myth-label art-myth-label-false">O que muita gente espera</p>
+          <p>
+            "Tenho uma hérnia, isto só se resolve com uma operação."
+          </p>
+        </div>
+        <div class="art-myth-col">
+          <p class="art-myth-label art-myth-label-true">O que acontece</p>
+          <p>
+            A maioria das ciáticas melhora sem cirurgia, e muitas hérnias encolhem sozinhas
+            com o tempo. A operação fica reservada para casos específicos.
+          </p>
+        </div>
+      </div>
+
+      <h2>Sinais que mudam a prioridade</h2>
+
+      <p>
+        A grande maioria das ciáticas melhora com tratamento e tempo. Mas há sinais que
+        significam outra coisa e que não podem esperar.
+      </p>
+
+      <div class="art-alert">
+        <p class="art-alert-label">Vá às urgências se acontecer isto</p>
+        <ul>
+          <li>Dificuldade em urinar, ou perda de controlo da urina ou das fezes.</li>
+          <li>Dormência na zona genital, no períneo ou na parte interior das coxas.</li>
+          <li>Dor e fraqueza nas duas pernas ao mesmo tempo, ou fraqueza a piorar de dia para dia.</li>
+        </ul>
+        <p class="art-alert-note">
+          Estes sinais podem indicar compressão dos nervos na base da coluna. É raro,
+          mas as horas contam.
+        </p>
+      </div>
+
+      <p>
+        Precisa também de avaliação rápida se o pé começar a "cair": não consegue levantar
+        a ponta do pé, tropeça ou arrasta-o ao andar. E peço para investigar antes de avançar
+        quando há febre, perda de peso sem explicação, história de cancro, dor a seguir a uma
+        queda ou dor que não alivia em nenhuma posição, nem de noite.
+      </p>
+
+      <h2>Quem chega aqui com ciática</h2>
+
+      <p>
+        Muita gente que passa o dia sentada, que é precisamente a posição que mais carrega
+        os discos da lombar. Juntam-se as horas no carro até ao Taguspark e o fim de semana
+        em que se decide pegar em pesos ou jogar padel sem preparação. Chegam também
+        corredores, com dor na nádega que confundem com ciática e que muitas vezes é muscular.
+      </p>
+
+      <p>
+        Nestes casos o tratamento alivia o nervo, mas a recuperação consolida-se quando a
+        forma de estar sentado e de voltar ao exercício também muda.
+      </p>
+
+      <p>
+        O consultório fica dentro do parque, a dez minutos a pé de qualquer empresa.
+        Dá para vir à hora de almoço e voltar sem ter perdido a tarde.
+      </p>
+
+      <div class="art-cta">
+        <p class="eyebrow">Avaliação inicial</p>
+        <h3>Diga-me onde começa a dor e até onde desce, em duas linhas.</h3>
+        <p>Resposta rápida pelo WhatsApp. Casos agudos sempre que a agenda permite.</p>
+        <a
+          href="https://wa.me/351916345523?text=Ol%C3%A1%2C%20tenho%20ci%C3%A1tica%20e%20gostaria%20de%20marcar%20uma%20avalia%C3%A7%C3%A3o"
+          class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+        >Marcar pelo WhatsApp</a>
+      </div>
+
+      <h2>Perguntas frequentes</h2>
+
+      <div class="art-faq">
+        {faqs.map((f) => (
+          <details>
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+
+      <p>
+        Se a dor fica sobretudo nas costas, leia também
+        <a href="/acupuntura-dor-lombar">Acupuntura para dor nas costas</a>.
+      </p>
+
+      <p class="art-regulacao">
+        A acupuntura é uma profissão regulamentada em Portugal. Exige formação
+        universitária de quatro anos, com estágios e prática clínica supervisionada,
+        e cédula profissional emitida pela ACSS. Os locais de atendimento estão
+        registados na Entidade Reguladora da Saúde.
+      </p>
+
+      <p class="art-disclaimer">
+        Este texto serve para informar, não substitui uma avaliação individual.
+        A descrição dos pontos e das zonas de dor ajuda a perceber o que se passa no corpo,
+        não é um guia para autodiagnóstico nem para espetar agulhas em casa. O que fazer,
+        e com que frequência, decide-se caso a caso, a partir do exame de cada pessoa.
+      </p>
+
+      <div class="legal-nav">
+        <a href="/">Início</a>
+        <a href="/perceber-a-dor">Perceber a dor</a>
+        <a href="/faq">Perguntas frequentes</a>
+        <a href="/marcar-consulta">Marcar consulta</a>
+      </div>
+
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .art-hero { padding: clamp(3rem, 6vw, 5rem) 0 1.5rem; }
+  .art-hero .container { max-width: 820px; }
+  .art-hero h1 { font-size: clamp(2rem, 4.5vw, 3.2rem); margin-top: 1rem; line-height: 1.12; }
+  .art-lead { font-size: clamp(1.02rem, 1.6vw, 1.18rem); color: var(--charcoal); line-height: 1.65; margin-top: 1.25rem; }
+  .art-meta { font-size: 0.83rem; color: var(--gray); margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+
+  .art-body { padding-bottom: clamp(4rem, 8vw, 6rem); }
+  .art-body .container { max-width: 820px; }
+  .art-body h2 { font-size: clamp(1.4rem, 2.4vw, 1.75rem); color: var(--ink-deep); margin: 3rem 0 1rem; }
+  .art-body h3 { font-size: 1.25rem; color: var(--ink-deep); margin-bottom: 0.5rem; }
+  .art-body p { font-size: 1rem; color: var(--charcoal); line-height: 1.75; margin-bottom: 1.1rem; }
+  .art-body a { color: var(--teal); }
+
+  .art-summary { background: var(--cream-warm); border-left: 3px solid var(--teal); padding: 1.75rem; margin-bottom: 1rem; }
+  .art-summary-title { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--teal); font-weight: 600; margin-bottom: 1rem !important; }
+  .art-summary ul { list-style: none; }
+  .art-summary li { font-size: 0.97rem; line-height: 1.7; margin-bottom: 0.9rem; padding-left: 1.1rem; position: relative; }
+  .art-summary li:last-child { margin-bottom: 0; }
+  .art-summary li::before { content: ''; position: absolute; left: 0; top: 0.62em; width: 5px; height: 5px; background: var(--coral); border-radius: 50%; }
+
+  .art-figure { margin: 2rem 0; }
+  .art-figure svg { width: 100%; height: auto; }
+  .art-figure figcaption { font-size: 0.85rem; color: var(--gray); font-style: italic; margin-top: 0.6rem; text-align: center; }
+
+  .art-callout { background: var(--cream-warm); padding: 1.75rem; margin: 2rem 0; border-radius: 2px; }
+  .art-callout-deep { background: var(--ink-deep); }
+  .art-callout-deep p { color: #E8EEF0; }
+  .art-callout p:last-child { margin-bottom: 0; }
+  .art-callout-label { font-size: 0.78rem !important; text-transform: uppercase; letter-spacing: 0.1em; color: var(--teal) !important; font-weight: 600; margin-bottom: 0.75rem !important; }
+  .art-callout-deep .art-callout-label { color: var(--teal-light) !important; }
+
+  .art-table-wrap { overflow-x: auto; margin: 1.5rem 0 2rem; }
+  .art-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 580px; }
+  .art-table th { text-align: left; padding: 0.75rem 0.9rem; background: var(--ink-deep); color: var(--cream); font-weight: 500; font-size: 0.82rem; }
+  .art-table td { padding: 0.8rem 0.9rem; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.55; }
+  .art-table tbody tr:nth-child(even) { background: var(--cream-warm); }
+  .art-table-alt { font-size: 0.8rem; color: var(--gray); font-style: italic; }
+
+  .art-myth { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); margin: 2rem 0; }
+  .art-myth-col { background: var(--cream-warm); padding: 1.5rem; }
+  .art-myth-col p { font-size: 0.95rem; margin-bottom: 0; }
+  .art-myth-label { font-size: 0.78rem !important; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; margin-bottom: 0.6rem !important; }
+  .art-myth-label-false { color: var(--coral-deep) !important; }
+  .art-myth-label-true { color: var(--teal) !important; }
+
+  .art-alert { border: 1px solid var(--coral); padding: 1.75rem; margin: 1.5rem 0 2rem; }
+  .art-alert-label { font-size: 0.78rem !important; text-transform: uppercase; letter-spacing: 0.1em; color: var(--coral-deep) !important; font-weight: 600; margin-bottom: 1rem !important; }
+  .art-alert ul { list-style: none; }
+  .art-alert li { font-size: 0.95rem; line-height: 1.65; margin-bottom: 0.7rem; padding-left: 1.1rem; position: relative; }
+  .art-alert li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 5px; height: 5px; background: var(--coral); border-radius: 50%; }
+  .art-alert-note { font-size: 0.9rem !important; color: var(--gray) !important; margin: 1rem 0 0 !important; }
+
+  .art-cta { background: var(--ink-deep); padding: clamp(2rem, 4vw, 2.75rem); margin: 2.5rem 0; text-align: center; }
+  .art-cta .eyebrow { color: var(--teal-light); }
+  .art-cta h3 { color: var(--cream); margin: 0.75rem 0; }
+  .art-cta p { color: #C9D6DB; font-size: 0.95rem; margin-bottom: 1.5rem; }
+
+  .art-faq details { border-bottom: 1px solid var(--border); }
+  .art-faq summary { cursor: pointer; padding: 1.1rem 0; font-weight: 500; color: var(--ink-deep); font-size: 1rem; list-style: none; position: relative; padding-right: 2rem; }
+  .art-faq summary::-webkit-details-marker { display: none; }
+  .art-faq summary::after { content: '+'; position: absolute; right: 0; top: 1rem; color: var(--teal); font-size: 1.3rem; line-height: 1; }
+  .art-faq details[open] summary::after { content: '−'; }
+  .art-faq details p { font-size: 0.95rem; padding-bottom: 1.2rem; margin-bottom: 0; color: var(--charcoal); }
+
+  .art-regulacao { font-size: 0.9rem !important; color: var(--charcoal) !important; padding-top: 1.5rem; margin-top: 2rem; border-top: 1px solid var(--border); }
+  .art-disclaimer { font-size: 0.85rem !important; color: var(--gray) !important; line-height: 1.7 !important; margin-top: 1rem; }
+
+  .art-causas { list-style: none; display: grid; gap: 1px; background: var(--border); margin: 1.5rem 0 2rem; }
+  .art-causas li { display: flex; gap: 1.1rem; align-items: flex-start; background: var(--cream-warm); padding: 1.4rem 1.5rem; }
+  .art-causas li p { font-size: 0.95rem; margin-bottom: 0; }
+  .art-causas-n { flex-shrink: 0; width: 2.4rem; height: 2.4rem; border-radius: 50%; background: var(--ink); color: var(--cream); display: grid; place-items: center; font-size: 1rem; font-weight: 500; }
+  .art-causas li:nth-child(2) .art-causas-n { background: var(--teal); }
+  .art-causas li:nth-child(3) .art-causas-n { background: var(--coral); }
+  .art-causas-titulo { font-weight: 600; color: var(--ink-deep) !important; margin-bottom: 0.3rem !important; }
+
+  .art-figure-img { max-width: 620px; margin-left: auto; margin-right: auto; }
+  .art-figure-img a { display: block; }
+  .art-figure-img img { width: 100%; height: auto; display: block; border-radius: 4px; }
+
+  @media (max-width: 640px) {
+    .art-myth { grid-template-columns: 1fr; }
+  }
+</style>
